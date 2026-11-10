@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Python cache & tests
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs & temp binaries
+*.log
+scratch/*.exe

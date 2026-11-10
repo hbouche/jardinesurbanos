@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Propuesta Ejecutiva 360° — Jardines Urbanos, S.A.</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap');
+
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #122B1D;
+      background: #F4F1EA;
+      font-size: 11px;
+      line-height: 1.45;
+    }
+
+    .page {
+      width: 210mm;
+      height: 297mm;
+      padding: 14mm 16mm;
+      position: relative;
+      page-break-after: always;
+      overflow: hidden;
+      background: #F4F1EA;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .page-dark {
+      background: #122B1D;
+      color: #F4F1EA;
+    }
+
+    .serif {
+      font-family: 'Fraunces', Georgia, serif;
+    }
+
+    .mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Header & Footer bars */
+    .top-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(18, 43, 29, 0.15);
+      font-size: 9.5px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #2E6F40;
+    }
+
+    .page-dark .top-meta {
+      border-bottom: 1px solid rgba(244, 241, 234, 0.15);
+      color: #71B347;
+    }
+
+    .footer-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 8px;
+      border-top: 1px solid rgba(18, 43, 29, 0.15);
+      font-size: 9px;
+      color: #4A5D52;
+    }
+
+    .page-dark .footer-meta {
+      border-top: 1px solid rgba(244, 241, 234, 0.15);
+      color: #A7B8AE;
+    }
+
+    /* Badges & Pills */
+    .pill {
+      display: inline-block;
+      padding: 3px 9px;
+      border-radius: 999px;
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .pill-green { background: rgba(113, 179, 71, 0.2); color: #71B347; border: 1px solid rgba(113, 179, 71, 0.45); }
+    .pill-dark { background: #122B1D; color: #71B347; }
+    .pill-orange { background: rgba(250, 125, 9, 0.15); color: #C95B00; border: 1px solid rgba(250, 125, 9, 0.35); }
+
+    /* Cards & Grids */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+
+    .card {
+      background: #FFFFFF;
+      border: 1px solid #DED9CE;
+      border-radius: 10px;
+      padding: 11px 13px;
+    }
+
+    .card-dark {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 10px;
+      padding: 11px 13px;
+      color: #F4F1EA;
+    }
+
+    .card-forest {
+      background: #122B1D;
+      color: #F4F1EA;
+      border-radius: 10px;
+      padding: 12px 14px;
+    }
+
+    .mockup-frame {
+      width: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1.5px solid rgba(18, 43, 29, 0.2);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+      background: #0D2116;
+    }
+
+    .mockup-frame img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 10px;
+    }
+    th {
+      background: #122B1D;
+      color: #F4F1EA;
+      text-align: left;
+      padding: 6px 8px;
+      font-weight: 600;
+      font-size: 9.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    td {
+      padding: 6px 8px;
+      border-bottom: 1px solid #DED9CE;
+      background: #FFFFFF;
+      vertical-align: top;
+    }
+    tr:nth-child(even) td {
+      background: #FAF8F4;
+    }
+
+    .swatch {
+      height: 28px;
+      border-radius: 6px;
+      display: flex;
+      align-items: flex-end;
+      padding: 4px 6px;
+      font-size: 8.5px;
+      font-weight: 700;
+    }
+
+    ul.clean-list {
+      list-style: none;
+    }
+    ul.clean-list li {
+      position: relative;
+      padding-left: 12px;
+      margin-bottom: 4px;
+    }
+    ul.clean-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #71B347;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =================================================================
+       PÁGINA 1: PORTADA EJECUTIVA + VISIÓN ESTRATÉGICA + MOCKUP HOME
+       ================================================================= -->
+  <section class="page page-dark">
+    <div>
+      <div class="top-meta">
+        <span>JARDINES URBANOS, S.A. (JUSA) • PROPUESTA EJECUTIVA 360°</span>
+        <span class="mono">META GO-LIVE: 1° DE DICIEMBRE 2026</span>
+      </div>
+
+      <div style="margin-top: 14px;">
+        <span class="pill pill-green">Transformación Digital & Ecosistema Comercial B2B / B2C</span>
+        <h1 class="serif" style="font-size: 28px; line-height: 1.12; margin-top: 8px; color: #F4F1EA;">
+          Nuevo Website 360° de Alto Impacto:<br/>
+          <span style="color: #71B347;">¡Vestimos de verde a Panamá!</span>
+        </h1>
+        <p style="font-size: 11.5px; color: #DDD9D0; margin-top: 7px; max-width: 95%;">
+          Una plataforma digital diseñada para proyectar la verdadera escala agroindustrial de <strong>Jardines Urbanos, S.A. (+25 años desde 1999 y fincas propias en Río Grande, Coclé)</strong>, integrando herramientas interactivas de cálculo por <strong>m²</strong>, catálogo botánico vivo, páginas de aterrizaje (Landing Pages) para ventas residenciales y licitaciones B2B, SEO local en Panamá, CRM y autonomía total.
+        </p>
+      </div>
+
+      <!-- Mockup Principal en Portada -->
+      <div class="mockup-frame" style="margin-top: 12px; border-color: rgba(113,179,71,0.4);">
+        <img src="file:///C:/Users/Usuario/.gemini/antigravity/brain/06a2f751-b5ae-4d18-94e4-841ab5713109/mockup_home_desktop_mobile_1794131306097.jpg" style="height: 108mm; object-position: center;" alt="Mockup Home Desktop y Mobile" />
+      </div>
+      <div style="font-size: 9px; color: #A7B8AE; margin-top: 4px; text-align: center;">
+        ▲ <strong>Vista Previa de la Página Principal (Computadora + Móvil):</strong> Hero inmersivo con video ligero de las fincas en Coclé, doble embudo (Residencial vs. Constructoras/Hidrosiembra), tarjetas de Zoysia Toro, Zoysia Japónica y San Agustín, y botón de WhatsApp inteligente.
+      </div>
+
+      <!-- 4 Pilares Ejecutivos -->
+      <div class="grid-4" style="margin-top: 12px;">
+        <div class="card-dark">
+          <div class="mono" style="color: #71B347; font-size: 9px; font-weight: 700;">01. DISEÑO UI/UX</div>
+          <div style="font-weight: 700; font-size: 11px; margin-top: 2px;">Tropical Luxury</div>
+          <p style="font-size: 9.5px; color: #DDD9D0; margin-top: 3px;">Estética editorial moderna con video optimizado (&lt;2.5 MB), 100% adaptable a laptop y celular.</p>
+        </div>
+        <div class="card-dark">
+          <div class="mono" style="color: #71B347; font-size: 9px; font-weight: 700;">02. INTERACCIÓN</div>
+          <div style="font-weight: 700; font-size: 11px; margin-top: 2px;">Calculadora de m²</div>
+          <p style="font-size: 9.5px; color: #DDD9D0; margin-top: 3px;">Recomienda la grama exacta o hidrosiembra según sol/terreno y envía el pedido a WhatsApp.</p>
+        </div>
+        <div class="card-dark">
+          <div class="mono" style="color: #71B347; font-size: 9px; font-weight: 700;">03. TRÁFICO & SEO</div>
+          <div style="font-weight: 700; font-size: 11px; margin-top: 2px;">Landing Pages 360°</div>
+          <p style="font-size: 9.5px; color: #DDD9D0; margin-top: 3px;">Páginas dedicadas para Gramas, Hidrosiembra, Palmas y Pitahaya listas para Google Panamá.</p>
+        </div>
+        <div class="card-dark">
+          <div class="mono" style="color: #71B347; font-size: 9px; font-weight: 700;">04. AUTONOMÍA</div>
+          <div style="font-weight: 700; font-size: 11px; margin-top: 2px;">100% Autogestionable</div>
+          <p style="font-size: 9.5px; color: #DDD9D0; margin-top: 3px;">Panel simplificado en WordPress + capacitación y video-guías para el equipo de JUSA.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-meta">
+      <span>Preparado por: <strong>Humberto</strong> • Consultoría y Desarrollo Digital 360°</span>
+      <span>Página 1 de 4</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PÁGINA 2: DIAGNÓSTICO FORENSE ACTUAL + SISTEMA VISUAL UI/UX + ARQUITECTURA DE LANDING PAGES
+       ================================================================= -->
+  <section class="page">
+    <div>
+      <div class="top-meta">
+        <span>01. DIAGNÓSTICO ACTUAL, IDENTIDAD VISUAL & ARQUITECTURA DE LANDING PAGES</span>
+        <span class="mono">JARDINESURBANOS.COM</span>
+      </div>
+
+      <h2 class="serif" style="font-size: 19px; margin-top: 10px; color: #122B1D;">
+        1. Hallazgos de la Auditoría Técnica Actual (Por qué renovar hoy)
+      </h2>
+      <p style="font-size: 10px; color: #3D5245; margin-top: 2px; margin-bottom: 8px;">
+        Realizamos una radiografía técnica en vivo sobre <code>jardinesurbanos.com</code> y detectamos oportunidades inmediatas que corregiremos de raíz:
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 24%;">Área Auditada</th>
+            <th style="width: 38%;">Situación Detectada Hoy</th>
+            <th style="width: 38%;">Solución en el Nuevo Website 360°</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Catálogo Digital</strong></td>
+            <td>El botón <em>"Ver / Descarga Catálogo"</em> lleva a un link externo gratuito (<code>tiiny.site</code>) que hoy devuelve <strong>Error 404 (No existe)</strong>.</td>
+            <td><strong>Catálogo Botánico Nativo y Filtrable</strong> alojado dentro de <code>jardinesurbanos.com</code> + PDF descargable actualizado.</td>
+          </tr>
+          <tr>
+            <td><strong>Velocidad de Carga</strong></td>
+            <td>El servidor tarda <strong>17.4 segundos (TTFB)</strong> en responder y carga 51 hojas CSS y WooCommerce sin tienda activa.</td>
+            <td>Optimización extrema + <strong>Cloudflare CDN (Nodo Panamá)</strong> e imágenes WebP para cargar en <strong>&lt; 1.5 segundos</strong>.</td>
+          </tr>
+          <tr>
+            <td><strong>SEO en Panamá e Idioma</strong></td>
+            <td>Código configurado en inglés (<code>lang="en-US"</code>), título genérico <em>"Bienvenidos"</em> y +12 páginas demo con <em>Lorem Ipsum</em> indexadas.</td>
+            <td>Limpieza total de páginas demo, configuración <code>es-PA</code>, <strong>Schema LocalBusiness</strong> y Landing Pages por producto.</td>
+          </tr>
+          <tr>
+            <td><strong>Captación, Correo y Móvil</strong></td>
+            <td>Sin formularios en el Home; enlace telefónico con 2 números unidos por <code>/</code> que no marca en celular; DNS M365 sin DKIM/DMARC.</td>
+            <td><strong>Calculadora de m² a WhatsApp</strong>, formularios conectados a CRM/Sheets y correo autenticado por <strong>Microsoft 365 SMTP</strong>.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Dirección de Arte y Paleta -->
+      <h2 class="serif" style="font-size: 18px; margin-top: 12px; color: #122B1D;">
+        2. Dirección de Arte UI/UX: "Tropical Luxury & Agro-Tech" + Video
+      </h2>
+      <div class="grid-2" style="margin-top: 6px;">
+        <div class="card">
+          <div style="font-weight: 700; font-size: 10.5px; margin-bottom: 6px;">Paleta Cromática Evolucionada</div>
+          <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px;">
+            <div>
+              <div class="swatch" style="background:#122B1D; color:#FFF;">#122B1D</div>
+              <div style="font-size:8.5px; font-weight:600; margin-top:2px;">Bosque B2B</div>
+            </div>
+            <div>
+              <div class="swatch" style="background:#71B347; color:#122B1D;">#71B347</div>
+              <div style="font-size:8.5px; font-weight:600; margin-top:2px;">Verde JUSA</div>
+            </div>
+            <div>
+              <div class="swatch" style="background:#2E6F40; color:#FFF;">#2E6F40</div>
+              <div style="font-size:8.5px; font-weight:600; margin-top:2px;">Clorofila UI</div>
+            </div>
+            <div>
+              <div class="swatch" style="background:#F4F1EA; color:#122B1D; border:1px solid #CCC;">#F4F1EA</div>
+              <div style="font-size:8.5px; font-weight:600; margin-top:2px;">Arena Editorial</div>
+            </div>
+            <div>
+              <div class="swatch" style="background:#FA7D09; color:#FFF;">#FA7D09</div>
+              <div style="font-size:8.5px; font-weight:600; margin-top:2px;">Terracota</div>
+            </div>
+          </div>
+          <p style="font-size: 9.5px; color: #4A5D52; margin-top: 6px;">
+            Conservamos el verde insignia (<code>#71B347</code>) y naranja (<code>#FA7D09</code>) de JUSA, integrándolos sobre fondos Arena Caliza y Bosque Profundo para transmitir solidez corporativa y frescura orgánica.
+          </p>
+        </div>
+
+        <div class="card">
+          <div style="font-weight: 700; font-size: 10.5px; margin-bottom: 4px;">🎥 Estrategia de Video Ligero & Fotografía Real</div>
+          <ul class="clean-list" style="font-size: 9.5px; color: #3D5245;">
+            <li><strong>Hero Video Loop Optimizado (&lt; 2.5 MB en WebM/MP4):</strong> Tomas aéreas de las fincas en Río Grande (Coclé), aplicación real de Hidrosiembra y jardines terminados, sin frenar la carga móvil.</li>
+            <li><strong>Tipografía Escaneable:</strong> <em>Fraunces / Alga</em> para titulares de autoridad, <em>Plus Jakarta Sans</em> para lectura ágil y <em>JetBrains Mono</em> para datos de ingeniería y metrajes (<code>m²</code>).</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Arquitectura de Landing Pages de Ventas -->
+      <h2 class="serif" style="font-size: 18px; margin-top: 12px; color: #122B1D;">
+        3. Ecosistema de Landing Pages para Ventas (B2C Residencial & B2B Constructoras)
+      </h2>
+      <p style="font-size: 10px; color: #3D5245; margin-top: 2px; margin-bottom: 6px;">
+        En lugar de encerrar los productos bajo rutas genéricas, crearemos <strong>Landing Pages de alta conversión</strong> optimizadas para Google Ads, Meta Ads y búsqueda orgánica en Panamá:
+      </p>
+
+      <div class="grid-3">
+        <div class="card">
+          <span class="pill pill-dark">Landing Page #1</span>
+          <div style="font-weight: 700; font-size: 11px; margin-top: 4px;">/gramas-naturales-panama/</div>
+          <p style="font-size: 9.5px; color: #4A5D52; margin-top: 3px;">
+            Comparador interactivo entre <strong>Zoysia Toro</strong> (alto tráfico), <strong>Zoysia Japónica</strong> (playas/salinidad) y <strong>San Agustín</strong> (semisombra), con la Calculadora de <code>m²</code> integrada.
+          </p>
+        </div>
+        <div class="card">
+          <span class="pill pill-orange">Landing Page #2 (B2B)</span>
+          <div style="font-weight: 700; font-size: 11px; margin-top: 4px;">/hidrosiembra-taludes-panama/</div>
+          <p style="font-size: 9.5px; color: #4A5D52; margin-top: 3px;">
+            Enfocada en <strong>constructoras, ingenieros civiles y proyectos viales</strong>: control de erosión, estabilización de taludes, comparador Antes/Después y descarga de Ficha Técnica PDF.
+          </p>
+        </div>
+        <div class="card">
+          <span class="pill pill-dark">Landing Page #3</span>
+          <div style="font-weight: 700; font-size: 11px; margin-top: 4px;">/vivero-palmas-y-arboles/</div>
+          <p style="font-size: 9.5px; color: #4A5D52; margin-top: 3px;">
+            Catálogo vivo filtrable con el stock real de JUSA (<em>Palma Real, Bismarckia, Cola de Zorro, Areca, Casco de Vaca, Neem, Monstera, Xanadu</em>) para PHs, paisajistas y hogares.
+          </p>
+        </div>
+      </div>
+
+      <div class="card-forest" style="margin-top: 8px; display: flex; justify-content: space-between; align-items: center;">
+        <div>
+          <span style="color: #71B347; font-weight: 700; font-size: 10px;">🍒 LANDING ESPECIAL DE AGROEXPORTACIÓN: /pitahaya-panama/</span>
+          <p style="font-size: 9.5px; color: #DDD9D0; margin-top: 1px;">
+            Vitrina comercial dedicada a las <strong>7 hectáreas de cultivo de Pitahaya en Río Grande, Coclé</strong>, con formulario directo a <code>xavier@jardinesurbanos.com</code>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-meta">
+      <span>Propuesta Ejecutiva 360° • Jardines Urbanos, S.A.</span>
+      <span>Página 2 de 4</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PÁGINA 3: HERRAMIENTAS INTERACTIVAS ("KILLER FEATURES") + MOCKUPS 2 Y 3
+       ================================================================= -->
+  <section class="page">
+    <div>
+      <div class="top-meta">
+        <span>02. EXPERIENCIA INTERACTIVA: CALCULADORA DE M², CATÁLOGO VIVO & HUB B2B</span>
+        <span class="mono">CONVERSIÓN INTELIGENTE</span>
+      </div>
+
+      <h2 class="serif" style="font-size: 19px; margin-top: 8px; color: #122B1D;">
+        4. Herramienta Estrella #1: Calculadora Interactiva de m² y Recomendador
+      </h2>
+      <p style="font-size: 10px; color: #3D5245; margin-top: 2px; margin-bottom: 7px;">
+        Inspirada en las mejores plataformas de paisajismo de EE. UU., convierte a los visitantes en pedidos listos para facturar: el cliente elige su tipo de proyecto, desliza los metros cuadrados (<code>m²</code>), indica si tiene pleno sol o sombra, y el sistema le recomienda la grama exacta sumando un <strong>+5% sugerido por merma de cortes</strong> y enviando el resumen técnico directo al WhatsApp comercial (<code>+507 6539-0949</code>).
+      </p>
+
+      <div class="mockup-frame" style="margin-bottom: 10px;">
+        <img src="file:///C:/Users/Usuario/.gemini/antigravity/brain/06a2f751-b5ae-4d18-94e4-841ab5713109/mockup_calculadora_y_comparador_1794131306652.jpg" style="height: 92mm; object-position: center;" alt="Mockup Calculadora de Grama y Comparador Antes y Después" />
+      </div>
+
+      <h2 class="serif" style="font-size: 19px; margin-top: 6px; color: #122B1D;">
+        5. Herramienta Estrella #2: Catálogo Botánico Filtrable & Hub B2B de Hidrosiembra
+      </h2>
+      <p style="font-size: 10px; color: #3D5245; margin-top: 2px; margin-bottom: 7px;">
+        Reemplazamos el antiguo enlace externo por un <strong>Catálogo Interactivo Propio</strong> con etiquetas climáticas de Panamá (☀️ <em>Sol Directo</em>, 🏖️ <em>Resistencia Salina</em>, ⛅ <em>Media Sombra</em>) y un <strong>Portal Técnico B2B</strong> donde arquitectos e ingenieros pueden descargar fichas técnicas en PDF o subir su listado de cantidades de obra (<em>BoQ</em>) en segundos.
+      </p>
+
+      <div class="mockup-frame">
+        <img src="file:///C:/Users/Usuario/.gemini/antigravity/brain/06a2f751-b5ae-4d18-94e4-841ab5713109/mockup_catalogo_y_b2b_png_1794131308833.jpg" style="height: 92mm; object-position: center;" alt="Mockup Catálogo Botánico y Hub B2B" />
+      </div>
+    </div>
+
+    <div class="footer-meta">
+      <span>Propuesta Ejecutiva 360° • Jardines Urbanos, S.A.</span>
+      <span>Página 3 de 4</span>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       PÁGINA 4: SEO 360°, CONECTIVIDAD, CRM, ANALÍTICA, AUTONOMÍA Y CRONOGRAMA AL 1° DIC
+       ================================================================= -->
+  <section class="page">
+    <div>
+      <div class="top-meta">
+        <span>03. INGENIERÍA 360° (SEO, CRM, ANALÍTICA), AUTONOMÍA Y CRONOGRAMA AL 1° DE DICIEMBRE</span>
+        <span class="mono">ROADMAP & REQUERIMIENTOS</span>
+      </div>
+
+      <h2 class="serif" style="font-size: 18px; margin-top: 8px; color: #122B1D;">
+        6. Conectividad 360°: SEO Panamá, CRM, Google Analytics 4 y Correo Blindado
+      </h2>
+
+      <div class="grid-2" style="margin-top: 6px;">
+        <div class="card">
+          <div style="font-weight: 700; font-size: 10.5px; color: #2E6F40;">🔍 SEO Local y Técnico en Google Panamá</div>
+          <ul class="clean-list" style="font-size: 9.5px; color: #3D5245; margin-top: 4px;">
+            <li><strong>Datos Estructurados Schema.org (JSON-LD):</strong> Marcado oficial de <code>GardenStore</code>, <code>LandscapeArchitect</code> y catálogo de productos con geolocalización en Río Grande, Coclé y cobertura en todo Panamá.</li>
+            <li><strong>Posicionamiento por Intención de Compra:</strong> Optimización de títulos H1, metadescripciones y URLs para dominar búsquedas de <em>grama natural en Panamá</em>, <em>hidrosiembra</em>, <em>palmas</em> y <em>vivero mayorista</em>.</li>
+            <li><strong>Google Business Profile & Search Console:</strong> Envío de Sitemap XML limpio y redirecciones <code>301</code> para conservar toda la autoridad del dominio.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div style="font-weight: 700; font-size: 10.5px; color: #2E6F40;">🔗 Conectividad Omnicanal, CRM & Analítica</div>
+          <ul class="clean-list" style="font-size: 9.5px; color: #3D5245; margin-top: 4px;">
+            <li><strong>WhatsApp con Contexto + CRM / Google Sheets:</strong> Cada cotización enviada desde la web o calculadora se registra automáticamente en una base de datos interna y hoja de seguimiento comercial (destacando proyectos B2B &ge; 500 m²).</li>
+            <li><strong>Correo Microsoft 365 Autenticado (Cero Spam):</strong> Conexión vía SMTP seguro + configuración de registros <strong>SPF, DKIM y DMARC</strong> hacia <code>ventas@jardinesurbanos.com</code> y <code>xavier@jardinesurbanos.com</code>.</li>
+            <li><strong>Google Tag Manager + GA4 + Meta Pixel:</strong> Medición exacta de cada clic a WhatsApp, uso de la calculadora de <code>m²</code> y descargas de fichas PDF.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Autonomía total -->
+      <div class="card-forest" style="margin-top: 8px;">
+        <div style="font-weight: 700; font-size: 11px; color: #71B347;">
+          🔑 ¿Quedarán con Autonomía sobre la Plataforma? ¡Sí, 100% Autogestionable!
+        </div>
+        <p style="font-size: 9.5px; color: #DDD9D0; margin-top: 3px;">
+          El sitio quedará configurado con <strong>plantillas guiadas a prueba de errores</strong>: Gabriela (<code>Gaby</code>) o cualquier miembro del equipo podrá subir nuevas plantas/palmas al catálogo, actualizar textos, cambiar fotos del comparador Antes/Después (con compresión automática a WebP) y exportar leads en menos de 5 minutos sin tocar código. Incluye <strong>sesión de capacitación en vivo + 3 micro-videos tutoriales grabados sobre su propio panel</strong>.
+        </p>
+      </div>
+
+      <!-- Cronograma hacia el 1 de Diciembre -->
+      <h2 class="serif" style="font-size: 18px; margin-top: 10px; color: #122B1D;">
+        7. Cronograma de Ejecución (Timetable Meta: 1° de Diciembre 2026)
+      </h2>
+
+      <table style="margin-top: 5px;">
+        <thead>
+          <tr>
+            <th style="width: 22%;">Fase del Proyecto</th>
+            <th style="width: 16%;">Fechas</th>
+            <th style="width: 34%;">Entregables de Nuestro Equipo</th>
+            <th style="width: 28%;">Hito / Apoyo de Jardines Urbanos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Fase 1: Auditoría, Backup y Arquitectura</strong></td>
+            <td class="mono">9 – 12 Nov</td>
+            <td>Respaldo completo del sitio actual, preparación de entorno <em>Staging</em> (cero caídas) y estructura base.</td>
+            <td>Cambiar rol de <code>Gaby</code> a <strong>Administrador</strong>, acceso Hosting/DNS y envío de logos/fotos.</td>
+          </tr>
+          <tr>
+            <td><strong>Fase 2: Diseño UI/UX & Prototipo</strong></td>
+            <td class="mono">13 – 17 Nov</td>
+            <td>Implementación visual del Home, Landing Pages y prototipo navegable en computadora y móvil.</td>
+            <td><strong>Validación de diseño visual</strong> (máximo martes 17 de noviembre).</td>
+          </tr>
+          <tr>
+            <td><strong>Fase 3: Desarrollo, Calculadora & SEO</strong></td>
+            <td class="mono">18 – 25 Nov</td>
+            <td>Programación de Calculadora de <code>m²</code>, Catálogo Vivo, conexión WhatsApp/CRM/M365, GA4 y SEO Panamá.</td>
+            <td>Validación de reglas de productos, precios/metrajes si aplica y contactos finales.</td>
+          </tr>
+          <tr>
+            <td><strong>Fase 4: QA, Ajustes y Capacitación</strong></td>
+            <td class="mono">26 – 29 Nov</td>
+            <td>Pruebas en móviles/navegadores, ronda consolidada de ajustes y sesión + videos de autogestión.</td>
+            <td>Revisión integral del sitio en Staging y participación en capacitación.</td>
+          </tr>
+          <tr>
+            <td><strong>Fase 5: Lanzamiento (Go-Live)</strong></td>
+            <td class="mono">30 Nov – 1 Dic</td>
+            <td>Publicación sin tiempo fuera de línea (<em>Zero-Downtime</em>), activación de caché/CDN y envío a Google.</td>
+            <td><strong>¡Lanzamiento oficial online el 1° de diciembre!</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Checklist de Requerimientos -->
+      <div class="card" style="margin-top: 8px; background: #FFFDF9; border-color: #FA7D09;">
+        <div style="font-weight: 700; font-size: 10.5px; color: #C95B00;">
+          📋 Requerimientos Necesarios de Parte de Jardines Urbanos para Arrancar Hoy (Fase 1):
+        </div>
+        <div class="grid-2" style="margin-top: 4px; font-size: 9.5px; color: #3D5245;">
+          <ul class="clean-list">
+            <li><strong>1. Permiso Administrador en WordPress:</strong> Actualizar el usuario <code>Gaby</code> (<code>gmoradelae@me.com</code>) de rol <em>Editor</em> a <strong>Administrador</strong>.</li>
+            <li><strong>2. Acceso a Hosting / cPanel y DNS:</strong> Para realizar el respaldo integral inicial, configurar Cloudflare CDN y autenticar los correos M365.</li>
+          </ul>
+          <ul class="clean-list">
+            <li><strong>3. Material Gráfico y Catálogo:</strong> Logotipo en alta resolución/vector, fotos adicionales de proyectos/finca y el archivo PDF del catálogo que antes estaba en <code>tiiny.site</code>.</li>
+            <li><strong>4. Cuenta de Google:</strong> Correo para darles propiedad total de <strong>Google Analytics 4</strong> y <strong>Google Search Console</strong>.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-meta">
+      <span>Propuesta Ejecutiva 360° • Jardines Urbanos, S.A. (`jardinesurbanos.com`)</span>
+      <span>Página 4 de 4</span>
+    </div>
+  </section>
+
+</body>
+</html>

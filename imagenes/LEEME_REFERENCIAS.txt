@@ -1,0 +1,26 @@
+REFERENCIAS PARA EL PROYECTO JARDINES URBANOS
+Recopilación: 8 de noviembre de 2026.
+
+01_sitio_oficial: 33 imágenes descargadas de https://jardinesurbanos.com/ y su biblioteca pública, con gramas, vivero, plantas, palmas, árboles, hidrosiembra, pitahaya, equipo y cabeceras.
+02_referencias_externas: 2 referencias de Jardinería Panamá para encuadre de instalación y rollo de grama. NO son obras de Jardines Urbanos y NO deben presentarse como portafolio propio.
+INDICE_VISUAL.html: abrir para ver todas las imágenes y sus dimensiones.
+FUENTES.csv y FUENTES_EXTERNAS.csv: procedencia, URL, autoría disponible, licencia y hash.
+VERIFICACION.csv: comprobación de lectura de cada archivo y dimensiones reales.
+
+Derechos: material reunido como referencia interna para el diseño. Publicación en un sitio web no significa licencia libre. No se encontró autorización explícita de reutilización comercial. Validar con Jardines Urbanos los derechos de sus imágenes; para fuentes externas obtener permiso o reemplazar por fotos propias/licenciadas. No se han eliminado marcas ni modificado los originales.
+
+Google Maps / perfil de negocio:
+Se identificaron dos fichas coincidentes por nombre, ubicación y teléfonos del sitio oficial:
+- Ciudad de Panamá, Calle 64 Este, +507 226-0494.
+https://www.google.com/maps/search/?api=1&query=Jardines%20Urbanos&query_place_id=ChIJ6-drjwGprI8RmxD9vsbSNKY
+- Río Grande, Coclé, +507 6539-0949.
+https://www.google.com/maps/search/?api=1&query=Jardines%20Urbanos%20Rio%20Grande&query_place_id=ChIJAQxuQ-Q1rI8RK1zW4ZiL2Wc
+La herramienta de búsqueda confirmó las fichas. La galería de Maps no fue accesible con las herramientas disponibles; no se descargaron ni atribuyeron fotos de clientes o del propietario desde Maps.
+
+Sugerencias de selección:
+- HIDROSIEMBRA-MAQUINA.jpg: equipo con marca del negocio en un talud; útil para servicio técnico.
+- DJI_0677-Mejorado-NR.jpg: vista aérea de cultivo de pitahaya; útil para página de producción.
+- Gramas: SAN-AGUSTIN-HEADER, SAN-AGUSTIN-CLOSEUP, JAPONESA-PROYECTO, JAPONESA-CLOSEUP, TORO-CLOSEUP, TORO-ZOOM y TARIMAS-SAN-AGUSTIN.
+- Revisar las cabeceras slider antes de elegirlas; pueden incluir oscurecimiento preexistente.
+
+Esta recopilación no modifica el sitio, sus archivos fuente ni Antigravity, y no publica ni sube las imágenes.

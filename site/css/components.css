@@ -1,0 +1,1816 @@
+/**
+ * components.css
+ * Jardines Urbanos, S.A. (Panamá) - UI Components
+ * Visual Direction: "Tropical Luxury & Agro-Tech"
+ */
+
+/* ============================================================
+   1. Buttons
+   ============================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+  line-height: 1.2;
+  padding: 0.85rem 1.75rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--transition-normal);
+  user-select: none;
+  white-space: nowrap;
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--color-jusa);
+  outline-offset: 2px;
+}
+
+.btn-primary {
+  background-color: var(--color-chlorophyll);
+  color: var(--color-text-light);
+  border-color: var(--color-chlorophyll);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-chlorophyll-hover);
+  border-color: var(--color-chlorophyll-hover);
+  box-shadow: 0 4px 16px rgba(46, 111, 64, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-accent {
+  background-color: var(--color-jusa);
+  color: var(--color-forest-dark);
+  border-color: var(--color-jusa);
+  box-shadow: var(--shadow-green);
+}
+
+.btn-accent:hover {
+  background-color: var(--color-jusa-hover);
+  border-color: var(--color-jusa-hover);
+  box-shadow: 0 6px 20px rgba(113, 179, 71, 0.45);
+  transform: translateY(-1px);
+}
+
+.btn-terracotta {
+  background-color: var(--color-terracotta);
+  color: #FFFFFF;
+  border-color: var(--color-terracotta);
+}
+
+.btn-terracotta:hover {
+  background-color: var(--color-terracotta-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(250, 125, 9, 0.35);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-forest);
+  border-color: var(--color-forest);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-forest);
+  color: var(--color-sand);
+}
+
+.btn-outline-light {
+  background-color: transparent;
+  color: var(--color-text-light);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: var(--color-text-light);
+  color: var(--color-text-light);
+}
+
+.btn-whatsapp {
+  background-color: var(--color-whatsapp);
+  color: #FFFFFF;
+  border-color: var(--color-whatsapp);
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp:hover {
+  background-color: var(--color-whatsapp-dark);
+  border-color: var(--color-whatsapp-dark);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+  transform: translateY(-1px);
+  color: #FFFFFF;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: var(--fs-body-sm);
+}
+
+.btn-lg {
+  padding: 1.1rem 2.25rem;
+  font-size: var(--fs-body-lg);
+}
+
+.btn-block {
+  display: flex;
+  width: 100%;
+}
+
+/* ============================================================
+   2. Badges & Source Integrity Tags
+   ============================================================ */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-family: var(--font-body);
+  font-size: var(--fs-badge);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.3rem 0.65rem;
+  border-radius: var(--radius-pill);
+  line-height: 1;
+}
+
+/* Official photo tag: [Foto Oficial Finca JUSA] */
+.badge-official {
+  background-color: rgba(113, 179, 71, 0.15);
+  color: #245A1A;
+  border: 1px solid rgba(113, 179, 71, 0.45);
+}
+
+/* Mockup AI tag: [Variedad de Finca • Imagen Referencial] */
+.badge-mockup {
+  background-color: rgba(250, 125, 9, 0.12);
+  color: #B35400;
+  border: 1px solid rgba(250, 125, 9, 0.35);
+}
+
+/* Status tags */
+
+/* Referential price tag */
+.catalog-price-tag, .badge-price {
+  display: inline-flex;
+  align-items: center;
+  background-color: rgba(113, 179, 71, 0.16);
+  color: #122B1D;
+  border: 1px solid rgba(113, 179, 71, 0.45);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  letter-spacing: -0.01em;
+}
+
+.badge-pending {
+  background-color: rgba(18, 43, 29, 0.06);
+  color: #6C7A72;
+  border: 1px dashed #A0ADA5;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: var(--fw-medium);
+  text-transform: none;
+}
+
+/* Trait badges */
+.badge-sun {
+  background-color: #FFF9E6;
+  color: #8C6200;
+  border: 1px solid #FFE499;
+}
+
+.badge-shade {
+  background-color: #EBF4F0;
+  color: #23543A;
+  border: 1px solid #B8DAC8;
+}
+
+.badge-salinity {
+  background-color: #E6F3FB;
+  color: #0A5F94;
+  border: 1px solid #A6D4F1;
+}
+
+.badge-traffic {
+  background-color: #F8EFE7;
+  color: #8A4010;
+  border: 1px solid #F0CCB0;
+}
+
+.badge-b2b {
+  background-color: rgba(18, 43, 29, 0.9);
+  color: var(--color-sand);
+  border: 1px solid rgba(113, 179, 71, 0.3);
+}
+
+/* ============================================================
+   3. Cards & Surfaces
+   ============================================================ */
+.card {
+  background-color: var(--color-sand-card);
+  border: 1px solid var(--color-border-sand);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.card-dark {
+  background-color: var(--color-forest-card);
+  border: 1px solid var(--color-border-dark);
+  color: var(--color-text-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-dark);
+}
+
+.card-bento {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ============================================================
+   4. Form Controls & Custom Sliders
+   ============================================================ */
+.form-group {
+  margin-bottom: var(--space-5);
+}
+
+.form-label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--fs-body-sm);
+  font-weight: var(--fw-bold);
+  color: var(--color-text-dark);
+  margin-bottom: var(--space-2);
+}
+
+.card-dark .form-label {
+  color: var(--color-text-light);
+}
+
+.form-control, .form-select, .form-textarea {
+  width: 100%;
+  padding: 0.85rem 1.15rem;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  color: var(--color-text-dark);
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-sand-muted);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  box-sizing: border-box;
+}
+
+.form-control:focus, .form-select:focus, .form-textarea:focus {
+  outline: none;
+  border-color: var(--color-chlorophyll);
+  box-shadow: 0 0 0 3px rgba(46, 111, 64, 0.18);
+}
+
+.form-textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.form-checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  font-size: var(--fs-body-sm);
+  color: var(--color-text-muted);
+  line-height: 1.45;
+  cursor: pointer;
+}
+
+.card-dark .form-checkbox-label {
+  color: var(--color-text-dim);
+}
+
+.form-checkbox-label input[type="checkbox"],
+input[type="checkbox"][name="ley81_optin"] {
+  margin-top: 0.15rem;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  accent-color: var(--color-chlorophyll);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Styled Range Input */
+input[type="range"].range-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #E0DDD4;
+  border-radius: var(--radius-pill);
+  outline: none;
+  margin: var(--space-3) 0;
+}
+
+input[type="range"].range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-jusa);
+  border: 3px solid var(--color-forest);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  transition: transform var(--transition-fast);
+}
+
+input[type="range"].range-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.18);
+}
+
+input[type="range"].range-slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-jusa);
+  border: 3px solid var(--color-forest);
+  cursor: pointer;
+}
+
+/* ============================================================
+   5. Interactive Calculator Widget Components
+   ============================================================ */
+.calc-widget {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-sand-muted);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-lg);
+}
+
+@media (min-width: 992px) {
+  .calc-widget {
+    grid-template-columns: 1.25fr 1fr;
+    gap: var(--space-10);
+    padding: var(--space-10);
+  }
+}
+
+/* Step Indicators and Badges for Interactive Estimator */
+.calc-step-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.calc-step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-forest);
+  color: var(--color-lime);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.calc-step-badge-accent {
+  background-color: var(--color-lime);
+  color: var(--color-forest);
+}
+
+.calc-step-label {
+  margin-bottom: 0;
+  font-weight: 700;
+  color: var(--color-forest);
+  font-size: 0.95rem;
+}
+
+.calc-step-header-result .calc-step-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.btn-calc-whatsapp-primary {
+  background-color: #25D366;
+  color: #FFFFFF;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+  transition: all var(--transition-fast);
+}
+
+.btn-calc-whatsapp-primary:hover {
+  background-color: #20BA5A;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45);
+}
+
+.calc-secondary-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.calc-lead-section {
+  background: var(--color-sand);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-sand);
+  margin-top: var(--space-4);
+}
+
+.calc-lead-fields-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+/* Botanical Catalog: Scroll Indicator & Prominent CTA */
+.catalog-scroll-indicator {
+  display: none;
+}
+
+.catalog-scroll-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(46, 111, 64, 0.1);
+  color: var(--color-chlorophyll);
+  border: 1px solid rgba(46, 111, 64, 0.25);
+  border-radius: var(--radius-full);
+  padding: 6px 14px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.btn-catalog-all {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 700;
+  padding: 14px 28px;
+  box-shadow: 0 4px 18px rgba(46, 111, 64, 0.25);
+  transition: all var(--transition-normal);
+}
+
+.btn-catalog-all:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(46, 111, 64, 0.35);
+}
+
+.calc-scenarios-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+@media (max-width: 480px) {
+  .calc-scenarios-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.calc-pill {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background-color: var(--color-sand);
+  border: 2px solid transparent;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: left;
+}
+
+.calc-pill-icon {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  border-radius: var(--radius-sm);
+  background: rgba(46, 111, 64, 0.1);
+  color: var(--color-chlorophyll);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.calc-pill.active .calc-pill-icon {
+  background: var(--color-forest);
+  color: var(--color-jusa);
+}
+
+.svg-icon {
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.calc-pill:hover {
+  background-color: #EBE6DA;
+}
+
+.calc-pill.active {
+  background-color: #FFFFFF;
+  border-color: var(--color-chlorophyll);
+  box-shadow: 0 2px 8px rgba(46, 111, 64, 0.15);
+}
+
+.calc-pill-title {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-body);
+  color: var(--color-forest);
+}
+
+.calc-pill-sub {
+  font-size: var(--fs-caption);
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+.calc-sun-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.calc-sun-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  background-color: var(--color-sand);
+  border: 2px solid transparent;
+  border-radius: var(--radius-md);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-body-sm);
+  cursor: pointer;
+  color: var(--color-forest);
+  transition: all var(--transition-fast);
+}
+
+.calc-sun-btn.active {
+  background-color: #FFFFFF;
+  border-color: var(--color-chlorophyll);
+  color: var(--color-chlorophyll);
+  box-shadow: 0 2px 8px rgba(46, 111, 64, 0.15);
+}
+
+.calc-area-sync {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.calc-number-input {
+  width: 140px;
+  font-family: var(--font-mono);
+  font-size: 1.25rem;
+  font-weight: var(--fw-bold);
+  color: var(--color-forest);
+  padding: 0.5rem 0.75rem;
+  border: 2px solid var(--color-chlorophyll);
+  border-radius: var(--radius-sm);
+  text-align: right;
+}
+
+.calc-ticks {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: var(--fs-caption);
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
+
+/* Result Card */
+.calc-result-card {
+  background-color: var(--color-forest);
+  color: var(--color-text-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--color-border-dark);
+  box-shadow: var(--shadow-dark);
+}
+
+.calc-result-header {
+  border-bottom: 1px solid var(--color-border-dark);
+  padding-bottom: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.calc-metric-highlight {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  margin: var(--space-2) 0;
+}
+
+.calc-metric-number {
+  font-family: var(--font-mono);
+  font-size: clamp(2.25rem, 4vw, 3rem);
+  font-weight: var(--fw-bold);
+  color: var(--color-jusa);
+  line-height: 1;
+}
+
+.calc-metric-unit {
+  font-size: 1.15rem;
+  color: var(--color-sand);
+  font-weight: var(--fw-medium);
+}
+
+.calc-rec-box {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-left: 4px solid var(--color-jusa);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.calc-rec-title {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: var(--fw-bold);
+  color: var(--color-sand);
+  margin-bottom: var(--space-1);
+}
+
+.calc-rec-sci {
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--color-jusa);
+  margin-bottom: var(--space-2);
+}
+
+.calc-rec-desc {
+  font-size: var(--fs-body-sm);
+  color: var(--color-text-dim);
+  line-height: 1.45;
+}
+
+.calc-specs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-6) 0;
+  font-size: var(--fs-body-sm);
+}
+
+.calc-specs-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-2) 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.calc-specs-list span:first-child {
+  color: var(--color-text-dim);
+}
+
+.calc-specs-list span:last-child {
+  font-family: var(--font-mono);
+  font-weight: var(--fw-semibold);
+  color: var(--color-sand);
+}
+
+/* ============================================================
+   6. Before / After Comparison Slider
+   ============================================================ */
+.ba-comparator {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  user-select: none;
+  background-color: #000000;
+  touch-action: pan-y;
+}
+
+.ba-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.ba-after, .ba-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ba-after img, .ba-before img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  display: block;
+}
+
+.ba-before {
+  width: 50%;
+  z-index: 2;
+  border-right: 2px solid #FFFFFF;
+}
+
+.ba-before img {
+  width: 100%; /* Will be synchronized by JS or fixed */
+}
+
+.ba-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 44px;
+  height: 44px;
+  margin-top: -22px;
+  margin-left: -22px;
+  top: 50%;
+  z-index: 5;
+  background: var(--color-jusa);
+  border: 3px solid #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  cursor: ew-resize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-forest);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.ba-badge-before {
+  position: absolute;
+  top: var(--space-4);
+  left: var(--space-4);
+  z-index: 4;
+  background-color: var(--color-terracotta);
+  color: #FFFFFF;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-caption);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.ba-badge-after {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  z-index: 4;
+  background-color: var(--color-jusa);
+  color: var(--color-forest-dark);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-caption);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.ba-range-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: ew-resize;
+  z-index: 6;
+  margin: 0;
+}
+
+/* ============================================================
+   7. Botanical Catalog Grid & Cards
+   ============================================================ */
+.catalog-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-2);
+}
+
+.catalog-tab {
+  padding: 0.65rem 1.25rem;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-sand);
+  border: 1px solid var(--color-border-sand);
+  color: var(--color-text-dark);
+  font-size: var(--fs-body-sm);
+  font-weight: var(--fw-semibold);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.catalog-tab:hover {
+  background-color: #E8E3D7;
+}
+
+.catalog-tab.active {
+  background-color: var(--color-forest);
+  color: var(--color-sand);
+  border-color: var(--color-forest);
+}
+
+.catalog-search-wrap {
+  position: relative;
+  margin-bottom: var(--space-8);
+  max-width: 480px;
+}
+
+.catalog-search-input {
+  width: 100%;
+  padding: 0.85rem 1.25rem 0.85rem 2.85rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-sand-muted);
+  font-size: var(--fs-body);
+}
+
+.catalog-search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-6);
+}
+
+.catalog-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-border-sand);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.catalog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.catalog-card-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background-color: #EAE6DD;
+}
+
+.catalog-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.catalog-card:hover .catalog-card-img {
+  transform: scale(1.05);
+}
+
+.catalog-card-badge-pos {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+  z-index: 2;
+}
+
+.catalog-card-body {
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.catalog-card-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--color-forest);
+  margin-bottom: 2px;
+}
+
+.catalog-card-sci {
+  font-size: 0.825rem;
+  font-style: italic;
+  color: var(--color-chlorophyll);
+  margin-bottom: var(--space-3);
+}
+
+.catalog-card-traits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin-bottom: var(--space-4);
+}
+
+.catalog-card-desc {
+  font-size: var(--fs-body-sm);
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin-bottom: var(--space-5);
+  flex: 1;
+}
+
+.catalog-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--color-sand-muted);
+  padding-top: var(--space-3);
+  margin-top: auto;
+}
+
+/* ============================================================
+   8. Modals
+   ============================================================ */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(10, 27, 18, 0.75);
+  backdrop-filter: blur(4px);
+  z-index: var(--z-modal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-fast), visibility var(--transition-fast);
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-dialog {
+  background-color: #FFFFFF;
+  border-radius: var(--radius-xl);
+  max-width: 680px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-xl);
+  position: relative;
+  transform: translateY(20px);
+  transition: transform var(--transition-normal);
+}
+
+.modal-overlay.open .modal-dialog {
+  transform: translateY(0);
+}
+
+.modal-header {
+  padding: var(--space-6) var(--space-6) 0 var(--space-6);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.modal-close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  padding: 4px;
+}
+
+.modal-close-btn:hover {
+  color: var(--color-forest);
+}
+
+.modal-body {
+  padding: var(--space-6);
+}
+
+/* ============================================================
+   9. Off-Canvas Drawer (Mobile Navigation)
+   ============================================================ */
+.drawer-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(10, 27, 18, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: var(--z-drawer);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all var(--transition-normal);
+}
+
+.drawer-backdrop:not(.open) {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.drawer-backdrop.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.drawer-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 320px;
+  max-width: 85vw;
+  background-color: var(--color-forest);
+  color: var(--color-text-light);
+  z-index: calc(var(--z-drawer) + 1);
+  box-shadow: var(--shadow-dark);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(100%);
+  transition: transform var(--transition-normal);
+  overflow-y: auto;
+}
+
+.drawer-backdrop.open .drawer-panel {
+  transform: translateX(0);
+}
+
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-border-dark);
+  padding-bottom: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.drawer-close-btn {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--color-sand);
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast), background var(--transition-fast);
+  line-height: 1;
+  padding: 0;
+}
+
+.drawer-close-btn:hover {
+  color: var(--color-jusa);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.drawer-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.drawer-nav-link {
+  color: var(--color-text-light);
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: var(--fw-semibold);
+  transition: color var(--transition-fast), background var(--transition-fast);
+  min-height: 44px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  border-radius: var(--radius-sm);
+}
+
+.drawer-nav-link:hover, .drawer-nav-link.active {
+  color: var(--color-jusa);
+}
+
+/* ============================================================
+   10. Toast Feedback
+   ============================================================ */
+.toast-container {
+  position: fixed;
+  bottom: 80px;
+  right: 24px;
+  z-index: var(--z-toast);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.toast {
+  background-color: var(--color-forest-dark);
+  color: var(--color-text-light);
+  border: 1px solid var(--color-jusa);
+  padding: 0.85rem 1.35rem;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-xl);
+  font-size: var(--fs-body-sm);
+  font-weight: var(--fw-medium);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  animation: slideUp 250ms ease;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Sleek Minimalist Video Progress Pips */
+.video-playlist-pills {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-top: var(--space-4);
+}
+
+.video-pip-btn:hover {
+  background: rgba(244, 241, 234, 0.55);
+}
+.video-pip-btn.active {
+  width: 68px;
+  background: var(--color-lime);
+  box-shadow: 0 0 12px rgba(168, 230, 122, 0.65);
+}
+
+/* ============================================================
+   iOS Safari Auto-Zoom Prevention (Touch Inputs >= 16px)
+   ============================================================ */
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* ============================================================
+   Mobile 640px Layout & Touch Optimization
+   ============================================================ */
+@media (max-width: 640px) {
+  .btn-lg {
+    width: 100%;
+    max-width: 100%;
+    white-space: normal;
+    padding: 0.85rem 1rem;
+    text-align: center;
+  }
+
+  .hero-cta-group,
+  .hero-actions {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: var(--space-3) !important;
+  }
+
+  .calc-controls {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .calc-scenarios-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ============================================================
+   Mobile Sticky Bottom Thumb Bar
+   ============================================================ */
+.mobile-sticky-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 900;
+  background: rgba(18, 43, 29, 0.96);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(113, 179, 71, 0.35);
+  padding: 8px 16px calc(8px + env(safe-area-inset-bottom, 0px));
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.35);
+  transition: transform var(--transition-normal);
+}
+
+.mobile-sticky-bar.hidden {
+  transform: translateY(100%);
+}
+
+.mobile-sticky-bar .btn {
+  flex: 1;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  .mobile-sticky-bar {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 70px;
+  }
+  footer,
+  .site-footer {
+    padding-bottom: calc(var(--space-8) + 70px);
+  }
+}
+
+/* Sleek Minimalist Video Progress Pips */
+.video-playlist-pills {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-top: var(--space-4);
+}
+
+.video-pip-btn:hover {
+  background: rgba(244, 241, 234, 0.55);
+}
+.video-pip-btn.active {
+  width: 68px;
+  background: var(--color-lime);
+  box-shadow: 0 0 12px rgba(168, 230, 122, 0.65);
+}
+
+/* Sleek Minimalist Video Progress Pips */
+.video-playlist-pills {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-top: var(--space-4);
+}
+
+.video-pip-btn:hover {
+  background: rgba(244, 241, 234, 0.55);
+}
+.video-pip-btn.active {
+  width: 68px;
+  background: var(--color-lime);
+  box-shadow: 0 0 12px rgba(168, 230, 122, 0.65);
+}
+
+/* Sleek Minimalist Video Progress Pips */
+.video-playlist-pills {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-top: var(--space-4);
+}
+
+.video-pip-btn:hover {
+  background: rgba(244, 241, 234, 0.55);
+}
+.video-pip-btn.active {
+  width: 68px;
+  background: var(--color-lime);
+  box-shadow: 0 0 12px rgba(168, 230, 122, 0.65);
+}
+
+/* Sleek Minimalist Video Progress Pips */
+.video-playlist-pills {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-top: var(--space-4);
+}
+.video-pip-btn {
+  width: 44px;
+  height: 6px;
+  border-radius: 99px;
+  background: rgba(244, 241, 234, 0.28);
+  border: none;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  padding: 0;
+  outline: none;
+}
+.video-pip-btn:hover {
+  background: rgba(244, 241, 234, 0.55);
+}
+.video-pip-btn.active {
+  width: 68px;
+  background: var(--color-lime);
+  box-shadow: 0 0 12px rgba(168, 230, 122, 0.65);
+}
+
+
+/* ============================================================
+   MOBILE RESPONSIVE COMPONENTS OVERHAUL (max-width: 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+  /* Universal Buttons on Mobile */
+  .btn {
+    white-space: normal !important;
+    max-width: 100% !important;
+  }
+  .btn-lg {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0.85rem 1rem !important;
+  }
+  .btn-block {
+    width: 100% !important;
+  }
+
+  /* Form Controls & iOS Zoom Prevention */
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+
+  /* Calculator Mobile Overhaul: Fast Friendly 3-Step Estimator */
+  .calc-widget {
+    grid-template-columns: minmax(0, 1fr) !important;
+    padding: 16px 14px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    gap: 1.25rem !important;
+    border-radius: 16px !important;
+  }
+  .calc-controls {
+    min-width: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  /* Step 1: Scenarios in balanced 2x2 grid */
+  .calc-scenarios-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    width: 100% !important;
+    margin-bottom: var(--space-4) !important;
+  }
+  .calc-pill {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    gap: 3px !important;
+    padding: 12px 10px !important;
+    width: 100% !important;
+    min-height: 64px !important;
+    box-sizing: border-box !important;
+    min-width: 0 !important;
+    border-radius: 10px !important;
+    text-align: left !important;
+    border: 1.5px solid var(--color-border-sand) !important;
+    background: #FFFFFF !important;
+    transition: all 0.2s ease !important;
+  }
+  .calc-pill.active {
+    background: var(--color-forest) !important;
+    border-color: var(--color-jusa) !important;
+    box-shadow: 0 4px 12px rgba(18, 43, 29, 0.18) !important;
+  }
+  .calc-pill-title {
+    font-size: 0.88rem !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    color: var(--color-forest) !important;
+  }
+  .calc-pill.active .calc-pill-title {
+    color: #FFFFFF !important;
+  }
+  .calc-pill-sub {
+    font-size: 0.72rem !important;
+    color: var(--color-text-dim) !important;
+    line-height: 1.25 !important;
+  }
+  .calc-pill.active .calc-pill-sub {
+    color: var(--color-lime) !important;
+  }
+  /* Step 2: Synchronized Area Slider and Number Input */
+  .calc-area-sync {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 10px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 4px 0 !important;
+  }
+  .calc-area-sync input[type="range"] {
+    flex: 1 !important;
+    min-width: 0 !important;
+    height: 38px !important;
+    cursor: pointer !important;
+  }
+  .calc-number-input {
+    width: 96px !important;
+    min-width: 85px !important;
+    height: 44px !important;
+    font-size: 1.15rem !important;
+    font-weight: 700 !important;
+    padding: 4px 8px !important;
+    box-sizing: border-box !important;
+    border-radius: 8px !important;
+    border: 2px solid var(--color-chlorophyll) !important;
+    text-align: center !important;
+    background: #FFFFFF !important;
+  }
+  .calc-ticks {
+    display: flex !important;
+    justify-content: space-between !important;
+    font-size: 0.68rem !important;
+    color: var(--color-text-dim) !important;
+    width: 100% !important;
+    margin-top: 4px !important;
+    padding: 0 2px !important;
+  }
+  /* Sun Grid: 2 equal side-by-side columns */
+  .calc-sun-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+  .calc-sun-btn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    padding: 10px 8px !important;
+    min-height: 46px !important;
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    border-radius: 8px !important;
+    border: 1.5px solid var(--color-border-sand) !important;
+    background: #FFFFFF !important;
+    color: var(--color-forest) !important;
+    transition: all 0.2s ease !important;
+    box-sizing: border-box !important;
+  }
+  .calc-sun-btn.active {
+    background: var(--color-forest) !important;
+    border-color: var(--color-jusa) !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 4px 12px rgba(18, 43, 29, 0.18) !important;
+  }
+  /* Step 3: Result Card with Prominent WhatsApp */
+  .calc-result-card {
+    min-width: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 18px 16px !important;
+    border-radius: 14px !important;
+    box-shadow: 0 8px 24px rgba(18, 43, 29, 0.2) !important;
+  }
+  .calc-summary-title {
+    font-size: 1.25rem !important;
+  }
+  .btn-calc-whatsapp-primary {
+    height: 48px !important;
+    min-height: 48px !important;
+    font-size: 0.92rem !important;
+    font-weight: 700 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    border-radius: 10px !important;
+    width: 100% !important;
+    margin-bottom: 8px !important;
+  }
+  .calc-secondary-actions {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+    width: 100% !important;
+  }
+  .calc-secondary-actions .btn {
+    height: 40px !important;
+    font-size: 0.78rem !important;
+    padding: 6px 8px !important;
+  }
+  .calc-lead-section {
+    padding: 12px 10px !important;
+    margin-top: 14px !important;
+    border-radius: 10px !important;
+  }
+  .calc-lead-fields-grid {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+  .calc-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 8px !important;
+  }
+  .calc-actions .btn {
+    width: 100% !important;
+    white-space: normal !important;
+  }
+
+  /* ============================================================
+     Botanical Catalog Mobile: Horizontal Touch Scroll-Snap Track
+     Prevents infinite vertical scroll fatigue on Home page
+     ============================================================ */
+  #catalogo .catalog-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    overscroll-behavior-x: contain !important;
+    gap: 14px !important;
+    padding: 8px 4px 18px 4px !important;
+    margin-bottom: 1.25rem !important;
+    scrollbar-width: thin !important;
+    scrollbar-color: var(--color-jusa) var(--color-sand) !important;
+  }
+  #catalogo .catalog-grid::-webkit-scrollbar {
+    height: 6px !important;
+    display: block !important;
+  }
+  #catalogo .catalog-grid::-webkit-scrollbar-track {
+    background: var(--color-sand-muted) !important;
+    border-radius: 999px !important;
+  }
+  #catalogo .catalog-grid::-webkit-scrollbar-thumb {
+    background: var(--color-jusa) !important;
+    border-radius: 999px !important;
+  }
+  #catalogo .catalog-card {
+    flex: 0 0 280px !important;
+    min-width: 280px !important;
+    max-width: 280px !important;
+    width: 280px !important;
+    scroll-snap-align: start !important;
+    scroll-snap-stop: normal !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 14px rgba(18, 43, 29, 0.08) !important;
+    border: 1px solid var(--color-border-sand) !important;
+    background: #FFFFFF !important;
+    margin: 0 !important;
+  }
+  #catalogo .catalog-card .catalog-card-img-wrap {
+    height: 180px !important;
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+  #catalogo .catalog-card .catalog-card-img {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+  .catalog-scroll-indicator {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 12px !important;
+    width: 100% !important;
+  }
+  .btn-catalog-all {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 50px !important;
+    padding: 14px 16px !important;
+    font-size: 0.92rem !important;
+    white-space: normal !important;
+    text-align: center !important;
+    border-radius: 10px !important;
+  }
+  .catalog-controls {
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+  .catalog-tabs {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+  }
+  .catalog-tab {
+    font-size: 0.78rem !important;
+    padding: 6px 10px !important;
+  }
+  .catalog-card,
+  .botanical-card {
+    min-width: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    border-radius: 12px !important;
+  }
+  .botanical-card-actions {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 8px !important;
+    flex-wrap: wrap !important;
+  }
+  .botanical-card-actions .btn {
+    font-size: 0.78rem !important;
+    padding: 6px 10px !important;
+  }
+
+  /* B2B Specs & Buttons */
+  .spec-box {
+    padding: 14px 12px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .b2b-specs-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .btn-terracotta {
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  /* Sleek 1-Row Mobile Sticky Bottom Thumb Bar */
+  .mobile-sticky-bar,
+  .thumb-bar {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 999 !important;
+    background: rgba(18, 43, 29, 0.98) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border-top: 1px solid rgba(113, 179, 71, 0.4) !important;
+    padding: 8px 12px calc(8px + env(safe-area-inset-bottom, 0px)) !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4) !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    transition: transform 0.25s ease !important;
+  }
+  .mobile-sticky-bar.hidden,
+  .thumb-bar.hidden {
+    transform: translateY(120%) !important;
+  }
+  .mobile-sticky-bar .btn,
+  .thumb-bar .btn {
+    width: 100% !important;
+    height: 44px !important;
+    min-height: 44px !important;
+    max-height: 44px !important;
+    padding: 0 8px !important;
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    white-space: nowrap !important;
+    border-radius: 8px !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+  }
+}
+@media (min-width: 769px) {
+  .mobile-sticky-bar,
+  .thumb-bar {
+    display: none !important;
+  }
+}
+
+
+/* ============================================================
+   Social Media Icon Bar & Official Photo Badges
+   ============================================================ */
+.social-icon-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.social-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(244, 241, 234, 0.12);
+  border: 1px solid rgba(113, 179, 71, 0.35);
+  color: var(--color-sand);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+.social-icon-link:hover {
+  background: var(--color-chlorophyll);
+  border-color: var(--color-lime);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+.photo-auth-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.70rem;
+  color: #F4F1EA;
+  background: rgba(18, 43, 29, 0.85);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(113, 179, 71, 0.4);
+  margin-top: 6px;
+  letter-spacing: 0.02em;
+}

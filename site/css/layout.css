@@ -1,0 +1,1703 @@
+/**
+ * layout.css
+ * Jardines Urbanos, S.A. (Panamá) - Global Layout, Grid System & Navigation
+ * Visual Direction: "Tropical Luxury & Agro-Tech"
+ */
+
+/* ============================================================
+   1. CSS Reset & Base Elements
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--color-text-dark);
+  background-color: var(--bg-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--color-forest);
+  line-height: var(--lh-heading);
+  font-weight: var(--fw-bold);
+}
+
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+h4 { font-size: var(--fs-h4); }
+
+p {
+  margin-bottom: var(--space-4);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: var(--color-chlorophyll);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-jusa);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ============================================================
+   2. Structural Layout & Containers
+   ============================================================ */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-6);
+  padding-right: var(--space-6);
+}
+
+.container-wide {
+  max-width: var(--container-wide);
+}
+
+.container-narrow {
+  max-width: var(--container-narrow);
+}
+
+.section {
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
+  position: relative;
+}
+
+.section-sm {
+  padding-top: var(--space-10);
+  padding-bottom: var(--space-10);
+}
+
+.section-dark {
+  background-color: var(--color-forest);
+  color: var(--color-text-light);
+}
+
+.section-dark h1,
+.section-dark h2,
+.section-dark h3,
+.section-dark h4 {
+  color: var(--color-sand);
+}
+
+.section-dark p {
+  color: var(--color-text-dim);
+}
+
+.section-sand {
+  background-color: var(--color-sand);
+}
+
+.section-white {
+  background-color: #FFFFFF;
+}
+
+.section-header {
+  margin-bottom: var(--space-12);
+  text-align: center;
+}
+
+.section-header-left {
+  text-align: left;
+}
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-chlorophyll);
+  margin-bottom: var(--space-2);
+}
+
+.section-dark .section-eyebrow {
+  color: var(--color-jusa);
+}
+
+.section-title {
+  margin-bottom: var(--space-3);
+}
+
+.section-desc {
+  font-size: var(--fs-body-lg);
+  color: var(--color-text-muted);
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-header-left .section-desc {
+  margin-left: 0;
+}
+
+/* ============================================================
+   3. Top Bar (Authority, Farm Coordinates & Phone Verification)
+   ============================================================ */
+.top-bar {
+  background-color: var(--color-forest-dark);
+  color: var(--color-text-dim);
+  font-size: 0.8125rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.45rem 0;
+  position: relative;
+  z-index: calc(var(--z-header) + 1);
+}
+
+.top-bar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.top-bar-authority {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-family: var(--font-body);
+}
+
+.top-bar-coordinates {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-jusa);
+  background: rgba(113, 179, 71, 0.12);
+  padding: 2px 8px;
+  border-radius: var(--radius-xs);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.top-bar-contacts {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+}
+
+.top-bar-link {
+  color: var(--color-text-light);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color var(--transition-fast);
+}
+
+.top-bar-link:hover {
+  color: var(--color-jusa);
+}
+
+/* ============================================================
+   4. Site Header & Navigation
+   ============================================================ */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-header);
+  background-color: rgba(18, 43, 29, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border-dark);
+  transition: background-color var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.site-header.scrolled {
+  background-color: var(--color-forest);
+  box-shadow: var(--shadow-dark);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 74px;
+}
+
+.brand-logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  text-decoration: none;
+}
+
+.brand-emblem {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--color-jusa), var(--color-chlorophyll));
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  box-shadow: 0 4px 10px rgba(113, 179, 71, 0.35);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: var(--fw-bold);
+  color: var(--color-text-light);
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+}
+
+.brand-sub {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.15em;
+  color: var(--color-jusa);
+  text-transform: uppercase;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--color-text-dim);
+  text-decoration: none;
+  font-size: var(--fs-body-sm);
+  font-weight: var(--fw-semibold);
+  transition: color var(--transition-fast);
+  position: relative;
+  padding: 0.35rem 0;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-jusa);
+  transition: width var(--transition-fast);
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--color-text-light);
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+  width: 100%;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--color-text-light);
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ============================================================
+   5. Hero Section Showcase
+   ============================================================ */
+.hero {
+  position: relative;
+  background-color: var(--color-forest);
+  color: var(--color-text-light);
+  padding-top: calc(var(--space-16) + var(--space-4));
+  padding-bottom: var(--space-20);
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  filter: saturate(1.1) contrast(1.04);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(10, 27, 18, 0.52) 0%, rgba(10, 27, 18, 0.22) 52%, rgba(10, 27, 18, 0.02) 100%);
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 780px;
+  background: rgba(10, 27, 18, 0.38);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: var(--space-8);
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: rgba(113, 179, 71, 0.15);
+  border: 1px solid var(--color-border-green);
+  color: var(--color-jusa);
+  font-family: var(--font-mono);
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-bold);
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-pill);
+  margin-bottom: var(--space-5);
+}
+
+.hero-title {
+  font-size: var(--fs-hero);
+  color: var(--color-sand);
+  margin-bottom: var(--space-5);
+  letter-spacing: -0.01em;
+}
+
+.hero-lead {
+  font-size: var(--fs-body-lg);
+  color: var(--color-text-dim);
+  line-height: 1.6;
+  margin-bottom: var(--space-8);
+  max-width: 740px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-10);
+}
+
+.hero-trust-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-4);
+  border-top: 1px solid var(--color-border-dark);
+  padding-top: var(--space-6);
+  margin-top: var(--space-6);
+}
+
+.hero-trust-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.hero-trust-icon {
+  font-size: 1.5rem;
+}
+
+.hero-trust-text {
+  font-size: var(--fs-body-sm);
+  color: var(--color-text-dim);
+}
+
+.hero-trust-text strong {
+  display: block;
+  color: var(--color-sand);
+  font-size: 0.95rem;
+}
+
+/* ============================================================
+   6. Credibility / Authority Grid
+   ============================================================ */
+.authority-bar {
+  background-color: var(--color-forest-dark);
+  color: var(--color-text-light);
+  border-top: 1px solid var(--color-border-dark);
+  border-bottom: 1px solid var(--color-border-dark);
+  padding: var(--space-8) 0;
+}
+
+.authority-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+}
+
+.authority-item {
+  text-align: center;
+  padding: var(--space-3);
+}
+
+.authority-number {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: var(--fw-bold);
+  color: var(--color-jusa);
+  line-height: 1;
+  margin-bottom: var(--space-2);
+}
+
+.authority-label {
+  font-size: var(--fs-body-sm);
+  color: var(--color-text-dim);
+}
+
+/* ============================================================
+   7. Bento Grid Pillars
+   ============================================================ */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-6);
+}
+
+.bento-col-8 {
+  grid-column: span 8;
+}
+
+.bento-col-4 {
+  grid-column: span 4;
+}
+
+.bento-col-6 {
+  grid-column: span 6;
+}
+
+.bento-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  height: 100%;
+}
+
+/* ============================================================
+   8. Footer Layout & Legal Compliance
+   ============================================================ */
+.site-footer {
+  background-color: var(--color-forest-dark);
+  color: var(--color-text-dim);
+  border-top: 2px solid var(--color-chlorophyll);
+  padding-top: var(--space-16);
+  padding-bottom: calc(var(--space-16) + 40px); /* Extra padding for mobile thumb bar */
+  margin-top: auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: var(--space-10);
+  margin-bottom: var(--space-12);
+}
+
+.footer-col-brand .brand-logo-wrap {
+  margin-bottom: var(--space-4);
+}
+
+.footer-desc {
+  font-size: var(--fs-body-sm);
+  color: var(--color-text-dim);
+  line-height: 1.6;
+  margin-bottom: var(--space-4);
+}
+
+.footer-heading {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-bold);
+  color: var(--color-sand);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-5);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.footer-link {
+  color: var(--color-text-dim);
+  text-decoration: none;
+  font-size: var(--fs-body-sm);
+  transition: color var(--transition-fast);
+}
+
+.footer-link:hover {
+  color: var(--color-jusa);
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  font-size: var(--fs-body-sm);
+  margin-bottom: var(--space-3);
+}
+
+.footer-contact-item a {
+  color: var(--color-sand);
+  text-decoration: none;
+}
+
+.footer-contact-item a:hover {
+  color: var(--color-jusa);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  font-size: var(--fs-caption);
+}
+
+.footer-legal-tag {
+  color: var(--color-jusa);
+}
+
+/* ============================================================
+   9. Mobile Sticky Bottom Thumb Action Bar
+   ============================================================ */
+.thumb-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-thumb-bar);
+  background-color: rgba(10, 27, 18, 0.96);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid var(--color-border-dark);
+  padding: 0.65rem var(--space-4);
+  box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.35);
+  display: none;
+  transition: transform var(--transition-normal);
+}
+
+.thumb-bar.hidden {
+  transform: translateY(100%);
+}
+
+.thumb-bar-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.thumb-bar .btn {
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* ============================================================
+   10. Responsive Breakpoints
+   ============================================================ */
+/* Desktop Wide (>= 1440px) */
+@media (min-width: 1440px) {
+  .container {
+    max-width: var(--container-wide);
+  }
+}
+
+/* Tablet Landscape / Medium Desktop (< 1200px) */
+@media (max-width: 1199px) {
+  .footer-grid {
+    grid-template-columns: 1.5fr 1fr 1fr 1.25fr;
+    gap: var(--space-6);
+  }
+}
+
+/* Tablet Portrait & Mobile Collapse (< 992px) */
+@media (max-width: 991px) {
+  .nav-menu {
+    display: none; /* In drawer */
+  }
+
+  .nav-actions .btn-accent {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .authority-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bento-col-8, .bento-col-4, .bento-col-6 {
+    grid-column: span 12;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+
+  .thumb-bar {
+    display: block;
+  }
+}
+
+/* Mobile Screens (< 768px) */
+@media (max-width: 767px) {
+  .top-bar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .hero {
+    padding-top: var(--space-12);
+    padding-bottom: var(--space-16);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .authority-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Mobile Small (< 414px) */
+@media (max-width: 414px) {
+  .container {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+
+  .thumb-bar-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Rotating Hero Slides & Controls */
+.hero-carousel {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.hero-bg.hero-carousel img.hero-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.04);
+  transition: opacity 1.1s ease-in-out, transform 6s ease-out;
+  filter: saturate(1.1) contrast(1.04);
+}
+
+.hero-bg.hero-carousel img.hero-slide.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hero-slider-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+  padding-top: var(--space-4);
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.hero-slider-dots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hero-dot {
+  background: rgba(10, 27, 18, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: rgba(244, 241, 234, 0.85);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 0.38rem 0.75rem;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.hero-dot:hover {
+  border-color: var(--color-jusa);
+  color: #FFFFFF;
+}
+
+.hero-dot.active {
+  background: var(--color-jusa);
+  border-color: var(--color-jusa);
+  color: var(--color-forest-dark);
+  font-weight: 700;
+}
+
+.hero-slide-caption {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-jusa);
+  letter-spacing: 0.03em;
+}
+
+/* Engineering Blueprint Spec Grid (B2B Hidrosiembra) */
+.eng-spec-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  gap: var(--space-6);
+}
+
+.eng-spec-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(18, 43, 29, 0.14);
+  border-top: 4px solid var(--color-forest);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.eng-spec-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-top-color: var(--color-jusa);
+}
+
+.eng-spec-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+
+.eng-spec-code {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--color-chlorophyll);
+  background: rgba(46, 111, 64, 0.08);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-xs);
+}
+
+.eng-spec-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: var(--color-sand);
+  color: var(--color-forest);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eng-spec-metric {
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--color-forest);
+  line-height: 1.1;
+  margin-bottom: var(--space-2);
+}
+
+.eng-spec-metric small {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-terracotta);
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 4px;
+}
+
+.eng-spec-title {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-forest);
+  margin-bottom: var(--space-2);
+}
+
+.eng-spec-desc {
+  font-size: var(--fs-body-sm);
+  color: var(--color-text-muted);
+  line-height: 1.55;
+  margin-bottom: var(--space-4);
+  flex: 1;
+}
+
+.eng-spec-bar {
+  height: 5px;
+  background: var(--color-sand);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: var(--space-3);
+}
+
+.eng-spec-bar span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-chlorophyll), var(--color-jusa));
+  border-radius: 999px;
+}
+
+.eng-spec-foot {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--color-forest);
+  padding-top: var(--space-2);
+  border-top: 1px dashed rgba(18, 43, 29, 0.14);
+}
+
+
+/* Official Brand Logo */
+.brand-official-logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.25));
+  transition: transform 0.2s ease;
+}
+
+.brand-logo-wrap:hover .brand-official-logo {
+  transform: scale(1.03);
+}
+
+/* Nosotros Section & Decorative Edge Plants */
+.nosotros-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1.15fr;
+  gap: var(--space-8);
+  align-items: stretch;
+}
+
+@media (max-width: 991px) {
+  .nosotros-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.nosotros-photo-mosaic {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.nosotros-photo-item {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 2px solid #FFFFFF;
+  aspect-ratio: 4 / 3;
+  background: var(--color-forest);
+}
+
+.nosotros-photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.nosotros-photo-item:hover img {
+  transform: scale(1.05);
+}
+
+.nosotros-photo-item figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.5rem 0.75rem;
+  background: linear-gradient(180deg, transparent 0%, rgba(10, 27, 18, 0.88) 100%);
+  color: #F4F1EA;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.decor-plant-edge {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.85;
+  max-width: 340px;
+}
+
+.decor-plant-left {
+  top: 0;
+  left: -40px;
+}
+
+.decor-plant-right {
+  bottom: 0;
+  right: -40px;
+}
+
+@media (max-width: 768px) {
+  .decor-plant-edge {
+    display: none !important;
+  }
+}
+
+
+
+
+
+
+/* Sleek Hero Market Banner (Replacing numbered text buttons) */
+.hero-slider-bar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.hero-market-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  background: rgba(10, 27, 18, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(113, 179, 71, 0.35);
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-pill);
+  transition: all 0.35s ease;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+}
+
+.hero-market-text {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--color-sand);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  line-height: 1.35;
+}
+
+.hero-market-text .market-tag {
+  color: var(--color-jusa);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: rgba(113, 179, 71, 0.18);
+  padding: 2px 8px;
+  border-radius: var(--radius-xs);
+  white-space: nowrap;
+}
+
+.hero-market-cta {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-jusa);
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 700;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.hero-market-cta:hover {
+  color: #FFFFFF;
+  transform: translateX(3px);
+}
+
+.hero-nav-dots {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero-nav-pip {
+  width: 28px;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.hero-nav-pip.active {
+  width: 48px;
+  background: var(--color-jusa);
+  box-shadow: 0 0 10px rgba(113, 179, 71, 0.6);
+}
+
+/* Video Reel Looper & Dynamic Line */
+.video-market-bar {
+  background: rgba(10, 27, 18, 0.85);
+  border: 1px solid rgba(113, 179, 71, 0.3);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  margin-bottom: var(--space-4);
+  transition: all 0.3s ease;
+}
+
+.video-market-headline {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-sand);
+  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.video-market-desc {
+  font-size: var(--fs-body-sm);
+  color: var(--color-text-dim);
+  line-height: 1.5;
+  margin-bottom: var(--space-3);
+}
+
+.video-playlist-pills {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.video-pip-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: var(--color-text-dim);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.25s ease;
+}
+
+.video-pip-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+  color: #FFFFFF;
+}
+
+.video-pip-btn.active {
+  background: var(--color-jusa);
+  color: var(--color-forest-dark);
+  border-color: var(--color-jusa);
+  font-weight: 700;
+}
+
+.video-pip-btn .pip-indicator {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  display: inline-block;
+}
+
+
+/* ============================================================
+   MOBILE RESPONSIVE PRODUCTION OVERHAUL (max-width: 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+  *, *::before, *::after {
+    box-sizing: border-box !important;
+  }
+
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+    width: 100% !important;
+    padding-bottom: 80px !important; /* Prevents sticky thumb bar from obscuring content */
+  }
+
+  .container,
+  .container-wide,
+  .container-narrow {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    box-sizing: border-box !important;
+  }
+
+  .section {
+    padding-top: 2.25rem !important;
+    padding-bottom: 2.25rem !important;
+    overflow: hidden !important;
+  }
+
+  .section-title {
+    font-size: 1.55rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .section-desc {
+    font-size: 0.92rem !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Header & Navigation */
+  .top-bar {
+    padding: 6px 0 !important;
+  }
+  .top-bar-inner {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 4px !important;
+    font-size: 0.72rem !important;
+  }
+  .top-bar-contacts {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+  .site-header {
+    padding: 0.5rem 0 !important;
+  }
+  .site-header .navbar {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+  .brand-official-logo {
+    height: 38px !important;
+    width: auto !important;
+    max-width: 160px !important;
+  }
+  .nav-actions .btn-accent,
+  .site-header .nav-actions .btn-sm {
+    display: none !important; /* Replaced by bottom sticky thumb bar */
+  }
+  .menu-toggle {
+    width: 44px !important;
+    height: 44px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Drawer Safety */
+  .drawer-backdrop:not(.open) {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    opacity: 0 !important;
+  }
+  .drawer-backdrop.open {
+    display: block !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    opacity: 1 !important;
+  }
+  .drawer-panel {
+    width: 82% !important;
+    max-width: 320px !important;
+  }
+
+  /* Hero & Rotating Marketing Banner */
+  .hero {
+    min-height: auto !important;
+    padding-top: 2rem !important;
+    padding-bottom: 5.5rem !important;
+    overflow: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+  }
+  .hero-bg,
+  .hero-carousel {
+    overflow: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+  }
+  .hero-slide {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: 50% 35% !important;
+    transform: none !important;
+  }
+
+  /* Specific Photographic Mobile Framing per Focal Point */
+  /* 1. Hero de Inicio: Enfoque en campo, cosechador, hidrosiembra y palmas */
+  .hero-slide[src*="DJI_0677-Mejorado-NR"] {
+    object-position: 50% 35% !important; /* Centrado panorámico del cultivo de grama tecnificado en Río Grande */
+  }
+  .hero-slide[src*="hero_2_gramas_finca"] {
+    object-position: 50% 38% !important; /* Centrado en tractor cosechador y rollos frescos de grama */
+  }
+  .hero-slide[src*="hero_3_hidrosiembra"] {
+    object-position: 48% 42% !important; /* Centrado en máquina de hidrosiembra y estabilización de talud */
+  }
+  .hero-slide[src*="hero_4_vivero_palmas"] {
+    object-position: 50% 30% !important; /* Centrado en copas y follaje de Palmas Reales monumentales */
+  }
+
+  /* 2. Hero de Nosotros: Cartelera monumental y equipo */
+  .hero-slide[src*="letrero_finca_nosotros_derecha"] {
+    object-position: 65% 50% !important; /* Cartelera monumental nítida y visible en pantallas verticales de 360px y 390px */
+  }
+  .hero-slide[src*="subhero_cont_2"] {
+    object-position: 50% 35% !important;
+  }
+  .hero-slide[src*="subhero_cont_3"] {
+    object-position: 50% 38% !important;
+  }
+
+  /* 3. Hero de Residencial & PH: Tapete de grama natural centrado */
+  .hero-slide[src*="subhero_res_1"] {
+    object-position: 50% 55% !important; /* Tapete verde Zoysia Japónica tolerante al salitre */
+  }
+  .hero-slide[src*="subhero_res_2"] {
+    object-position: 50% 50% !important; /* Tapete denso de San Agustín bajo sombra */
+  }
+  .hero-slide[src*="subhero_res_3"] {
+    object-position: 50% 50% !important; /* Tapete alfombra Zoysia Toro de alto tráfico */
+  }
+  .hero-slide[src*="subhero_res_4"] {
+    object-position: 50% 50% !important; /* Tapete residencial con rollos frescos cosechados */
+  }
+
+  /* Hero Photographic Carousel Transitions & Mobile Vibrancy */
+  .hero-bg.hero-carousel .hero-slide {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    opacity: 0 !important;
+    transform: scale(1.02) !important;
+    transition: opacity 1s ease-in-out, transform 4s ease-out !important;
+    filter: brightness(1.04) contrast(1.06) saturate(1.15) !important;
+    z-index: 1 !important;
+  }
+  .hero-bg.hero-carousel .hero-slide.active {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+    z-index: 1 !important;
+  }
+
+  /* Hero Scrim Overlay - Sombra Ejecutiva de Lujo Suave (Foco Fotográfico) */
+  .hero-overlay {
+    background: linear-gradient(180deg, 
+      rgba(10, 27, 18, 0.35) 0%, 
+      rgba(10, 27, 18, 0.10) 30%, 
+      rgba(10, 27, 18, 0.35) 65%, 
+      rgba(10, 27, 18, 0.78) 100%) !important;
+    z-index: 2 !important;
+  }
+
+  /* Hero Content - Caja translúcida refinada (legibilidad perfecta de letras sin tapar la foto) */
+  .hero-content {
+    position: relative !important;
+    z-index: 3 !important;
+    background: linear-gradient(180deg, rgba(10, 27, 18, 0.58) 0%, rgba(10, 27, 18, 0.42) 60%, rgba(10, 27, 18, 0.68) 100%) !important;
+    backdrop-filter: blur(4px) !important;
+    -webkit-backdrop-filter: blur(4px) !important;
+    padding: 18px 16px !important;
+    border-radius: 16px !important;
+    border: 1px solid rgba(113, 179, 71, 0.32) !important;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4) !important;
+  }
+
+  .hero-eyebrow {
+    background: rgba(10, 27, 18, 0.72) !important;
+    backdrop-filter: blur(4px) !important;
+    -webkit-backdrop-filter: blur(4px) !important;
+    border: 1px solid rgba(113, 179, 71, 0.6) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4) !important;
+    color: #8FD959 !important; /* Verde JUSA optimizado para contraste AA/AAA */
+    font-size: 0.72rem !important;
+    padding: 0.35rem 0.75rem !important;
+    border-radius: var(--radius-pill) !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75) !important;
+    margin-bottom: 0.75rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+  }
+
+  .hero-title {
+    font-size: 1.65rem !important;
+    line-height: 1.25 !important;
+    color: #FFFFFF !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9), 0 4px 14px rgba(10, 27, 18, 0.95) !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .hero-lead {
+    font-size: 0.92rem !important;
+    line-height: 1.5 !important;
+    color: #F4F1EA !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 2px 8px rgba(10, 27, 18, 0.9) !important;
+    margin-bottom: 1.25rem !important;
+  }
+  .hero-lead strong {
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
+  }
+
+  .hero-slider-bar {
+    width: 100% !important;
+    margin-top: 1rem !important;
+    padding-top: 0.75rem !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Cartelera Rotativa Móvil (.hero-market-banner) con translucidez elegante */
+  .hero-market-banner {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    background: rgba(10, 27, 18, 0.75) !important;
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
+    border: 1px solid rgba(113, 179, 71, 0.45) !important;
+    border-radius: 12px !important;
+    padding: 10px 14px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    gap: 8px !important;
+    white-space: normal !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+  }
+
+  .hero-market-banner .hero-market-text {
+    font-size: 0.86rem !important;
+    line-height: 1.4 !important;
+    color: var(--color-sand) !important; /* #F4F1EA con 15.8:1 ratio de contraste */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7) !important;
+    white-space: normal !important;
+    width: 100% !important;
+    word-break: break-word !important;
+  }
+
+  .hero-market-banner .market-tag {
+    color: #8FD959 !important; /* Verde JUSA vibrante con contraste AAA (10.4:1) */
+    background: rgba(113, 179, 71, 0.22) !important;
+    border: 1px solid rgba(113, 179, 71, 0.45) !important;
+    font-weight: 700 !important;
+    padding: 2px 8px !important;
+    border-radius: 6px !important;
+    display: inline-block !important;
+    margin-right: 4px !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
+    letter-spacing: 0.06em !important;
+  }
+
+  .hero-market-banner .market-phrase {
+    color: var(--color-sand) !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6) !important;
+    line-height: 1.35 !important;
+  }
+
+  .hero-market-banner .hero-market-cta {
+    align-self: flex-start !important;
+    font-size: 0.80rem !important;
+    color: #8FD959 !important;
+    font-weight: 700 !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7) !important;
+    white-space: nowrap !important;
+    padding: 4px 8px !important;
+    background: rgba(113, 179, 71, 0.12) !important;
+    border-radius: 6px !important;
+  }
+
+  .hero-actions,
+  .hero-cta-group {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 10px !important;
+  }
+  .hero-actions .btn,
+  .hero-cta-group .btn {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  /* Nosotros Section & Grid */
+  .nosotros-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 1.25rem !important;
+    box-sizing: border-box !important;
+  }
+  .nosotros-grid > .card,
+  .nosotros-section .card,
+  .card {
+    min-width: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 16px 14px !important;
+    border-radius: 14px !important;
+  }
+  .nosotros-grid .card h3 {
+    font-size: 1.25rem !important;
+    line-height: 1.3 !important;
+    word-break: break-word !important;
+  }
+  .nosotros-photo-mosaic {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .nosotros-photo-mosaic figure {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+  }
+  .nosotros-photo-mosaic figure img {
+    width: 100% !important;
+    height: 130px !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+  }
+
+  /* Bento Grid & Pilares */
+  .bento-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+  .bento-card {
+    min-width: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Video Section */
+  .video-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 12px !important;
+  }
+  .video-market-bar {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 10px 12px !important;
+    border-radius: 10px !important;
+  }
+  .video-market-headline {
+    font-size: 0.88rem !important;
+    line-height: 1.35 !important;
+  }
+  .video-playlist-pills {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.75rem !important;
+  }
+  footer,
+  .site-footer {
+    padding-bottom: calc(var(--space-8) + 80px) !important;
+  }
+}
+
+
+/* ============================================================
+   High Contrast Typography over Dark Backgrounds (WCAG AAA >= 7:1)
+   ============================================================ */
+.section-dark .section-desc,
+.hero-lead,
+.hero-trust-text,
+.card-dark p,
+.top-bar,
+.site-footer,
+.site-footer p {
+  color: #F4F1EA !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
+}
+.section-dark .section-desc strong,
+.hero-trust-text strong,
+.hero-lead strong,
+.card-dark h3,
+.card-dark h4 {
+  color: #FFFFFF !important;
+}
+.hero-eyebrow,
+.section-dark .section-eyebrow {
+  color: #A8E67A !important;
+  background: rgba(18, 43, 29, 0.90) !important;
+  border: 1px solid rgba(168, 230, 122, 0.5) !important;
+  text-transform: none !important;
+  letter-spacing: 0.04em !important;
+}
+.top-bar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  color: #F4F1EA;
+  font-size: 0.85rem;
+}
+.top-bar-contacts {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.top-bar-socials {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.top-bar-divider {
+  color: rgba(244, 241, 234, 0.3);
+  font-size: 0.85rem;
+}
+@media (max-width: 768px) {
+  .top-bar-inner {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    padding: 6px 12px !important;
+  }
+  .top-bar-location {
+    font-size: 0.78rem !important;
+  }
+  .top-bar-socials {
+    display: none !important; /* Kept in mobile drawer and footer on small screens */
+  }
+  .top-bar-divider {
+    display: none !important;
+  }
+  .top-bar-contacts {
+    gap: 8px !important;
+  }
+  .top-bar-link span.phone-label {
+    display: none !important;
+  }
+}

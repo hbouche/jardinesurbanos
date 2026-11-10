@@ -1,0 +1,385 @@
+import os
+
+comercial_html = """<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grama Comercial y Proyectos Urbanísticos | Jardines Urbanos, S.A. Panamá</title>
+  <meta name="description" content="Suministro mayorista de grama certificada en rollos para proyectos comerciales, urbanizaciones, hoteles, canchas deportivas y PHs en todo Panamá desde fincas en Río Grande, Coclé.">
+  <meta name="keywords" content="grama comercial panama, grama para canchas, grama para urbanizaciones, venta mayorista de grama, zoysia toro comercial, jardines urbanos cocle">
+  <meta name="author" content="Jardines Urbanos, S.A.">
+  <link rel="canonical" href="https://jardinesurbanos.com/pages/comercial.html">
+
+  <meta property="og:title" content="Grama Comercial y Proyectos Urbanísticos | Jardines Urbanos Panamá">
+  <meta property="og:description" content="Suministro masivo y tecnificado de grama natural en rollos cosechada fresca en tarimas desde fincas propias en Río Grande, Coclé.">
+  <meta property="og:image" content="../assets/img/subhero_b2b_3.jpg">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..800&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/tokens.css?v=13">
+  <link rel="stylesheet" href="../css/components.css?v=13">
+  <link rel="stylesheet" href="../css/layout.css?v=13">
+  <link rel="icon" type="image/png" href="../assets/img/icon_512px.png">
+
+  <style id="mobile-overhaul-core">
+    .hero-bg.hero-carousel .hero-slide {
+      position: absolute !important;
+      inset: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      opacity: 0 !important;
+      transform: scale(1.02) !important;
+      transition: opacity 1s ease-in-out, transform 4s ease-out !important;
+      filter: brightness(1.04) contrast(1.06) saturate(1.15) !important;
+      z-index: 1 !important;
+    }
+    .hero-bg.hero-carousel .hero-slide.active {
+      opacity: 1 !important;
+      transform: scale(1) !important;
+      z-index: 1 !important;
+    }
+    .hero-overlay {
+      background: linear-gradient(180deg, rgba(10, 27, 18, 0.35) 0%, rgba(10, 27, 18, 0.10) 30%, rgba(10, 27, 18, 0.35) 65%, rgba(10, 27, 18, 0.78) 100%) !important;
+      z-index: 2 !important;
+    }
+    .hero-content {
+      position: relative !important;
+      z-index: 3 !important;
+      background: linear-gradient(180deg, rgba(10, 27, 18, 0.58) 0%, rgba(10, 27, 18, 0.42) 60%, rgba(10, 27, 18, 0.68) 100%) !important;
+      backdrop-filter: blur(4px) !important;
+      -webkit-backdrop-filter: blur(4px) !important;
+      padding: 18px 16px !important;
+      border-radius: 16px !important;
+      border: 1px solid rgba(113, 179, 71, 0.32) !important;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4) !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-location">
+        <svg class="svg-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Rio Grande, Coclé</span>
+      </div>
+      <div class="top-bar-contacts">
+        <div class="top-bar-socials" aria-label="Redes sociales oficiales">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Instagram">
+            <svg class="svg-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn">
+            <svg class="svg-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Facebook">
+            <svg class="svg-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="YouTube">
+            <svg class="svg-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><polygon points="10 15 15 12 10 9 10 15"/></svg>
+          </a>
+        </div>
+        <span class="top-bar-divider" aria-hidden="true">|</span>
+        <a href="tel:+5072260494" class="top-bar-link">
+          <svg class="svg-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span class="phone-label">Fijo:</span> (+507) 226-0494
+        </a>
+        <a href="https://wa.me/50765390949" target="_blank" rel="noopener noreferrer" class="top-bar-link" style="color: var(--color-jusa);">
+          <svg class="svg-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+          <span class="phone-label">WhatsApp:</span> (+507) 6539-0949
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="../index.html" class="brand-logo-wrap"><img src="../assets/img/logo_white_290X82px.png" alt="Jardines Urbanos, S.A. - Logo Oficial" class="brand-official-logo" width="195" height="55"></a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav-menu">
+          <li><a href="../index.html" class="nav-link">Inicio</a></li>
+          <li><a href="nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+          <li><a href="residencial.html" class="nav-link">Residencial</a></li>
+          <li><a href="comercial.html" class="nav-link active">Comercial</a></li>
+          <li><a href="b2b-hidrosiembra.html" class="nav-link">Hidrosiembra</a></li>
+          <li><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+          <li><a href="calculadora.html" class="nav-link">Calculadora</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#calculadora" class="btn btn-accent btn-sm">Cotizar Comercial</a>
+        <button class="menu-toggle" aria-label="Abrir menú"><svg class="svg-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop" aria-hidden="true">
+    <div class="drawer-panel">
+      <div>
+        <div class="drawer-header">
+          <img src="../assets/img/logo_white_290X82px.png" alt="Jardines Urbanos, S.A." style="height: 44px; width: auto;">
+          <button class="drawer-close-btn" aria-label="Cerrar">&times;</button>
+        </div>
+        <ul class="drawer-nav-list">
+          <li><a href="../index.html" class="drawer-nav-link">Inicio</a></li>
+          <li><a href="nosotros.html" class="drawer-nav-link">Sobre Nosotros</a></li>
+          <li><a href="residencial.html" class="drawer-nav-link">Residencial</a></li>
+          <li><a href="comercial.html" class="drawer-nav-link active">Comercial</a></li>
+          <li><a href="b2b-hidrosiembra.html" class="drawer-nav-link">Hidrosiembra</a></li>
+          <li><a href="catalogo.html" class="drawer-nav-link">Catálogo</a></li>
+          <li><a href="calculadora.html" class="drawer-nav-link">Calculadora</a></li>
+          <li><a href="contacto.html" class="drawer-nav-link">Contacto</a></li>
+        </ul>
+      </div>
+      <div style="border-top: 1px solid var(--color-border-dark); padding-top: var(--space-4);">
+        <div style="text-align: center; margin-bottom: 12px;">
+          <p style="font-size: 0.75rem; color: #F4F1EA; margin-bottom: 8px;">Síguenos en redes:</p>
+          <div class="social-icon-bar" style="justify-content: center;">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Instagram">
+              <svg class="svg-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn">
+              <svg class="svg-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Facebook">
+              <svg class="svg-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="YouTube">
+              <svg class="svg-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><polygon points="10 15 15 12 10 9 10 15"/></svg>
+            </a>
+          </div>
+        </div>
+        <a href="https://wa.me/50765390949" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-block"><svg class="svg-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> WhatsApp Comercial</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Commercial Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg hero-carousel" id="hero-carousel">
+        <img src="../assets/img/subhero_b2b_3.jpg" srcset="../assets/img/subhero_b2b_3_mobile.jpg 768w, ../assets/img/subhero_b2b_3.jpg 1920w" sizes="(max-width: 768px) 100vw, 1920px" class="hero-slide active" data-slide-index="0" data-market-tag="LOGÍSTICA MAYORISTA" data-market-phrase="Despachos masivos diarios en tarimas para urbanismos, PHs y hoteles." data-cta-text="Calcular metraje comercial" data-cta-href="#calculadora" alt="Cosecha de grama en finca Coclé" width="1920" height="1080">
+        <img src="../assets/img/subhero_b2b_4.jpg" srcset="../assets/img/subhero_b2b_4_mobile.jpg 768w, ../assets/img/subhero_b2b_4.jpg 1920w" sizes="(max-width: 768px) 100vw, 1920px" class="hero-slide" data-slide-index="1" data-market-tag="CAPACIDAD AGRO-INDUSTRIAL" data-market-phrase="7 hectáreas de producción tecnificada continua en Río Grande, Coclé." data-cta-text="Conocer la escala" data-cta-href="#beneficios" alt="Finca de producción tecnificada" width="1920" height="1080">
+        <img src="../assets/img/hero_2_gramas_finca.jpg" srcset="../assets/img/hero_2_gramas_mobile.jpg 768w, ../assets/img/hero_2_gramas_finca.jpg 1920w" sizes="(max-width: 768px) 100vw, 1920px" class="hero-slide" data-slide-index="2" data-market-tag="GRAMA EN ROLLOS" data-market-phrase="Grama Zoysia Toro y Zoysia Japónica para canchas y parques de alto tránsito." data-cta-text="Ver variedades" data-cta-href="#variedades-comerciales" alt="Tractor cosechador de grama" width="1920" height="1080">
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span>Fincas propias en Río Grande, Coclé • Suministro mayorista desde 1999</span>
+          </div>
+          <h1 class="hero-title">Grama natural y paisajismo para proyectos comerciales y urbanísticos</h1>
+          <p class="hero-lead">
+            Capacidad de suministro masivo para promotores, constructoras, hoteles, canchas deportivas y desarrollos residenciales en todo Panamá. Cosecha fresca mecanizada y despacho directo sobre tarimas.
+          </p>
+
+          <div class="hero-slider-bar">
+            <div class="hero-market-banner" id="hero-market-banner">
+              <div class="hero-market-text" id="hero-market-text">
+                <span class="market-tag">LOGÍSTICA MAYORISTA</span>
+                <span class="market-phrase">Despachos masivos diarios en tarimas para urbanismos, PHs y hoteles.</span>
+              </div>
+              <a href="#calculadora" class="hero-market-cta" id="hero-market-cta">
+                <span>Calcular metraje comercial</span> &rarr;
+              </a>
+            </div>
+            <div class="hero-nav-dots" role="tablist" aria-label="Selector de vistas">
+              <button type="button" class="hero-nav-pip active" data-slide-to="0" aria-label="Vista 1"></button>
+              <button type="button" class="hero-nav-pip" data-slide-to="1" aria-label="Vista 2"></button>
+              <button type="button" class="hero-nav-pip" data-slide-to="2" aria-label="Vista 3"></button>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#calculadora" class="btn btn-accent btn-lg">Cotizar metraje comercial</a>
+            <a href="https://wa.me/50765390949?text=Hola%20Jardines%20Urbanos%2C%20solicito%20cotizaci%C3%B3n%20para%20un%20proyecto%20comercial." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+              <svg class="svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> WhatsApp Comercial Directo
+            </a>
+            <a href="b2b-hidrosiembra.html" class="btn btn-outline-light btn-lg">Ver servicios de Hidrosiembra</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Commercial Value Pillars -->
+    <section class="section section-sand" id="beneficios">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Capacidad industrial y cumplimiento</span>
+          <h2 class="section-title">Respaldamos los cronogramas de entrega de tu obra</h2>
+          <p class="section-desc">Proveemos a desarrolladores de primer nivel en Panamá con garantía de suministro continuo, frescura de corte y asesoría técnica en campo.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6);">
+          <div class="card" style="padding: var(--space-6);">
+            <div style="color: var(--color-chlorophyll); margin-bottom: var(--space-3);">
+              <svg class="svg-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-5l-3-4h-5v10Z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+            </div>
+            <h3 style="font-size: 1.25rem; color: var(--color-forest); margin-bottom: 0.5rem;">Cosecha fresca el mismo día</h3>
+            <p style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.55;">Corte mecanizado de alta precisión coordinado con la hora de despacho para que la grama llegue con máxima hidratación y prendimiento radicular inmediato.</p>
+          </div>
+
+          <div class="card" style="padding: var(--space-6);">
+            <div style="color: var(--color-chlorophyll); margin-bottom: var(--space-3);">
+              <svg class="svg-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+            <h3 style="font-size: 1.25rem; color: var(--color-forest); margin-bottom: 0.5rem;">Estibas sobre tarimas de madera</h3>
+            <p style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.55;">Cada tarima contiene aproximadamente 45 m² ordenados, facilitando la descarga rápida con montacargas o pluma hidráulica en proyectos de gran escala.</p>
+          </div>
+
+          <div class="card" style="padding: var(--space-6);">
+            <div style="color: var(--color-chlorophyll); margin-bottom: var(--space-3);">
+              <svg class="svg-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 style="font-size: 1.25rem; color: var(--color-forest); margin-bottom: 0.5rem;">Asesoría agronómica e instalación</h3>
+            <p style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.55;">Supervisión de preparación de suelo, nivelación, sistemas de riego y colocación profesional por cuadrillas especializadas con experiencia en obras viales y PHs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Embedded Calculator Section -->
+    <section class="section section-white" id="calculadora">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Calculadora agronómica de metraje comercial</span>
+          <h2 class="section-title">Estima la grama y logística de tarimas para tu proyecto</h2>
+          <p class="section-desc">Selecciona el tipo de entorno y el área en metros cuadrados para obtener una estimación con cálculo de tarimas y enlace directo a WhatsApp.</p>
+        </div>
+
+        <div class="calc-widget" id="calc-widget">
+          <div class="calc-controls">
+            <h3 style="font-size: 1.15rem; color: var(--color-forest); margin-bottom: 0.75rem;">1. Selecciona el escenario del proyecto:</h3>
+            <div class="calc-scenarios-grid">
+              <button type="button" class="calc-pill" data-scenario="residential">
+                <span class="calc-pill-title">Urbanismo / PH</span>
+                <span class="calc-pill-sub">Áreas verdes residenciales</span>
+              </button>
+              <button type="button" class="calc-pill" data-scenario="beach">
+                <span class="calc-pill-title">Hotel / Playa</span>
+                <span class="calc-pill-sub">Salinidad y brisa marina</span>
+              </button>
+              <button type="button" class="calc-pill active" data-scenario="sports">
+                <span class="calc-pill-title">Cancha / Tráfico</span>
+                <span class="calc-pill-sub">Parques y alto tránsito</span>
+              </button>
+              <button type="button" class="calc-pill" data-scenario="slope">
+                <span class="calc-pill-title">Talud / Obra</span>
+                <span class="calc-pill-sub">Control de erosión</span>
+              </button>
+            </div>
+
+            <h3 style="font-size: 1.15rem; color: var(--color-forest); margin-bottom: 0.75rem;">2. Área estimada del terreno (m²):</h3>
+            <div class="calc-area-sync">
+              <input type="range" id="calc-area-slider" min="20" max="5000" step="10" value="1000" aria-label="Control deslizante de área en metros cuadrados">
+              <input type="number" id="calc-area-input" min="1" max="100000" value="1000" class="calc-number-input" aria-label="Entrada numérica de metros cuadrados">
+            </div>
+
+            <h3 style="font-size: 1.15rem; color: var(--color-forest); margin-top: 1rem; margin-bottom: 0.75rem;">3. Exposición solar:</h3>
+            <div class="calc-sun-grid">
+              <button type="button" class="calc-sun-btn active" data-sun="full">Pleno Sol Directo (+6 hrs)</button>
+              <button type="button" class="calc-sun-btn" data-sun="partial">Sombra Parcial / Árboles</button>
+            </div>
+          </div>
+
+          <div class="calc-result-card" id="calc-result-card">
+            <h3 class="calc-summary-title">Cotización comercial recomendada</h3>
+            <div class="calc-metric-highlight">
+              <span class="calc-metric-number" id="calc-total-area">1,050</span>
+              <span class="calc-metric-unit">m² con merma de instalación</span>
+            </div>
+            <div class="calc-rec-box">
+              <span class="calc-rec-title" id="calc-rec-name">Grama Zoysia Toro</span>
+              <span class="calc-rec-desc" id="calc-rec-desc">Césped esmeralda de alta densidad y máxima resistencia al pisoteo.</span>
+            </div>
+            <div style="margin: 1rem 0; padding: 10px; background: rgba(18, 43, 29, 0.04); border-radius: 8px;">
+              <p style="font-size: 0.85rem; color: var(--color-forest); margin-bottom: 4px;"><strong>Logística estimada de finca:</strong></p>
+              <p style="font-size: 0.85rem; color: var(--color-text-muted);" id="calc-pallet-est">Aprox. 24 tarimas de 45 m² despachadas desde Río Grande, Coclé.</p>
+            </div>
+            <a href="https://wa.me/50765390949?text=Hola%20Jardines%20Urbanos%2C%20deseo%20cotizar%20un%20proyecto%20comercial." id="calc-whatsapp-btn" target="_blank" rel="noopener noreferrer" class="btn btn-calc-whatsapp-primary">
+              <svg class="svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> Solicitar Cotización Formal
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col-brand">
+        <a href="../index.html" class="brand-logo-wrap"><img src="../assets/img/logo_white_290X82px.png" alt="Jardines Urbanos, S.A." class="brand-official-logo" width="195" height="55"></a>
+        <p class="footer-desc">Productores de grama natural en rollos, vivero botánico y especialistas en hidrosiembra mecanizada en Panamá desde 1999.</p>
+        <div class="social-icon-bar" style="margin-top: 1rem;">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Instagram">
+            <svg class="svg-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn">
+            <svg class="svg-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Facebook">
+            <svg class="svg-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="YouTube">
+            <svg class="svg-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><polygon points="10 15 15 12 10 9 10 15"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col-nav">
+        <h4 class="footer-heading">Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="../index.html" class="footer-link">Inicio</a></li>
+          <li><a href="nosotros.html" class="footer-link">Sobre Nosotros</a></li>
+          <li><a href="residencial.html" class="footer-link">Residencial</a></li>
+          <li><a href="comercial.html" class="footer-link">Comercial</a></li>
+          <li><a href="b2b-hidrosiembra.html" class="footer-link">Hidrosiembra</a></li>
+          <li><a href="catalogo.html" class="footer-link">Catálogo</a></li>
+          <li><a href="calculadora.html" class="footer-link">Calculadora</a></li>
+          <li><a href="contacto.html" class="footer-link">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col-contact">
+        <h4 class="footer-heading">Finca & Atención</h4>
+        <p class="footer-desc">Fincas propias en Río Grande, Coclé • Carretera Interamericana Km 168.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem; color: #F4F1EA;">Fijo: (+507) 226-0494<br>WhatsApp: (+507) 6539-0949</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+        <span class="footer-legal-tag">© 1999–2026 Jardines Urbanos, S.A. Todos los derechos reservados.</span>
+        <span style="font-size: 0.75rem; color: #F4F1EA;">Fincas propias Rio Grande, Coclé • Panamá</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 1-Row Mobile Sticky Bottom Thumb Bar -->
+  <aside class="thumb-bar mobile-sticky-bar" aria-label="Acciones rápidas">
+    <a href="#calculadora" class="btn btn-primary"><svg class="svg-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg> Cotizar Comercial</a>
+    <a href="https://wa.me/50765390949" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp"><svg class="svg-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> WhatsApp Finca</a>
+  </aside>
+
+  <script src="../js/omnichannel.js?v=13"></script>
+  <script src="../js/calculator.js?v=13"></script>
+  <script src="../js/main.js?v=13"></script>
+</body>
+</html>
+"""
+
+out_file = r"c:\Users\Usuario\Downloads\Jardines Urbanos\site\pages\comercial.html"
+with open(out_file, "w", encoding="utf-8") as f:
+    f.write(comercial_html)
+print(f"[OK] Created {out_file} ({len(comercial_html):,} bytes)")

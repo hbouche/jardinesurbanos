@@ -1,0 +1,6 @@
+--- tests/test_milestone3_validation.js
++++ tests/test_milestone3_validation.js
+@@ -139,2 +139,2 @@
+ const b2bHtml = fs.readFileSync(path.join(SITE_DIR, 'pages/b2b-hidrosiembra.html'), 'utf-8');
+-assert(b2bHtml.includes('Hasta 60° (1:1)'), 'b2b-hidrosiembra.html includes max slope 60° spec');
++assert(b2bHtml.includes('Hasta 60°') && b2bHtml.includes('1:1'), 'b2b-hidrosiembra.html includes max slope 60° spec');

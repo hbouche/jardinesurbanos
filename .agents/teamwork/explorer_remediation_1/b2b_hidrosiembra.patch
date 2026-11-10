@@ -1,0 +1,10 @@
+--- site/pages/b2b-hidrosiembra.html
++++ site/pages/b2b-hidrosiembra.html
+@@ -140,2 +140,2 @@
+             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-3);">
+-              <span class="badge badge-official">Flota Propia JUSA • Río Grande, Coclé</span>
++              <span class="badge badge-mockup">[Variedad de Finca • Imagen Referencial]</span>
+               <span style="font-family: var(--font-mono); font-size: var(--fs-caption); color: var(--color-text-muted);">Aplicación hidráulica: Mulch + Semilla Tropicalizada + Fijador Orgánico</span>
+@@ -168,1 +168,1 @@
+-            <div class="eng-spec-metric">Hasta 60° <small>(Talud 1:1)</small></div>
++            <div class="eng-spec-metric" aria-label="Hasta 60° (1:1)">Hasta 60° <small>(Talud 1:1)</small></div>

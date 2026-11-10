@@ -1,0 +1,210 @@
+Total downloaded official: 33
+Total downloaded external: 2
+Total WP inventory items: 162
+
+--- DOWNLOADED OFFICIAL IMAGES (33) ---
+FILE: ARBOL-PREPARADO.jpg | WxH: 1440x1920 | BYTES: 940576 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/ARBOL-PREPARADO.jpg
+FILE: ARECA.jpg | WxH: 1877x1920 | BYTES: 1494404 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/ARECA.jpg
+FILE: BISMARKIA.jpg | WxH: 1440x1920 | BYTES: 735718 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/BISMARKIA.jpg
+FILE: COLA-DE-ZORRO.jpg | WxH: 1280x960 | BYTES: 335469 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/COLA-DE-ZORRO.jpg
+FILE: CROTO.jpg | WxH: 1576x1920 | BYTES: 927988 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/CROTO.jpg
+FILE: Catalogo_Main.jpg | WxH: 1920x763 | BYTES: 734000 | URL: https://jardinesurbanos.com/wp-content/uploads/2025/06/Catalogo_Main.jpg
+FILE: DJI_0677-Mejorado-NR.jpg | WxH: 1920x1080 | BYTES: 1050256 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/DJI_0677-Mejorado-NR.jpg
+FILE: GINGER-VARIEGADO.jpg | WxH: 1920x1684 | BYTES: 986852 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/GINGER-VARIEGADO.jpg
+FILE: HIDROSIEMBRA-MAQUINA.jpg | WxH: 1920x1440 | BYTES: 609362 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/HIDROSIEMBRA-MAQUINA.jpg
+FILE: IMG_8680.jpg | WxH: 1844x1920 | BYTES: 658566 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/IMG_8680.jpg
+FILE: JAPONESA-CLOSEUP.jpg | WxH: 1280x1920 | BYTES: 704642 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/JAPONESA-CLOSEUP.jpg
+FILE: JAPONESA-PROYECTO.jpg | WxH: 1920x1440 | BYTES: 589152 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/JAPONESA-PROYECTO.jpg
+FILE: JAZMIN-ESTRELLA.jpg | WxH: 1440x1920 | BYTES: 534470 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/JAZMIN-ESTRELLA.jpg
+FILE: MONSTERA.jpg | WxH: 1440x1920 | BYTES: 670739 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/MONSTERA.jpg
+FILE: NEEM.jpg | WxH: 1440x1920 | BYTES: 1102515 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/NEEM.jpg
+FILE: Nosotros1.jpg | WxH: 780x900 | BYTES: 255158 | URL: https://jardinesurbanos.com/wp-content/uploads/2025/06/Nosotros1.jpg
+FILE: Nosotros2.jpg | WxH: 945x723 | BYTES: 181665 | URL: https://jardinesurbanos.com/wp-content/uploads/2025/06/Nosotros2.jpg
+FILE: Nosotros3.jpg | WxH: 900x675 | BYTES: 271004 | URL: https://jardinesurbanos.com/wp-content/uploads/2025/06/Nosotros3.jpg
+FILE: Nosotros4.jpg | WxH: 900x675 | BYTES: 283037 | URL: https://jardinesurbanos.com/wp-content/uploads/2025/06/Nosotros4.jpg
+FILE: PALMA-REAL-FINCA.jpg | WxH: 1632x1224 | BYTES: 759764 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/PALMA-REAL-FINCA.jpg
+FILE: Pitahaya2.jpg | WxH: 1440x1920 | BYTES: 778927 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Pitahaya2.jpg
+FILE: Plantas_Main.jpg | WxH: 1920x1079 | BYTES: 374438 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Plantas_Main.jpg
+FILE: SAE-PARA-COSECHA_mision.jpg | WxH: 780x900 | BYTES: 681534 | URL: https://jardinesurbanos.com/wp-content/uploads/2025/09/SAE-PARA-COSECHA_mision.jpg
+FILE: SAN-AGUSTIN-CLOSEUP.jpg | WxH: 1920x1440 | BYTES: 1124278 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/SAN-AGUSTIN-CLOSEUP.jpg
+FILE: SAN-AGUSTIN-HEADER.jpg | WxH: 1632x1224 | BYTES: 436802 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/SAN-AGUSTIN-HEADER.jpg
+FILE: TARIMAS-SAN-AGUSTIN.jpg | WxH: 1632x1224 | BYTES: 509199 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/06/TARIMAS-SAN-AGUSTIN.jpg
+FILE: TORO-CLOSEUP-1.jpg | WxH: 1440x1920 | BYTES: 1071696 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/TORO-CLOSEUP-1.jpg
+FILE: TORO-ZOOM.jpg | WxH: 1440x1920 | BYTES: 991729 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/TORO-ZOOM.jpg
+FILE: XANADU.jpg | WxH: 1440x1920 | BYTES: 765963 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/XANADU.jpg
+FILE: headerimage4_jardinesurbanos.jpg | WxH: 1920x600 | BYTES: 422241 | URL: https://jardinesurbanos.com/wp-content/uploads/2020/08/headerimage4_jardinesurbanos.jpg
+FILE: slider-5-black.jpg | WxH: 1920x1279 | BYTES: 595210 | URL: https://jardinesurbanos.com/wp-content/uploads/2025/06/slider-5-black.jpg
+FILE: slider-8-black.jpg | WxH: 1920x1279 | BYTES: 723659 | URL: https://jardinesurbanos.com/wp-content/uploads/2025/06/slider-8-black.jpg
+FILE: slider-9-black.jpg | WxH: 1920x1279 | BYTES: 537117 | URL: https://jardinesurbanos.com/wp-content/uploads/2025/06/slider-9-black.jpg
+
+--- DOWNLOADED EXTERNAL IMAGES (2) ---
+FILE: referencia_instalacion_grama.jpg | WxH: 800x800 | BYTES: 788606
+FILE: referencia_rollo_grama.jpg | WxH: 800x800 | BYTES: 661460
+
+--- WP MEDIA INVENTORY: BOTANICAL SPECIES (42 species in library) ---
+ID: 37726 | TITLE: ARBOL-PREPARADO | FILE: ARBOL-PREPARADO.jpg | WxH: 1440x1920 | STATUS: DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/ARBOL-PREPARADO.jpg
+ID: 37724 | TITLE: PALMA-REAL-FINCA | FILE: PALMA-REAL-FINCA.jpg | WxH: 1632x1224 | STATUS: DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/PALMA-REAL-FINCA.jpg
+ID: 37330 | TITLE: Astromelia&#8212;Arbol | FILE: Astromelia-Arbol.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Astromelia-Arbol.jpg
+ID: 37331 | TITLE: Luuvia-de-oro&#8212;Arbol | FILE: Luuvia-de-oro-Arbol.jpg | WxH: 1920x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Luuvia-de-oro-Arbol.jpg
+ID: 37329 | TITLE: Maria&#8212;Arbol | FILE: Maria-Arbol.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Maria-Arbol.jpg
+ID: 37328 | TITLE: Guachapali&#8212;Abrol(1) | FILE: Guachapali-Abrol1.jpg | WxH: 1920x1440 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Guachapali-Abrol1.jpg
+ID: 37327 | TITLE: Sauce-llorón&#8211;Arbol | FILE: Sauce-lloron-Arbol.jpg | WxH: 1454x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Sauce-lloron-Arbol.jpg
+ID: 37326 | TITLE: Jerusalen&#8212;Arbol | FILE: Jerusalen-Arbol.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Jerusalen-Arbol.jpg
+ID: 37325 | TITLE: Chirca&#8212;Arbol | FILE: Chirca-Arbol.jpg | WxH: 1336x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Chirca-Arbol.jpg
+ID: 37324 | TITLE: Caracucha&#8212;Arbol | FILE: Caracucha-Arbol.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Caracucha-Arbol.jpg
+ID: 37323 | TITLE: Panama&#8212;Arbol | FILE: Panama-Arbol.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Panama-Arbol.jpg
+ID: 37322 | TITLE: Amador&#8212;Arbol | FILE: Amador-Arbol.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Amador-Arbol.jpg
+ID: 37321 | TITLE: Flamboyan&#8212;Abrol | FILE: Flamboyan-Abrol.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Flamboyan-Abrol.jpg
+ID: 37320 | TITLE: Calliandra&#8212;Arbol | FILE: Calliandra-Arbol.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Calliandra-Arbol.jpg
+ID: 37319 | TITLE: Neem&#8212;Arbol | FILE: Neem-Arbol.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Neem-Arbol.jpg
+ID: 37318 | TITLE: Cedro-amargo&#8212;Arbol | FILE: Cedro-amargo-Arbol.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Cedro-amargo-Arbol.jpg
+ID: 37317 | TITLE: Areca&#8212;Palma | FILE: Areca-Palma.jpg | WxH: 1445x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Areca-Palma.jpg
+ID: 37316 | TITLE: Guayacan&#8212;Arbol(1) | FILE: Guayacan-Arbol1.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Guayacan-Arbol1.jpg
+ID: 37314 | TITLE: Roble&#8212;Arbol | FILE: Roble-Arbol.jpg | WxH: 1280x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Roble-Arbol.jpg
+ID: 37315 | TITLE: Acacia-amarilla&#8212;Arbol | FILE: Acacia-amarilla-Arbol.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Acacia-amarilla-Arbol.jpg
+ID: 37313 | TITLE: Corotu&#8212;Arbol | FILE: Corotu-Arbol.jpg | WxH: 1920x1080 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Corotu-Arbol.jpg
+ID: 37312 | TITLE: Palo-santo&#8212;Arbol | FILE: Palo-santo-Arbol.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Palo-santo-Arbol.jpg
+ID: 37311 | TITLE: Aceituno&#8212;Arbol | FILE: Aceituno-Arbol.jpg | WxH: 1283x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Aceituno-Arbol.jpg
+ID: 37310 | TITLE: Lorito&#8212;Arbol | FILE: Lorito-Arbol.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Lorito-Arbol.jpg
+ID: 37309 | TITLE: Olivo-negro&#8212;Arbol | FILE: Olivo-negro-Arbol.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Olivo-negro-Arbol.jpg
+ID: 37308 | TITLE: Almendro&#8212;Arbol | FILE: Almendro-Arbol.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Almendro-Arbol.jpg
+ID: 37306 | TITLE: Plantas_Main | FILE: Plantas_Main.jpg | WxH: 1920x1079 | STATUS: DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Plantas_Main.jpg
+ID: 37304 | TITLE: Phoenix-canariensis&#8212;Palma | FILE: Phoenix-canariensis-Palma.jpg | WxH: 1588x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Phoenix-canariensis-Palma.jpg
+ID: 37302 | TITLE: Raphia&#8212;Palma | FILE: Raphia-Palma.jpg | WxH: 1920x1280 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Raphia-Palma.jpg
+ID: 37300 | TITLE: Carpentaria&#8212;Palma | FILE: Carpentaria-Palma.jpg | WxH: 1514x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Carpentaria-Palma.jpg
+ID: 37299 | TITLE: Viajera&#8212;Palma | FILE: Viajera-Palma.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Viajera-Palma.jpg
+ID: 37298 | TITLE: Coco-plumoso&#8212;Palma | FILE: Coco-plumoso-Palma.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Coco-plumoso-Palma.jpg
+ID: 37295 | TITLE: Cola-de-zorro&#8212;Palma | FILE: Cola-de-zorro-Palma.jpg | WxH: 960x1280 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Cola-de-zorro-Palma.jpg
+ID: 37292 | TITLE: Real-gigante&#8212;Palma | FILE: Real-gigante-Palma.jpg | WxH: 768x1024 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Real-gigante-Palma.jpg
+ID: 37290 | TITLE: Aglonema-roja&#8212;Planta | FILE: Aglonema-roja-Planta.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Aglonema-roja-Planta.jpg
+ID: 37289 | TITLE: Sanchezia&#8212;Planta | FILE: Sanchezia-Planta.jpg | WxH: 1920x1440 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Sanchezia-Planta.jpg
+ID: 37288 | TITLE: Dissotis-rotundifolia&#8212;Planta | FILE: Dissotis-rotundifolia-Planta.jpg | WxH: 1920x1275 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Dissotis-rotundifolia-Planta.jpg
+ID: 37287 | TITLE: Cactus&#8212;Planta | FILE: Cactus-Planta.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Cactus-Planta.jpg
+ID: 37286 | TITLE: Dieffenbachia-loteria&#8212;Planta | FILE: Dieffenbachia-loteria-Planta.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Dieffenbachia-loteria-Planta.jpg
+ID: 37285 | TITLE: Calathea-bijao&#8212;Planta | FILE: Calathea-bijao-Planta.jpg | WxH: 1920x1280 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Calathea-bijao-Planta.jpg
+ID: 37283 | TITLE: Caladium&#8212;Planta | FILE: Caladium-Planta.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Caladium-Planta.jpg
+ID: 37284 | TITLE: Helecho-peinilla&#8212;Planta | FILE: Helecho-peinilla-Planta.jpg | WxH: 1920x1440 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Helecho-peinilla-Planta.jpg
+ID: 37282 | TITLE: Ficus-lyrata&#8212;Planta | FILE: Ficus-lyrata-Planta.jpg | WxH: 1920x1282 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Ficus-lyrata-Planta.jpg
+ID: 37281 | TITLE: Clerodendron&#8212;Planta | FILE: Clerodendron-Planta.jpg | WxH: 1920x1280 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Clerodendron-Planta.jpg
+ID: 37280 | TITLE: Rosa-tabogana&#8212;Planta | FILE: Rosa-tabogana-Planta.jpg | WxH: 1920x1280 | STATUS: NOT_DOWNLOADED | URL: https://jardinesurbanos.com/wp-content/uploads/2020/05/Rosa-tabogana-Planta.jpg
+
+Total botanical species items in WP: 45
+
+--- OTHER ITEMS IN WP INVENTORY ---
+ID: 37869 | TITLE: woocommerce-placeholder | FILE: woocommerce-placeholder.png | WxH: 1200x1200 | STATUS: NOT_DOWNLOADED
+ID: 37763 | TITLE: Section_image_Header_3 | FILE: Section_image_Header_3.jpg | WxH: 1920x600 | STATUS: NOT_DOWNLOADED
+ID: 37755 | TITLE: SAE-PARA-COSECHA_mision | FILE: SAE-PARA-COSECHA_mision.jpg | WxH: 780x900 | STATUS: DOWNLOADED
+ID: 37748 | TITLE: TARIMAS-SAN-AGUSTIN | FILE: TARIMAS-SAN-AGUSTIN.jpg | WxH: 1632x1224 | STATUS: DOWNLOADED
+ID: 37745 | TITLE: headerimage4_jardinesurbanos | FILE: headerimage4_jardinesurbanos.jpg | WxH: 1920x600 | STATUS: DOWNLOADED
+ID: 37744 | TITLE: HIDROSIEMBRA-MAQUINA | FILE: HIDROSIEMBRA-MAQUINA.jpg | WxH: 1920x1440 | STATUS: DOWNLOADED
+ID: 37743 | TITLE: AMADOR-HOJA-FLOR | FILE: AMADOR-HOJA-FLOR.jpg | WxH: 1920x1834 | STATUS: NOT_DOWNLOADED
+ID: 37740 | TITLE: XANADU | FILE: XANADU.jpg | WxH: 1440x1920 | STATUS: DOWNLOADED
+ID: 37739 | TITLE: CASCO-DE-VACA | FILE: CASCO-DE-VACA.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED
+ID: 37738 | TITLE: CASCO-DE-VACA-HOJA-FLOR | FILE: CASCO-DE-VACA-HOJA-FLOR.jpg | WxH: 1994x1914 | STATUS: NOT_DOWNLOADED
+ID: 37737 | TITLE: MONSTERA | FILE: MONSTERA.jpg | WxH: 1440x1920 | STATUS: DOWNLOADED
+ID: 37735 | TITLE: GINGER-VARIEGADO | FILE: GINGER-VARIEGADO.jpg | WxH: 1920x1684 | STATUS: DOWNLOADED
+ID: 37734 | TITLE: DIANELA | FILE: DIANELA.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED
+ID: 37733 | TITLE: CROTO | FILE: CROTO.jpg | WxH: 1576x1920 | STATUS: DOWNLOADED
+ID: 37732 | TITLE: JAZMIN-ESTRELLA | FILE: JAZMIN-ESTRELLA.jpg | WxH: 1440x1920 | STATUS: DOWNLOADED
+ID: 37731 | TITLE: ROBELLINI | FILE: ROBELLINI.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED
+ID: 37729 | TITLE: NEEM | FILE: NEEM.jpg | WxH: 1440x1920 | STATUS: DOWNLOADED
+ID: 37728 | TITLE: AMADOR | FILE: AMADOR.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED
+ID: 37727 | TITLE: COPETE | FILE: COPETE.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED
+ID: 37723 | TITLE: BISMARKIA | FILE: BISMARKIA.jpg | WxH: 1440x1920 | STATUS: DOWNLOADED
+ID: 37722 | TITLE: COLA-DE-ZORRO | FILE: COLA-DE-ZORRO.jpg | WxH: 1280x960 | STATUS: DOWNLOADED
+ID: 37720 | TITLE: ARECA | FILE: ARECA.jpg | WxH: 1877x1920 | STATUS: DOWNLOADED
+ID: 37717 | TITLE: JAPONESA-CLOSEUP | FILE: JAPONESA-CLOSEUP.jpg | WxH: 1280x1920 | STATUS: DOWNLOADED
+ID: 37716 | TITLE: JAPONESA-PROYECTO | FILE: JAPONESA-PROYECTO.jpg | WxH: 1920x1440 | STATUS: DOWNLOADED
+ID: 37715 | TITLE: SAN-AGUSTIN-HEADER | FILE: SAN-AGUSTIN-HEADER.jpg | WxH: 1632x1224 | STATUS: DOWNLOADED
+ID: 37714 | TITLE: SAN-AGUSTIN-CLOSEUP-2 | FILE: SAN-AGUSTIN-CLOSEUP-2.jpg | WxH: 442x331 | STATUS: NOT_DOWNLOADED
+ID: 37713 | TITLE: SAN-AGUSTIN-CLOSEUP | FILE: SAN-AGUSTIN-CLOSEUP.jpg | WxH: 1920x1440 | STATUS: DOWNLOADED
+ID: 37712 | TITLE: TORO-CLOSEUP | FILE: TORO-CLOSEUP-1.jpg | WxH: 1440x1920 | STATUS: DOWNLOADED
+ID: 37711 | TITLE: TORO-ZOOM | FILE: TORO-ZOOM.jpg | WxH: 1440x1920 | STATUS: DOWNLOADED
+ID: 37710 | TITLE: TORO-CHAPEADORA | FILE: TORO-CHAPEADORA-1.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED
+ID: 37709 | TITLE: TORO-CLOSEUP | FILE: TORO-CLOSEUP.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED
+ID: 37708 | TITLE: TORO-CHAPEADORA | FILE: TORO-CHAPEADORA.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED
+ID: 37681 | TITLE: icono | FILE: icono.svg | WxH: 512x512 | STATUS: NOT_DOWNLOADED
+ID: 37666 | TITLE: headerimage3_jardinesurbanos | FILE: headerimage3_jardinesurbanos.jpg | WxH: 1920x600 | STATUS: NOT_DOWNLOADED
+ID: 37653 | TITLE: Catalogo_Main | FILE: Catalogo_Main.jpg | WxH: 1920x763 | STATUS: DOWNLOADED
+ID: 37610 | TITLE: slider-10-black | FILE: slider-10-black.jpg | WxH: 1920x1279 | STATUS: NOT_DOWNLOADED
+ID: 37609 | TITLE: slider-9-black | FILE: slider-9-black.jpg | WxH: 1920x1279 | STATUS: DOWNLOADED
+ID: 37586 | TITLE: WhatsApp Video 2025-06-04 at 10.35.08 | FILE: WhatsApp-Video-2025-06-04-at-10.35.08.mp4 | WxH: 1280x720 | STATUS: NOT_DOWNLOADED
+ID: 37585 | TITLE: Nosotros4 | FILE: Nosotros4.jpg | WxH: 900x675 | STATUS: DOWNLOADED
+ID: 37583 | TITLE: Nosotros3 | FILE: Nosotros3.jpg | WxH: 900x675 | STATUS: DOWNLOADED
+ID: 37582 | TITLE: slider-8-black | FILE: slider-8-black.jpg | WxH: 1920x1279 | STATUS: DOWNLOADED
+ID: 37581 | TITLE: slider-7-black | FILE: slider-7-black.jpg | WxH: 1920x1279 | STATUS: NOT_DOWNLOADED
+ID: 37580 | TITLE: slider-6-black | FILE: slider-6-black.jpg | WxH: 1920x1279 | STATUS: NOT_DOWNLOADED
+ID: 37579 | TITLE: slider-5-black | FILE: slider-5-black.jpg | WxH: 1920x1279 | STATUS: DOWNLOADED
+ID: 37576 | TITLE: logo_300X300px_verde_stack | FILE: logo_300X300px_verde_stack.png | WxH: 300x300 | STATUS: NOT_DOWNLOADED
+ID: 37575 | TITLE: logo_300X300px_verde_stack_2 | FILE: logo_300X300px_verde_stack_2.png | WxH: 233x300 | STATUS: NOT_DOWNLOADED
+ID: 37574 | TITLE: logo_300X300px_blanco_stack | FILE: logo_300X300px_blanco_stack.png | WxH: 300x300 | STATUS: NOT_DOWNLOADED
+ID: 37573 | TITLE: logo_300X300px_blanco_stack_2 | FILE: logo_300X300px_blanco_stack_2.png | WxH: 233x300 | STATUS: NOT_DOWNLOADED
+ID: 37407 | TITLE: Viveros_low | FILE: Viveros_low.mp4 | WxH: 1080x1920 | STATUS: NOT_DOWNLOADED
+ID: 37403 | TITLE: Gramas_Main_Thumb4video_2 | FILE: Gramas_Main_Thumb4video_2.jpg | WxH: 900x675 | STATUS: NOT_DOWNLOADED
+ID: 37386 | TITLE: Gramas_low | FILE: Gramas_low.mp4 | WxH: 720x1280 | STATUS: NOT_DOWNLOADED
+ID: 37384 | TITLE: Gramas_Main_Thumb4video | FILE: Gramas_Main_Thumb4video.jpg | WxH: 900x675 | STATUS: NOT_DOWNLOADED
+ID: 37376 | TITLE: PITAHAYA_logo | FILE: PITAHAYA_logo.png | WxH: 800x1080 | STATUS: NOT_DOWNLOADED
+ID: 37375 | TITLE: IMG_9040 | FILE: IMG_9040.jpg | WxH: 1920x1440 | STATUS: NOT_DOWNLOADED
+ID: 37374 | TITLE: IMG_9182 | FILE: IMG_9182.jpg | WxH: 1829x1920 | STATUS: NOT_DOWNLOADED
+ID: 37373 | TITLE: IMG_0918 | FILE: IMG_0918.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED
+ID: 37372 | TITLE: IMG_8701 | FILE: IMG_8701.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED
+ID: 37370 | TITLE: PHOTO-2025-04-23-15-08-18-B | FILE: PHOTO-2025-04-23-15-08-18-B.jpg | WxH: 1600x949 | STATUS: NOT_DOWNLOADED
+ID: 37366 | TITLE: Nosotros2 | FILE: Nosotros2.jpg | WxH: 945x723 | STATUS: DOWNLOADED
+ID: 37364 | TITLE: Nosotros1 | FILE: Nosotros1.jpg | WxH: 780x900 | STATUS: DOWNLOADED
+ID: 37340 | TITLE: Pitahaya2 | FILE: Pitahaya2.jpg | WxH: 1440x1920 | STATUS: DOWNLOADED
+ID: 37339 | TITLE: PHOTO-2025-05-13-13-30-00 | FILE: PHOTO-2025-05-13-13-30-00.jpg | WxH: 960x725 | STATUS: NOT_DOWNLOADED
+ID: 37338 | TITLE: PHOTO-2025-05-13-13-30-00-2 | FILE: PHOTO-2025-05-13-13-30-00-2.jpg | WxH: 960x628 | STATUS: NOT_DOWNLOADED
+ID: 37337 | TITLE: PHOTO-2025-04-23-15-08-18 | FILE: PHOTO-2025-04-23-15-08-18.jpg | WxH: 1600x1193 | STATUS: NOT_DOWNLOADED
+ID: 37336 | TITLE: IMG_8680 | FILE: IMG_8680.jpg | WxH: 1844x1920 | STATUS: DOWNLOADED
+ID: 37335 | TITLE: IMG_0919 | FILE: IMG_0919.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED
+ID: 37334 | TITLE: f64dfecc-ccc6-4bf7-a6de-b75778bd6790 | FILE: f64dfecc-ccc6-4bf7-a6de-b75778bd6790.jpg | WxH: 960x1280 | STATUS: NOT_DOWNLOADED
+ID: 37333 | TITLE: DJI_0677-Mejorado-NR | FILE: DJI_0677-Mejorado-NR.jpg | WxH: 1920x1080 | STATUS: DOWNLOADED
+ID: 37305 | TITLE: IMG_0243 | FILE: IMG_0243.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED
+ID: 37303 | TITLE: IMG_0244 | FILE: IMG_0244.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED
+ID: 37301 | TITLE: IMG_0245 | FILE: IMG_0245.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED
+ID: 37297 | TITLE: IMG_0247 | FILE: IMG_0247.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED
+ID: 37296 | TITLE: IMG_0263 | FILE: IMG_0263.jpg | WxH: 1440x1920 | STATUS: NOT_DOWNLOADED
+ID: 37294 | TITLE: 8487fdc4-924c-4b84-a229-44398009beda | FILE: 8487fdc4-924c-4b84-a229-44398009beda.jpg | WxH: 960x1280 | STATUS: NOT_DOWNLOADED
+ID: 37293 | TITLE: d53d9ac6-11ab-4110-98dc-d6c7369a3786 | FILE: d53d9ac6-11ab-4110-98dc-d6c7369a3786.jpg | WxH: 768x1024 | STATUS: NOT_DOWNLOADED
+ID: 37276 | TITLE: headerimage2_jardinesurbanos | FILE: headerimage2_jardinesurbanos.png | WxH: 1920x600 | STATUS: NOT_DOWNLOADED
+ID: 37273 | TITLE: headerimage_jardinesurbanos | FILE: headerimage_jardinesurbanos.png | WxH: 1920x600 | STATUS: NOT_DOWNLOADED
+ID: 37270 | TITLE: PHOTO-2025-05-16-08-42-23 3 | FILE: PHOTO-2025-05-16-08-42-23-3.jpg | WxH: 1280x719 | STATUS: NOT_DOWNLOADED
+ID: 37269 | TITLE: PHOTO-2025-05-15-13-48-15 | FILE: PHOTO-2025-05-15-13-48-15.jpg | WxH: 1280x1280 | STATUS: NOT_DOWNLOADED
+ID: 37268 | TITLE: PHOTO-2025-05-15-13-48-15 3 | FILE: PHOTO-2025-05-15-13-48-15-3.jpg | WxH: 1280x1280 | STATUS: NOT_DOWNLOADED
+ID: 37267 | TITLE: PHOTO-2025-05-15-13-48-15 2 | FILE: PHOTO-2025-05-15-13-48-15-2.jpg | WxH: 1280x1280 | STATUS: NOT_DOWNLOADED
+ID: 37266 | TITLE: PHOTO-2025-05-15-13-48-14 | FILE: PHOTO-2025-05-15-13-48-14.jpg | WxH: 1032x581 | STATUS: NOT_DOWNLOADED
+ID: 37265 | TITLE: PHOTO-2025-05-15-13-48-14 3 | FILE: PHOTO-2025-05-15-13-48-14-3.jpg | WxH: 581x1032 | STATUS: NOT_DOWNLOADED
+ID: 37264 | TITLE: PHOTO-2025-05-15-13-48-14 2 | FILE: PHOTO-2025-05-15-13-48-14-2.jpg | WxH: 1224x988 | STATUS: NOT_DOWNLOADED
+ID: 37262 | TITLE: PHOTO-2025-04-01-16-21-00 | FILE: PHOTO-2025-04-01-16-21-00.jpg | WxH: 1179x698 | STATUS: NOT_DOWNLOADED
+ID: 37259 | TITLE: WhatsApp Image 2025-05-26 at 10.42.47 AM | FILE: WhatsApp-Image-2025-05-26-at-10.42.47-AM-scaled.jpeg | WxH: 1920x2560 | STATUS: NOT_DOWNLOADED
+ID: 37258 | TITLE: f5abdb6c-4e63-488e-9c75-9ce7f2e1690e | FILE: f5abdb6c-4e63-488e-9c75-9ce7f2e1690e.jpeg | WxH: 768x1024 | STATUS: NOT_DOWNLOADED
+ID: 37257 | TITLE: 98460311-187d-4f1a-a39f-4f424178a3a5 | FILE: 98460311-187d-4f1a-a39f-4f424178a3a5.jpg | WxH: 768x1024 | STATUS: NOT_DOWNLOADED
+ID: 37256 | TITLE: 43019e15-40fa-4ca2-80ae-4ada444ebd04 | FILE: 43019e15-40fa-4ca2-80ae-4ada444ebd04.jpeg | WxH: 768x1024 | STATUS: NOT_DOWNLOADED
+ID: 37255 | TITLE: 96a2a165-8ab8-467a-b1df-08dd81c22ef6 | FILE: 96a2a165-8ab8-467a-b1df-08dd81c22ef6.jpg | WxH: 768x1024 | STATUS: NOT_DOWNLOADED
+ID: 37216 | TITLE: cropped-icon_512px.png | FILE: cropped-icon_512px.png | WxH: 512x512 | STATUS: NOT_DOWNLOADED
+ID: 37215 | TITLE: icon_512px | FILE: icon_512px.png | WxH: 512x512 | STATUS: NOT_DOWNLOADED
+ID: 37211 | TITLE: logo_white_290X82px | FILE: logo_white_290X82px.png | WxH: 290x82 | STATUS: NOT_DOWNLOADED
+ID: 37210 | TITLE: logo_290X82px | FILE: logo_290X82px.png | WxH: 290x82 | STATUS: NOT_DOWNLOADED
+ID: 37209 | TITLE: logo_218X62px | FILE: logo_218X62px.png | WxH: 218x62 | STATUS: NOT_DOWNLOADED
+ID: 37208 | TITLE: logo_145X41px | FILE: logo_145X41px.png | WxH: 145x41 | STATUS: NOT_DOWNLOADED
+ID: 37173 | TITLE: slider-4-black | FILE: slider-4-black.jpg | WxH: 1920x1279 | STATUS: NOT_DOWNLOADED
+ID: 37172 | TITLE: slider-3-black | FILE: slider-3-black.jpg | WxH: 1920x1279 | STATUS: NOT_DOWNLOADED
+ID: 37171 | TITLE: slider-2-black | FILE: slider-2-black-1.jpg | WxH: 1920x1279 | STATUS: NOT_DOWNLOADED
+ID: 37170 | TITLE: slider-1-black | FILE: slider-1-black-1.jpg | WxH: 1920x1279 | STATUS: NOT_DOWNLOADED
+ID: 37169 | TITLE: lower_slider_3-black | FILE: lower_slider_3-black.jpg | WxH: 1920x763 | STATUS: NOT_DOWNLOADED
+ID: 37168 | TITLE: lower_slider_2-black | FILE: lower_slider_2-black.jpg | WxH: 1920x763 | STATUS: NOT_DOWNLOADED
+ID: 37164 | TITLE: three-children-folded-their-hands-together-playin-blackc | FILE: three-children-folded-their-hands-together-playin-blackc.jpg | WxH: 1920x763 | STATUS: NOT_DOWNLOADED
+ID: 37162 | TITLE: three-children-folded-their-hands-together-playin-2025-03-16-09-38-53-utc | FILE: three-children-folded-their-hands-together-playin-2025-03-16-09-38-53-utc.jpg | WxH: 1920x763 | STATUS: NOT_DOWNLOADED
+ID: 37161 | TITLE: slider-2-black | FILE: slider-2-black.jpg | WxH: 1920x1279 | STATUS: NOT_DOWNLOADED
+ID: 37160 | TITLE: slider-1-black | FILE: slider-1-black.jpg | WxH: 1920x1279 | STATUS: NOT_DOWNLOADED
+ID: 37156 | TITLE: slider-2-black | FILE: slider-2-black.png | WxH: 2000x1332 | STATUS: NOT_DOWNLOADED
+ID: 37155 | TITLE: slider-1-black | FILE: slider-1-black.png | WxH: 2000x1332 | STATUS: NOT_DOWNLOADED
+ID: 37154 | TITLE: big-garden-grass-field-mowing-by-caucasian-gardene-2025-03-15-21-36-41-utc | FILE: big-garden-grass-field-mowing-by-caucasian-gardene-2025-03-15-21-36-41-utc.png | WxH: 2000x1332 | STATUS: NOT_DOWNLOADED
+ID: 37134 | TITLE: 20170519104843 | FILE: 20170519104843.jpeg | WxH: 900x675 | STATUS: NOT_DOWNLOADED
+ID: 37129 | TITLE: 20170519113401 | FILE: 20170519113401.jpeg | WxH: 900x675 | STATUS: NOT_DOWNLOADED
+ID: 37128 | TITLE: 20170519113034 | FILE: 20170519113034.jpeg | WxH: 900x675 | STATUS: NOT_DOWNLOADED
+ID: 37127 | TITLE: 20240911115034 | FILE: 20240911115034.png | WxH: 900x675 | STATUS: NOT_DOWNLOADED
+ID: 37126 | TITLE: 20240910154645 | FILE: 20240910154645.png | WxH: 900x675 | STATUS: NOT_DOWNLOADED
+ID: 37125 | TITLE: 20240910144557 | FILE: 20240910144557.png | WxH: 900x675 | STATUS: NOT_DOWNLOADED
+ID: 37124 | TITLE: 20170519110604 | FILE: 20170519110604.jpeg | WxH: 900x675 | STATUS: NOT_DOWNLOADED
+ID: 37123 | TITLE: 20170519104919 | FILE: 20170519104919.jpeg | WxH: 900x675 | STATUS: NOT_DOWNLOADED
