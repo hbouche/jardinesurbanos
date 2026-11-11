@@ -19,8 +19,8 @@
   "generatedAt": "2026-11-08T10:41:00Z",
   "brand": "Jardines Urbanos, S.A. (Panamá)",
   "summary": {
-    "totalItems": 42,
-    "officialPhotosCount": 33,
+    "totalItems": 48,
+    "officialPhotosCount": 39,
     "mockupsCount": 9,
     "categories": [
       "agro",
@@ -1513,6 +1513,90 @@
       "fileSize": 1017078,
       "sha256": "65241665C6E764117DBF0FB6F07915F8C88DF04ED392CC847068F5F6BBDE9398",
       "mimeType": "image/jpeg"
+    },
+    {
+      "id": "img_proyecto_bulevar_palmas_reales",
+      "filename": "proyecto_bulevar_palmas_reales.jpg",
+      "relativePath": "assets/img/proyecto_bulevar_palmas_reales.jpg",
+      "isOfficial": true,
+      "isMockup": false,
+      "sourceTag": "[Foto Oficial Finca JUSA]",
+      "badgeText": "Foto Oficial JUSA",
+      "title": "Bulevar Urbano PH con Palmas Reales",
+      "category": "proyectos",
+      "subcategory": "urbanismo",
+      "alt": "Siembra de Palmas Reales adultas en mediana de bulevar residencial en Panamá por Jardines Urbanos",
+      "description": "Obra vial y urbanismo en Panamá con camión de JUSA sembrando palmas reales adultas con anclaje técnico."
+    },
+    {
+      "id": "img_hidrosiembra_talud_escalonado_real",
+      "filename": "hidrosiembra_talud_escalonado_real.jpg",
+      "relativePath": "assets/img/hidrosiembra_talud_escalonado_real.jpg",
+      "isOfficial": true,
+      "isMockup": false,
+      "sourceTag": "[Foto Oficial Finca JUSA]",
+      "badgeText": "Foto Oficial JUSA",
+      "title": "Talud Escalonado Revegetado con Hidrosiembra",
+      "category": "b2b_hidrosiembra",
+      "subcategory": "taludes",
+      "alt": "Talud de carretera estabilizado con hidrosiembra verde densa en Panamá",
+      "description": "Estabilización de taludes de corte vial con hidrosiembra mecanizada y control de erosión."
+    },
+    {
+      "id": "img_nosotros_liderazgo_finca_cocle",
+      "filename": "nosotros_liderazgo_finca_cocle.jpg",
+      "relativePath": "assets/img/nosotros_liderazgo_finca_cocle.jpg",
+      "isOfficial": true,
+      "isMockup": false,
+      "sourceTag": "[Foto Oficial Finca JUSA]",
+      "badgeText": "Foto Oficial JUSA",
+      "title": "Liderazgo Agronómico en Finca Coclé",
+      "category": "institucional",
+      "subcategory": "equipo",
+      "alt": "Expertos agrónomos supervisando cultivo tecnificado en Río Grande, Coclé",
+      "description": "Liderazgo de Jardines Urbanos en campo con más de 25 años de trayectoria en Panamá."
+    },
+    {
+      "id": "img_parque_residencial_arbol_sombra",
+      "filename": "parque_residencial_arbol_sombra.jpg",
+      "relativePath": "assets/img/parque_residencial_arbol_sombra.jpg",
+      "isOfficial": true,
+      "isMockup": false,
+      "sourceTag": "[Foto Oficial Finca JUSA]",
+      "badgeText": "Foto Oficial JUSA",
+      "title": "Jardín Residencial con Árbol de Sombra y Césped",
+      "category": "proyectos",
+      "subcategory": "residencial",
+      "alt": "Jardín residencial con árbol ornamental y césped impecable de Jardines Urbanos",
+      "description": "Área verde residencial con árbol de sombra maduro, canteros florales y grama natural."
+    },
+    {
+      "id": "img_tarima_grama_finca_oficial",
+      "filename": "tarima_grama_finca_oficial.jpg",
+      "relativePath": "assets/img/tarima_grama_finca_oficial.jpg",
+      "isOfficial": true,
+      "isMockup": false,
+      "sourceTag": "[Foto Oficial Finca JUSA]",
+      "badgeText": "Foto Oficial JUSA",
+      "title": "Tarima de Grama Cosechada en Finca",
+      "category": "logistica",
+      "subcategory": "gramas",
+      "alt": "Tarima de madera con rollos de grama fresca lista para despacho en Río Grande, Coclé",
+      "description": "Cosecha de grama en rollos estibada en pallets de 45 m² para entrega inmediata."
+    },
+    {
+      "id": "img_clusia_rosea_vivero",
+      "filename": "clusia_rosea_vivero.jpg",
+      "relativePath": "assets/img/clusia_rosea_vivero.jpg",
+      "isOfficial": true,
+      "isMockup": false,
+      "sourceTag": "[Foto Oficial Finca JUSA]",
+      "badgeText": "Foto Oficial JUSA",
+      "title": "Clusia Rosea (Copey)",
+      "category": "plantas",
+      "subcategory": "vivero",
+      "alt": "Hojas de Clusia Rosea en vivero de Coclé para cercas vivas y jardines de playa",
+      "description": "Follaje coriáceo resistente a brisa marina y sol pleno."
     }
   ]
 };
