@@ -36,7 +36,7 @@ EXT = ('.jpg', '.jpeg', '.png')
 
 
 def text_files():
-    return (['index.html'] + sorted(glob.glob(os.path.join(SITE, 'pages', '*.html'))) +
+    return (['index.html'] + sorted(glob.glob(os.path.join(SITE, '*', 'index.html'))) +
             sorted(glob.glob(os.path.join(SITE, '_partials', '*.html'))) +
             sorted(glob.glob(os.path.join(SITE, 'js', '*.js'))) +
             sorted(glob.glob(os.path.join(SITE, 'css', '*.css'))) + ['assets/media_manifest.js'])

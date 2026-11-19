@@ -3,8 +3,8 @@
 const { chromium } = require('playwright');
 const path = require('path'); const fs = require('fs');
 const root = path.resolve(__dirname, '..', 'site');
-const pages = ['index.html', 'pages/nosotros.html', 'pages/residencial.html', 'pages/comercial.html',
-  'pages/b2b-hidrosiembra.html', 'pages/catalogo.html', 'pages/calculadora.html', 'pages/contacto.html'];
+const pages = ['index.html', 'nosotros/index.html', 'residencial/index.html', 'comercial/index.html',
+  'hidrosiembra/index.html', 'catalogo/index.html', 'calculadora/index.html', 'contacto/index.html'];
 (async () => {
   const browser = await chromium.launch();
   for (const vp of [{ n: 'desktop', width: 1440, height: 900 }, { n: 'movil', width: 390, height: 844 }]) {

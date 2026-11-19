@@ -5,8 +5,8 @@ const path = require('path');
 const fs = require('fs');
 const root = path.resolve(__dirname, '..', 'site');
 const out = path.resolve(process.argv[2] || 'docs/qa/capturas');
-const pages = ['index.html', 'pages/nosotros.html', 'pages/residencial.html', 'pages/comercial.html',
-  'pages/b2b-hidrosiembra.html', 'pages/catalogo.html', 'pages/calculadora.html', 'pages/contacto.html'];
+const pages = ['index.html', 'nosotros/index.html', 'residencial/index.html', 'comercial/index.html',
+  'hidrosiembra/index.html', 'catalogo/index.html', 'calculadora/index.html', 'contacto/index.html'];
 const viewports = [{ n: 'desktop', width: 1440, height: 900 }, { n: 'movil', width: 390, height: 844 }];
 (async () => {
   fs.mkdirSync(out, { recursive: true });
@@ -24,7 +24,7 @@ const viewports = [{ n: 'desktop', width: 1440, height: 900 }, { n: 'movil', wid
       // Pausar videos y animaciones para capturas comparables
       await page.addStyleTag({ content: '*,*::before,*::after{animation:none!important;transition:none!important}' });
       await page.evaluate(() => document.querySelectorAll('video').forEach(v => { v.pause(); v.currentTime = 0; }));
-      const name = vp.n + '_' + path.basename(pg, '.html') + '.jpg';
+      const name = vp.n + '_' + (pg === 'index.html' ? 'index' : path.dirname(pg)) + '.jpg';
       await page.screenshot({ path: path.join(out, name), fullPage: true, type: 'jpeg', quality: 70 });
       console.log(name);
     }

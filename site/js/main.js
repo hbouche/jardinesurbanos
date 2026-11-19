@@ -7,14 +7,10 @@
 (function() {
   'use strict';
 
-  // Helper to determine asset relative prefix (root vs pages/)
-  const isSubPage = window.location.pathname.includes('/pages/') || 
-                    window.location.pathname.endsWith('residencial.html') ||
-                    window.location.pathname.endsWith('b2b-hidrosiembra.html') ||
-                    window.location.pathname.endsWith('catalogo.html') ||
-                    window.location.pathname.endsWith('calculadora.html') ||
-                    window.location.pathname.endsWith('contacto.html');
-  const assetPrefix = isSubPage ? '../' : '';
+  // Prefijo relativo hacia site/: se deduce de la ruta con que la página carga este script
+  // (index.html usa "js/main.js"; las páginas en carpeta usan "../js/main.js")
+  const mainScript = document.querySelector('script[src*="js/main.js"]');
+  const assetPrefix = mainScript ? mainScript.getAttribute('src').split('js/main.js')[0] : '';
 
   /**
    * 1. Toast Notification Utility
@@ -494,7 +490,7 @@ ${lead.name}`
     if (numberInput && parseInt(numberInput.value, 10) > 0) state.areaNet = parseInt(numberInput.value, 10);
 
     // Calculadora única: se puede abrir preseleccionada desde otras páginas
-    // ej. calculadora.html?escenario=comercial&m2=1000  (escenarios: residencial, playa, deportivo, talud, comercial)
+    // ej. calculadora/?escenario=comercial&m2=1000  (escenarios: residencial, playa, deportivo, talud, comercial)
     try {
       const params = new URLSearchParams(window.location.search);
       const alias = { comercial: 'residencial', hidrosiembra: 'talud', jardin: 'residencial' };

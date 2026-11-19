@@ -1812,3 +1812,14 @@ img {
 @media (min-width: 992px) {
   #catalogo .catalog-grid[data-destacadas] { grid-template-columns: repeat(3, 1fr) !important; }
 }
+
+/* Página de política de datos (Ley 81) */
+.politica-datos { max-width: 860px; }
+.politica-datos-card { background: #FFFFFF; padding: var(--space-8); }
+.politica-datos-card h2 { font-size: 1.25rem; margin: var(--space-6) 0 var(--space-2); }
+.politica-datos-card h2:first-child { margin-top: 0; }
+.politica-datos-card p, .politica-datos-card li { color: var(--color-text-dark); line-height: 1.7; }
+.politica-datos-card ul { padding-left: 1.2rem; margin: var(--space-2) 0; }
+.politica-datos-card a { color: var(--color-chlorophyll); font-weight: 600; }
+.consentimiento-datos { font-size: var(--fs-caption); color: var(--color-text-muted); margin-top: var(--space-2); }
+.consentimiento-datos a { color: var(--color-chlorophyll); font-weight: 600; }

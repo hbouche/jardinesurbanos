@@ -146,7 +146,7 @@ async function runSuite() {
     console.log('\n--- TIER 1.2: WhatsApp Link Schema & Official Number ---');
     {
       const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
-      await page.goto(`${baseUrl}/pages/calculadora.html`, { waitUntil: 'networkidle' });
+      await page.goto(`${baseUrl}/calculadora/index.html`, { waitUntil: 'networkidle' });
 
       await page.locator('.calc-number-input').fill('500');
       await page.locator('.calc-number-input').dispatchEvent('input');
@@ -166,7 +166,7 @@ async function runSuite() {
     console.log('\n--- TIER 1.3: Catalog Dynamic Category Filtering ---');
     {
       const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
-      await page.goto(`${baseUrl}/pages/catalogo.html`, { waitUntil: 'networkidle' });
+      await page.goto(`${baseUrl}/catalogo/index.html`, { waitUntil: 'networkidle' });
 
       const cardsAll = await page.locator('.catalog-card').count();
       assertTest(cardsAll >= 20, `Filter 'all' renders all species (found ${cardsAll} >= 20)`);
@@ -237,7 +237,7 @@ async function runSuite() {
     console.log('\n--- TIER 1.7: Ley 81 Compliance Form Interception ---');
     {
       const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
-      await page.goto(`${baseUrl}/pages/contacto.html`, { waitUntil: 'networkidle' });
+      await page.goto(`${baseUrl}/contacto/index.html`, { waitUntil: 'networkidle' });
 
       await page.locator('input[name="nombre"]').fill('Carlos Mendoza');
       await page.locator('input[name="telefono"]').fill('+507 6234-5678');
@@ -270,7 +270,7 @@ async function runSuite() {
     console.log('\n--- TIER 2: Boundary Inputs & Catalog Reset ---');
     {
       const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
-      await page.goto(`${baseUrl}/pages/calculadora.html`, { waitUntil: 'networkidle' });
+      await page.goto(`${baseUrl}/calculadora/index.html`, { waitUntil: 'networkidle' });
 
       const numInput = page.locator('.calc-number-input');
 
@@ -326,7 +326,7 @@ async function runSuite() {
     console.log('\n--- TIER 4: Real-World Scenarios (Residential, BoQ Copier, Thumb Bar) ---');
     {
       const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
-      await page.goto(`${baseUrl}/pages/residencial.html`, { waitUntil: 'networkidle' });
+      await page.goto(`${baseUrl}/residencial/index.html`, { waitUntil: 'networkidle' });
 
       await page.locator('.calc-number-input').fill('180');
       await page.locator('.calc-number-input').dispatchEvent('input');
@@ -350,7 +350,7 @@ async function runSuite() {
       const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
       await context.grantPermissions(['clipboard-read', 'clipboard-write']);
       const page = await context.newPage();
-      await page.goto(`${baseUrl}/pages/b2b-hidrosiembra.html`, { waitUntil: 'networkidle' });
+      await page.goto(`${baseUrl}/hidrosiembra/index.html`, { waitUntil: 'networkidle' });
 
       const content = await page.content();
       assertTest(content.includes('60° (1:1)'), 'B2B page defines max slope angle 60° (1:1)');
@@ -392,11 +392,11 @@ async function runSuite() {
     console.log('\n--- INTEGRITY: 0 Console Errors & 0 Broken Assets on All 6 Pages ---');
     const allPages = [
       'index.html',
-      'pages/residencial.html',
-      'pages/b2b-hidrosiembra.html',
-      'pages/catalogo.html',
-      'pages/calculadora.html',
-      'pages/contacto.html'
+      'residencial/index.html',
+      'hidrosiembra/index.html',
+      'catalogo/index.html',
+      'calculadora/index.html',
+      'contacto/index.html'
     ];
 
     for (const pUrl of allPages) {

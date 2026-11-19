@@ -10,11 +10,13 @@ reescribe en cada página el bloque entre los marcadores:
     <!-- @parcial:iconos -->  ...  <!-- @fin:iconos -->
 
 Tokens disponibles en los parciales:
-    {{ROOT}}          ruta a site/ desde la página ("" o "../")
-    {{PAGES}}         ruta a site/pages/ desde la página ("pages/" o "")
+    {{ROOT}}          ruta a site/ desde la página, para activos ("" o "../")
+    {{HOME}}          enlace a Inicio ("./" o "../")
+    {{PAGES}}         prefijo de los enlaces a otras páginas: las URLs son carpetas (nosotros/, ../nosotros/)
     {{ACTIVE:clave}}  " active" si la página actual es <clave>
     {{HEADER_CTA}}    botón del header propio de cada página (paginas.json)
     {{RED:nombre}}    URL de la red social (paginas.json > redes)
+    {{CANONICAL}}     URL pública de la página (paginas.json > dominio + carpeta)
 
 Uso:
     python3 scripts/build_partials.py           # reescribe las páginas
@@ -38,8 +40,11 @@ def load(name):
 def render(template, key, page_cfg, cfg, in_pages):
     out = template
     out = out.replace('{{ROOT}}', '../' if in_pages else '')
-    out = out.replace('{{PAGES}}', '' if in_pages else 'pages/')
+    out = out.replace('{{HOME}}', '../' if in_pages else './')
+    out = out.replace('{{PAGES}}', '../' if in_pages else '')
     out = out.replace('{{HEADER_CTA}}', page_cfg['cta_header'])
+    carpeta = '' if page_cfg['archivo'] == 'index.html' else page_cfg['archivo'].rsplit('/', 1)[0] + '/'
+    out = out.replace('{{CANONICAL}}', cfg['dominio'].rstrip('/') + '/' + carpeta)
     out = re.sub(r'\{\{ACTIVE:([\w-]+)\}\}', lambda m: ' active' if m.group(1) == key else '', out)
     out = re.sub(r'\{\{RED:(\w+)\}\}', lambda m: cfg['redes'][m.group(1)], out)
     left = re.findall(r'\{\{[^}]+\}\}', out)
@@ -66,7 +71,7 @@ def main():
     stale = []
     for key, page_cfg in cfg['paginas'].items():
         path = os.path.join(SITE, page_cfg['archivo'])
-        in_pages = page_cfg['archivo'].startswith('pages/')
+        in_pages = page_cfg['archivo'] != 'index.html'
         with open(path, encoding='utf-8') as fh:
             html = fh.read()
         new = html

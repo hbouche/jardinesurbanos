@@ -142,7 +142,7 @@ def test_tier1_calculator_four_scenarios_and_waste():
 def test_tier1_whatsapp_link_schema():
     print("\n--- TIER 1.2: WhatsApp Link Schema & Official Number ---", flush=True)
     page = TestContext.browser.new_page(viewport={"width": 1440, "height": 900})
-    page.goto(f"{TestContext.base_url}/pages/calculadora.html", wait_until='networkidle')
+    page.goto(f"{TestContext.base_url}/calculadora/index.html", wait_until='networkidle')
 
     # Input 500 m2 Playa
     page.locator('.calc-number-input').fill('500')
@@ -168,7 +168,7 @@ def test_tier1_whatsapp_link_schema():
 def test_tier1_catalog_category_filtering():
     print("\n--- TIER 1.3: Catalog Dynamic Category Filtering ---", flush=True)
     page = TestContext.browser.new_page(viewport={"width": 1440, "height": 900})
-    page.goto(f"{TestContext.base_url}/pages/catalogo.html", wait_until='networkidle')
+    page.goto(f"{TestContext.base_url}/catalogo/index.html", wait_until='networkidle')
 
     # All
     cards_all = page.locator('.catalog-card').count()
@@ -203,7 +203,7 @@ def test_tier1_catalog_category_filtering():
 def test_tier1_catalog_text_search():
     print("\n--- TIER 1.4: Catalog Live Text Search ---", flush=True)
     page = TestContext.browser.new_page(viewport={"width": 1440, "height": 900})
-    page.goto(f"{TestContext.base_url}/pages/catalogo.html", wait_until='networkidle')
+    page.goto(f"{TestContext.base_url}/catalogo/index.html", wait_until='networkidle')
 
     search_input = page.locator('#catalog-search')
 
@@ -279,7 +279,7 @@ def test_tier1_mobile_drawer_navigation():
 def test_tier1_ley81_form_validation():
     print("\n--- TIER 1.7: Ley 81 Compliance Form Interception ---", flush=True)
     page = TestContext.browser.new_page(viewport={"width": 1440, "height": 900})
-    page.goto(f"{TestContext.base_url}/pages/contacto.html", wait_until='networkidle')
+    page.goto(f"{TestContext.base_url}/contacto/index.html", wait_until='networkidle')
 
     # Fill form fields using name attributes (resilient across index.html and contacto.html)
     page.locator('input[name="nombre"]').fill('Carlos Mendoza')
@@ -317,7 +317,7 @@ def test_tier1_ley81_form_validation():
 def test_tier2_calculator_boundary_inputs():
     print("\n--- TIER 2.1: Calculator Boundary Values (0 m², 1 m², 10,000 m², Decimals) ---", flush=True)
     page = TestContext.browser.new_page(viewport={"width": 1440, "height": 900})
-    page.goto(f"{TestContext.base_url}/pages/calculadora.html", wait_until='networkidle')
+    page.goto(f"{TestContext.base_url}/calculadora/index.html", wait_until='networkidle')
 
     num_input = page.locator('.calc-number-input')
 
@@ -356,7 +356,7 @@ def test_tier2_calculator_boundary_inputs():
 def test_tier2_catalog_empty_search_and_recovery():
     print("\n--- TIER 2.2: Catalog Empty Search & Filter Reset Flow ---", flush=True)
     page = TestContext.browser.new_page(viewport={"width": 1440, "height": 900})
-    page.goto(f"{TestContext.base_url}/pages/catalogo.html", wait_until='networkidle')
+    page.goto(f"{TestContext.base_url}/catalogo/index.html", wait_until='networkidle')
 
     search_input = page.locator('#catalog-search')
     search_input.fill('xyzinexistente999')
@@ -383,7 +383,7 @@ def test_tier2_catalog_empty_search_and_recovery():
 def test_tier2_multi_filter_combinations():
     print("\n--- TIER 2.3: Multi-Filter Combinations (Category + Trait + Search) ---", flush=True)
     page = TestContext.browser.new_page(viewport={"width": 1440, "height": 900})
-    page.goto(f"{TestContext.base_url}/pages/catalogo.html", wait_until='networkidle')
+    page.goto(f"{TestContext.base_url}/catalogo/index.html", wait_until='networkidle')
 
     # Category grama + trait salinity -> Zoysia Japónica
     page.locator('.catalog-tab[data-cat="grama"]').click()
@@ -404,7 +404,7 @@ def test_tier2_multi_filter_combinations():
 def test_tier3_scenario_switch_whatsapp_live_update():
     print("\n--- TIER 3.1: Live State Synchronization to WhatsApp URL ---", flush=True)
     page = TestContext.browser.new_page(viewport={"width": 1440, "height": 900})
-    page.goto(f"{TestContext.base_url}/pages/calculadora.html", wait_until='networkidle')
+    page.goto(f"{TestContext.base_url}/calculadora/index.html", wait_until='networkidle')
 
     # Start: Residencial 250 m2
     wa_btn = page.locator('#calc-whatsapp-btn')
@@ -432,7 +432,7 @@ def test_tier3_scenario_switch_whatsapp_live_update():
 def test_tier3_catalog_modal_data_binding():
     print("\n--- TIER 3.2: Catalog Card Click -> Quick View Modal Data Binding ---", flush=True)
     page = TestContext.browser.new_page(viewport={"width": 1440, "height": 900})
-    page.goto(f"{TestContext.base_url}/pages/catalogo.html", wait_until='networkidle')
+    page.goto(f"{TestContext.base_url}/catalogo/index.html", wait_until='networkidle')
 
     # Click Palma Bismarckia card
     page.locator('.catalog-tab[data-cat="palma"]').click()
@@ -493,7 +493,7 @@ def test_tier3_utm_parameter_preservation():
 def test_tier4_homeowner_residential_flow():
     print("\n--- TIER 4.1: Residential Homeowner Full Journey ---", flush=True)
     page = TestContext.browser.new_page(viewport={"width": 1440, "height": 900})
-    page.goto(f"{TestContext.base_url}/pages/residencial.html", wait_until='networkidle')
+    page.goto(f"{TestContext.base_url}/residencial/index.html", wait_until='networkidle')
 
     # Homeowner wants 180 m² for a sunny beach home in Buenaventura
     num_input = page.locator('.calc-number-input')
@@ -520,7 +520,7 @@ def test_tier4_contractor_boq_spec_copy_flow():
     context = TestContext.browser.new_context(viewport={"width": 1440, "height": 900})
     context.grant_permissions(["clipboard-read", "clipboard-write"])
     page = context.new_page()
-    page.goto(f"{TestContext.base_url}/pages/b2b-hidrosiembra.html", wait_until='networkidle')
+    page.goto(f"{TestContext.base_url}/hidrosiembra/index.html", wait_until='networkidle')
 
     # Check technical slope spec 60°
     content = page.content()
@@ -580,11 +580,11 @@ def test_console_and_network_integrity():
     print("\n--- INTEGRITY: 0 Console Errors & 0 Broken Assets on All 6 Pages ---", flush=True)
     all_pages = [
         "index.html",
-        "pages/residencial.html",
-        "pages/b2b-hidrosiembra.html",
-        "pages/catalogo.html",
-        "pages/calculadora.html",
-        "pages/contacto.html"
+        "residencial/index.html",
+        "hidrosiembra/index.html",
+        "catalogo/index.html",
+        "calculadora/index.html",
+        "contacto/index.html"
     ]
 
     for p_url in all_pages:

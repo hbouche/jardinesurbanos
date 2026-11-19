@@ -56,11 +56,11 @@ assert(tokensCss.includes('JetBrains Mono'), 'tokens.css defines JetBrains Mono 
 console.log('\n--- 2. HTML Pages Existence ---');
 const requiredPages = [
   'index.html',
-  'pages/residencial.html',
-  'pages/b2b-hidrosiembra.html',
-  'pages/catalogo.html',
-  'pages/calculadora.html',
-  'pages/contacto.html'
+  'residencial/index.html',
+  'hidrosiembra/index.html',
+  'catalogo/index.html',
+  'calculadora/index.html',
+  'contacto/index.html'
 ];
 
 requiredPages.forEach(file => {
@@ -121,7 +121,7 @@ console.log('\n--- 5. Master Showcase Section Requirements ---');
 assert(indexHtml.includes('assets/img/DJI_0677-Mejorado-NR.jpg'), 'Hero references real drone photo DJI_0677-Mejorado-NR.jpg');
 assert(indexHtml.includes('+25 años'), 'Credibility banner includes +25 años trayectoria');
 assert(indexHtml.includes('Fincas propias en Coclé'), 'Credibility banner includes Fincas propias en Coclé');
-assert(indexHtml.includes('href="pages/calculadora.html"'), 'Inicio enlaza a la calculadora única (revisión DMC: un botón, no el formulario)');
+assert(indexHtml.includes('href="calculadora/"'), 'Inicio enlaza a la calculadora única (revisión DMC: un botón, no el formulario)');
 assert(indexHtml.includes('catalog-grid'), 'Botanical catalog grid markup is present');
 assert(indexHtml.includes('ba-comparator'), 'Before/After comparator markup is present');
 assert(indexHtml.includes('data-destacadas='), 'Inicio muestra solo las especies destacadas (revisión DMC: 6 especies + botón al catálogo)');
@@ -131,23 +131,23 @@ assert(indexHtml.includes('thumb-bar'), 'Mobile sticky bottom thumb action bar i
 
 // 6. Sub-Pages Specific Requirements
 console.log('\n--- 6. Standalone Sub-Pages Requirements ---');
-const residencialHtml = fs.readFileSync(path.join(SITE_DIR, 'pages/residencial.html'), 'utf-8');
+const residencialHtml = fs.readFileSync(path.join(SITE_DIR, 'residencial/index.html'), 'utf-8');
 assert(residencialHtml.includes('Zoysia Toro') && residencialHtml.includes('Zoysia Japónica') && residencialHtml.includes('San Agustín'),
   'residencial.html covers the 3 core sod varieties');
-assert(residencialHtml.includes('calculadora.html?escenario=residencial'), 'residencial.html enlaza a la calculadora única preseleccionada');
+assert(residencialHtml.includes('calculadora/?escenario=residencial'), 'residencial.html enlaza a la calculadora única preseleccionada');
 
-const b2bHtml = fs.readFileSync(path.join(SITE_DIR, 'pages/b2b-hidrosiembra.html'), 'utf-8');
+const b2bHtml = fs.readFileSync(path.join(SITE_DIR, 'hidrosiembra/index.html'), 'utf-8');
 assert(b2bHtml.includes('Hasta 60°') && (b2bHtml.includes('(Talud 1:1)') || b2bHtml.includes('(1:1)')), 'b2b-hidrosiembra.html includes max slope 60° spec');
 assert(b2bHtml.includes('data-action="copy-spec"'), 'b2b-hidrosiembra.html includes BoQ Spec Copier');
 
-const catalogoHtml = fs.readFileSync(path.join(SITE_DIR, 'pages/catalogo.html'), 'utf-8');
+const catalogoHtml = fs.readFileSync(path.join(SITE_DIR, 'catalogo/index.html'), 'utf-8');
 assert(catalogoHtml.includes('catalog-grid'), 'catalogo.html includes dynamic catalog grid');
 assert(catalogoHtml.includes('catalog-tab'), 'catalogo.html includes category tabs');
 
-const calcHtml = fs.readFileSync(path.join(SITE_DIR, 'pages/calculadora.html'), 'utf-8');
+const calcHtml = fs.readFileSync(path.join(SITE_DIR, 'calculadora/index.html'), 'utf-8');
 assert(calcHtml.includes('calc-widget'), 'calculadora.html includes full interactive calculator');
 
-const contactoHtml = fs.readFileSync(path.join(SITE_DIR, 'pages/contacto.html'), 'utf-8');
+const contactoHtml = fs.readFileSync(path.join(SITE_DIR, 'contacto/index.html'), 'utf-8');
 assert(contactoHtml.includes('8.4293, -80.4960'), 'contacto.html includes Coclé GPS coordinates');
 assert(contactoHtml.includes('ley81_optin'), 'contacto.html includes Ley 81 opt-in');
 

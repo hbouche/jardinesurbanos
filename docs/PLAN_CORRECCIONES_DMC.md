@@ -148,7 +148,26 @@ Detalle de lo que pedía la fase:
 4. Hero con un mensaje fijo en lugar de 4 rotativos. En móvil, texto más corto para que los botones se vean de inmediato.
 5. Cambiar la foto del hero de Comercial (sale una carretera).
 
-## Fase 4: Técnico y publicación
+## Fase 4: Técnico y publicación. HECHA
+Estado:
+- **URLs limpias por carpetas:** cada página vive en `site/<página>/index.html` y se accede como `/nosotros/`, `/residencial/`, `/comercial/`, `/hidrosiembra/`, `/catalogo/`, `/calculadora/`, `/contacto/` y `/politica-de-datos/`.
+  - Funciona en cualquier hosting estático sin reglas de reescritura.
+  - Para ver el sitio en local hay que usar un servidor: `npm run preview` (abre http://localhost:8080). Abriendo los archivos con doble clic, los enlaces a carpetas no funcionan.
+- **`b2b-hidrosiembra` pasa a `hidrosiembra`:** sin "B2B" en la URL, el título ni el mensaje prellenado de WhatsApp.
+  - Las direcciones viejas (`/pages/*.html`) quedan como redirecciones con `noindex` y `canonical`, así que los enlaces que ya circulan no dan 404.
+- **`canonical` en cada página** (dominio en `paginas.json` > `dominio`), más `sitemap.xml` y `robots.txt`.
+- **Caché:** se quitaron las metas que impedían cachear (`Cache-Control: no-cache`, `Pragma`, `Expires: 0`).
+- **Medición:** `js/analitica.js` en todas las páginas.
+  - Eventos: `cotizar_residencial`, `cotizar_comercial`, `cotizar_hidrosiembra`, `calculadora_abrir`, `calculadora_cotizacion` (con canal, escenario y m²), `whatsapp_click`, `llamada_click`, `correo_click` y `formulario_envio`.
+  - Se registran en `dataLayer` y, cuando haya IDs, en GA4 y en Meta ("Lead" o "Contact", más el evento personalizado).
+  - **Faltan los IDs** de GA4 y del píxel de Meta (`CONFIG` al inicio del archivo): sin ellos no se carga nada externo.
+- **Ley 81:** página `/politica-de-datos/` (responsable, datos, finalidades, derechos ARCO y portabilidad, ANTAI).
+  - Enlazada desde el footer, los formularios de Contacto e Hidrosiembra y la calculadora (que no tenía aviso).
+  - **Es un borrador: conviene que lo revise el asesor legal del cliente.**
+- **Redes en el footer:** listas desde la Fase 0. Las URLs reales se cargan en `paginas.json` > `redes` (Fase 5).
+- **Verificación:** `npm run enlaces` (0 enlaces rotos en 9 páginas), `npm run contraste` y tests (milestone3 170/170, calculadora y catálogo al 100%).
+
+Detalle de lo que pedía la fase:
 1. `b2b-hidrosiembra.html` pasa a `hidrosiembra`, actualizando los enlaces de las 8 páginas, el sitemap y el schema.
 2. URLs sin ".html": carpetas con `index.html` o reglas del hosting.
 3. GA4 y píxel de Meta con eventos `cotizar_residencial`, `cotizar_comercial`, `cotizar_hidrosiembra`, `whatsapp_click` y `calculadora_enviar`. **Requiere los IDs.**

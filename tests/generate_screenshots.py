@@ -68,14 +68,14 @@ def main():
     targets = [
         ("index.html", "desktop_home.png", False),
         ("index.html", "mobile_home.png", True),
-        ("pages/calculadora.html", "desktop_calculadora.png", False),
-        ("pages/calculadora.html", "mobile_calculadora.png", True),
-        ("pages/catalogo.html", "desktop_catalogo.png", False),
-        ("pages/catalogo.html", "mobile_catalogo.png", True),
-        ("pages/b2b-hidrosiembra.html", "desktop_b2b_hidrosiembra.png", False),
-        ("pages/b2b-hidrosiembra.html", "mobile_b2b_hidrosiembra.png", True),
-        ("pages/residencial.html", "desktop_residencial.png", False),
-        ("pages/contacto.html", "desktop_contacto.png", False),
+        ("calculadora/index.html", "desktop_calculadora.png", False),
+        ("calculadora/index.html", "mobile_calculadora.png", True),
+        ("catalogo/index.html", "desktop_catalogo.png", False),
+        ("catalogo/index.html", "mobile_catalogo.png", True),
+        ("hidrosiembra/index.html", "desktop_b2b_hidrosiembra.png", False),
+        ("hidrosiembra/index.html", "mobile_b2b_hidrosiembra.png", True),
+        ("residencial/index.html", "desktop_residencial.png", False),
+        ("contacto/index.html", "desktop_contacto.png", False),
     ]
 
     print("[*] Launching headless browser with Playwright...", flush=True)
