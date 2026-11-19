@@ -41,6 +41,11 @@
   --color-lime: #A9D982;               /* Lima claro: 9.3:1 sobre Bosque */
   --radius-full: 9999px;
 
+  /* Tonos claros (revisión DMC, lámina 14) para aligerar las secciones de contenido */
+  --color-salvia: #E3EDDB;
+  --color-menta: #F0F6EB;
+  --color-hoja: #CFE3BF;
+
   /* Typography Colors */
   --color-text-dark: #122B1D;          /* Primary text on light background */
   --color-text-muted: #4F6759;         /* Secondary text on light background */

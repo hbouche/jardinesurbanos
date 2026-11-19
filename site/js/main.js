@@ -178,8 +178,8 @@
         else if (quote.varietyKey === 'hidrosiembra') { unitP = '$1.85 / m² (ref.)'; unitVal = 1.85; }
         else { unitP = '$3.75 / m² (ref.)'; unitVal = 3.75; }
 
-        const totalEst = quote.areaGross > 0 ? ` • Est. Total: $${(quote.areaGross * unitVal).toLocaleString('es-PA', {minimumFractionDigits: 2, maximumFractionDigits: 2})}` : '';
-        refPriceEl.innerHTML = `${unitP}<span style="font-size:0.75rem; color:var(--color-sand-muted); font-weight:normal;">${totalEst}</span>`;
+        const totalEst = quote.areaGross > 0 ? ` • Total estimado: $${(quote.areaGross * unitVal).toLocaleString('es-PA', {minimumFractionDigits: 2, maximumFractionDigits: 2})}` : '';
+        refPriceEl.innerHTML = `${unitP}<span class="calc-total-est" style="font-size:0.75rem; font-weight:normal;">${totalEst}</span>`;
       }
       if (recSciEl) recSciEl.textContent = quote.scientificName;
       if (recDescEl) recDescEl.textContent = quote.description;
@@ -490,6 +490,33 @@ ${lead.name}`
     }
 
     // Initial render
+    // El estado arranca con el valor que muestra el campo (antes mostraba 300 m² pero calculaba 250)
+    if (numberInput && parseInt(numberInput.value, 10) > 0) state.areaNet = parseInt(numberInput.value, 10);
+
+    // Calculadora única: se puede abrir preseleccionada desde otras páginas
+    // ej. calculadora.html?escenario=comercial&m2=1000  (escenarios: residencial, playa, deportivo, talud, comercial)
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const alias = { comercial: 'residencial', hidrosiembra: 'talud', jardin: 'residencial' };
+      const esc = (params.get('escenario') || '').toLowerCase();
+      const target = alias[esc] || esc;
+      if (target) {
+        const pill = calcWidget.querySelector('[data-scenario="' + target + '"]');
+        if (pill) {
+          scenarioPills.forEach(p => p.classList.remove('active'));
+          pill.classList.add('active');
+          state.scenario = target;
+        }
+      }
+      let m2 = parseInt(params.get('m2'), 10);
+      if (!m2 && esc === 'comercial') m2 = 1000;
+      if (!m2 && target === 'talud') m2 = 2000;
+      if (m2 > 0) {
+        state.areaNet = m2;
+        if (rangeInput) rangeInput.value = Math.min(m2, parseInt(rangeInput.max, 10) || m2);
+        if (numberInput) numberInput.value = m2;
+      }
+    } catch (e) { /* URL sin parámetros válidos */ }
     updateView();
   }
 
@@ -512,8 +539,14 @@ ${lead.name}`
     const searchInput = document.querySelector('#catalog-search');
     const traitButtons = document.querySelectorAll('[data-filter-trait]');
 
+    // En Inicio solo se muestran las especies destacadas (data-destacadas); el catálogo completo vive en su página
+    const destacadas = (catalogGrid.getAttribute('data-destacadas') || '').split(',').map(s => s.trim()).filter(Boolean);
+
     function renderSpeciesCards(items) {
       catalogGrid.innerHTML = '';
+      if (destacadas.length && items) {
+        items = destacadas.map(id => items.find(it => it.id === id)).filter(Boolean);
+      }
 
       if (!items || items.length === 0) {
         catalogGrid.innerHTML = `

@@ -109,7 +109,39 @@ Detalle de lo que pedía la fase:
 4. Fotos: convertir a WebP de 200 KB como máximo y usar carga inmediata en las primeras tarjetas de cada carrusel. Objetivo: Inicio por debajo de unos 3 MB.
 5. Marca de agua: preparar el script para exportar las fotos propias con el logo y "© Imagen propiedad de Jardines Urbanos, S.A." en la esquina. Reemplaza la etiqueta "Foto oficial finca JUSA".
 
-## Fase 3: Colores y estructura
+## Fase 3: Colores y estructura. HECHA
+Estado:
+- **Inicio corto** en 8 bloques, en el orden de la lámina 16:
+  1. Hero fijo con 3 botones de cotizar.
+  2. Cifras en Salvia.
+  3. Servicios: gramas, comercial, hidrosiembra y vivero.
+  4. Antes y después, sin el video.
+  5. 6 especies destacadas y botón al catálogo.
+  6. Llamado a la calculadora, en Menta.
+  7. Nosotros en un párrafo con galería.
+  8. Contacto breve en Salvia: WhatsApp, teléfono y dirección.
+- **Medidas de Inicio:** pasó de 15.8 a 7.5 pantallas en desktop y de 19.9 a 9.8 en móvil. Muestra 6 fichas en vez de 25 y no tiene formularios. Descarga 2.6 MB (al empezar eran 38 MB).
+- **Qué salió de Inicio:** la calculadora completa, el formulario de contacto, la sección de constructoras y pliegos, "Infraestructura propia" y el video. Todo sigue en sus páginas.
+- **Una sola calculadora** (`pages/calculadora.html`):
+  - Residencial y Comercial ahora tienen un llamado que la abre preseleccionada (`?escenario=residencial|comercial|talud`, `&m2=`).
+  - "Calculadora" salió del menú: quedan 7 opciones. Sigue en el footer y en la barra fija de móvil.
+  - Se corrigió que mostraba 300 m² en el campo pero calculaba sobre 250.
+- **Hero fijo** en todas las páginas: 1 foto y 1 mensaje, sin rotación ni barra de mensajes.
+  - Inicio: foto de campo de grama de la finca.
+  - Comercial: proyecto terminado con Zoysia Japónica, en lugar de la carretera.
+  - En móvil, los 3 botones del hero de Inicio se ven en la primera pantalla.
+- **Tonos claros:**
+  - Cifras en Salvia con números en clorofila, en Inicio y en Nosotros.
+  - Resultado de la calculadora en blanco con borde Hoja.
+  - Directorio de contacto en Salvia.
+  - Video de Nosotros sobre Arena, con borde.
+  - Llamados finales de Catálogo e Hidrosiembra en Menta, con el botón terracota.
+  - La tarjeta del hero quedó más transparente.
+  - Header, cintillo y footer siguen oscuros.
+- Contraste: 0 problemas en desktop y en móvil. Tests: 164 de 164 en milestone3 (actualizados a la estructura nueva), calculadora y catálogo al 100%.
+- No hecho: consolidar el CSS inline propio de Inicio, Nosotros y Comercial. No afecta lo visible y queda como deuda técnica.
+
+Detalle de lo que pedía la fase:
 1. Tokens nuevos: Salvia `#E3EDDB`, Menta `#F0F6EB` y Hoja `#CFE3BF`. Aplicarlos según la lámina 14: cifras en Salvia, video en Arena, Constructoras en Menta con botón terracota, resultado de la calculadora en blanco con borde Hoja, directorio en Salvia. El header, el cintillo y el footer siguen oscuros. El hero, más transparente.
 2. **Inicio corto** en 8 bloques: hero, cifras, servicios, antes/después, 6 especies con botón al catálogo, botón a la calculadora, Nosotros en un párrafo con galería y contacto breve. Las 25 fichas y los 2 formularios salen de Inicio.
 3. **Una sola calculadora** en `/calculadora`, con preselección por tipo de proyecto desde Residencial, Comercial e Hidrosiembra. Sacar "Calculadora" del menú.

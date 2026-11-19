@@ -1701,3 +1701,114 @@ img {
     display: none !important;
   }
 }
+
+
+/* ============================================================
+   Revisión DMC · Fase 3: tonos claros y bloques del Inicio corto
+   ============================================================ */
+.section-salvia { background-color: var(--color-salvia); }
+.section-menta { background-color: var(--color-menta); }
+
+/* Franja de cifras en Salvia con números en clorofila */
+.authority-bar.authority-bar-light {
+  background: var(--color-salvia);
+  border-top: 1px solid var(--color-hoja);
+  border-bottom: 1px solid var(--color-hoja);
+}
+.authority-bar.authority-bar-light .authority-number { color: var(--color-chlorophyll); }
+.authority-bar.authority-bar-light .authority-label { color: var(--color-text-dark); }
+
+/* Servicios: 4 tarjetas */
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-6);
+}
+.servicio-card { padding: 0; overflow: hidden; display: flex; flex-direction: column; background: #FFFFFF; }
+.servicio-card-img { width: 100%; height: 180px; object-fit: cover; display: block; }
+.servicio-card-body { padding: var(--space-5); display: flex; flex-direction: column; gap: var(--space-3); flex: 1; }
+.servicio-card-title { font-size: 1.3rem; margin: 0; }
+.servicio-card-text { color: var(--color-text-muted); font-size: var(--fs-body-sm); margin: 0; flex: 1; }
+.servicio-card .btn { align-self: flex-start; }
+
+/* Llamado a la calculadora (un botón, no el formulario) */
+.cta-calculadora { border-top: 1px solid var(--color-hoja); border-bottom: 1px solid var(--color-hoja); }
+.cta-calculadora-inner {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-6); flex-wrap: wrap;
+}
+.cta-calculadora-inner > div { max-width: 640px; }
+.cta-calculadora .btn { display: inline-flex; align-items: center; gap: var(--space-2); }
+
+/* Nosotros: párrafo + galería */
+.nosotros-grid.nosotros-grid-galeria { display: block; }
+
+/* Contacto breve */
+.contacto-breve-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-5);
+}
+.contacto-breve-item {
+  display: flex; flex-direction: column; align-items: center; text-align: center; gap: var(--space-1);
+  background: #FFFFFF; color: var(--color-text-dark); text-decoration: none; padding: var(--space-6);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+.contacto-breve-item:hover { transform: translateY(-2px); }
+.contacto-breve-item span:last-child { color: var(--color-text-muted); font-size: var(--fs-body-sm); }
+.contacto-breve-icon {
+  display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;
+  border-radius: var(--radius-full); background: var(--color-salvia); color: var(--color-chlorophyll); margin-bottom: var(--space-2);
+}
+.contacto-breve-horario { text-align: center; margin-top: var(--space-6); color: var(--color-text-dark); font-size: var(--fs-body-sm); }
+.contacto-breve-horario a { color: var(--color-chlorophyll); font-weight: 600; }
+
+
+/* Tarjeta del hero más transparente (lámina 14) */
+.hero .hero-content { background: rgba(10, 27, 18, 0.26); }
+
+@media (max-width: 768px) {
+  .cta-calculadora-inner { flex-direction: column; align-items: stretch; text-align: center; }
+  .servicio-card-img { height: 150px; }
+}
+
+/* Resultado de la calculadora: blanco con borde Hoja (lámina 14) */
+.calc-result-card {
+  background: #FFFFFF !important;
+  border: 2px solid var(--color-hoja) !important;
+  color: var(--color-text-dark) !important;
+  box-shadow: 0 10px 30px rgba(18, 43, 29, 0.08) !important;
+}
+.calc-result-card [style*="color: var(--color-text-dim)"],
+.calc-result-card [style*="color: #FFFFFF"],
+.calc-result-card .calc-metric-unit,
+.calc-result-card .calc-specs-list li > span:first-child { color: var(--color-text-muted) !important; }
+.calc-result-card .calc-step-title,
+.calc-result-card .calc-summary-title { color: var(--color-forest) !important; }
+.calc-result-card .calc-metric-number { color: var(--color-chlorophyll) !important; }
+.calc-result-card [style*="color: var(--color-jusa)"] { color: var(--color-chlorophyll) !important; }
+.calc-result-card .calc-rec-box {
+  background: var(--color-menta) !important;
+  border-left-color: var(--color-chlorophyll) !important;
+}
+.calc-result-card .calc-rec-title { color: var(--color-forest) !important; }
+.calc-result-card .calc-rec-sci { color: var(--color-chlorophyll) !important; }
+.calc-result-card .calc-rec-desc { color: var(--color-text-muted) !important; }
+.calc-result-card .calc-specs-list li { border-color: var(--color-hoja) !important; }
+.calc-result-card .calc-specs-list li > span:last-child { color: var(--color-forest) !important; }
+
+/* Directorio de contacto en Salvia (lámina 14) */
+.directorio-salvia { background: var(--color-salvia) !important; color: var(--color-text-dark) !important; border: 1px solid var(--color-hoja) !important; }
+.directorio-salvia h2, .directorio-salvia strong { color: var(--color-forest) !important; }
+.directorio-salvia a { color: var(--color-chlorophyll) !important; }
+.directorio-salvia [style*="color: var(--color-text-dim)"], .directorio-salvia p, .directorio-salvia div { color: var(--color-text-dark); }
+
+/* Video de Nosotros sobre Arena, con borde (lámina 14) */
+.nosotros-video-card.nosotros-video-claro { background: var(--color-sand) !important; border: 1px solid var(--color-hoja) !important; }
+.nosotros-video-claro .nosotros-video-title { color: var(--color-forest) !important; }
+.nosotros-video-claro .nosotros-video-desc { color: var(--color-text-muted) !important; }
+.calc-result-card .calc-total-est { color: var(--color-text-muted) !important; }
+.authority-bar.authority-bar-light .authority-number { color: var(--color-chlorophyll) !important; }
+.authority-bar.authority-bar-light .authority-label { color: var(--color-text-dark) !important; }
+
+/* Inicio: 6 especies destacadas en 2 filas de 3 */
+@media (min-width: 992px) {
+  #catalogo .catalog-grid[data-destacadas] { grid-template-columns: repeat(3, 1fr) !important; }
+}

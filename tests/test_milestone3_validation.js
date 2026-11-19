@@ -121,12 +121,12 @@ console.log('\n--- 5. Master Showcase Section Requirements ---');
 assert(indexHtml.includes('assets/img/DJI_0677-Mejorado-NR.jpg'), 'Hero references real drone photo DJI_0677-Mejorado-NR.jpg');
 assert(indexHtml.includes('+25 años'), 'Credibility banner includes +25 años trayectoria');
 assert(indexHtml.includes('Fincas propias en Coclé'), 'Credibility banner includes Fincas propias en Coclé');
-assert(indexHtml.includes('calc-widget'), 'Calculator widget markup is present');
+assert(indexHtml.includes('href="pages/calculadora.html"'), 'Inicio enlaza a la calculadora única (revisión DMC: un botón, no el formulario)');
 assert(indexHtml.includes('catalog-grid'), 'Botanical catalog grid markup is present');
 assert(indexHtml.includes('ba-comparator'), 'Before/After comparator markup is present');
-assert(indexHtml.includes('assets/img/HIDROSIEMBRA-MAQUINA.webp'), 'B2B section references HIDROSIEMBRA-MAQUINA.webp');
-assert(indexHtml.includes('data-action="copy-spec"'), '1-Click BoQ Spec Copier action button is present');
-assert(indexHtml.includes('ley81_optin'), 'Ley 81 opt-in compliance checkbox is present');
+assert(indexHtml.includes('data-destacadas='), 'Inicio muestra solo las especies destacadas (revisión DMC: 6 especies + botón al catálogo)');
+assert(!indexHtml.includes('<form'), 'Inicio sin formularios completos (revisión DMC: contacto breve)');
+assert(indexHtml.includes('https://wa.me/50765390949') && indexHtml.includes('tel:+5072260494'), 'Contacto breve con WhatsApp y teléfono en Inicio');
 assert(indexHtml.includes('thumb-bar'), 'Mobile sticky bottom thumb action bar is present');
 
 // 6. Sub-Pages Specific Requirements
@@ -134,7 +134,7 @@ console.log('\n--- 6. Standalone Sub-Pages Requirements ---');
 const residencialHtml = fs.readFileSync(path.join(SITE_DIR, 'pages/residencial.html'), 'utf-8');
 assert(residencialHtml.includes('Zoysia Toro') && residencialHtml.includes('Zoysia Japónica') && residencialHtml.includes('San Agustín'),
   'residencial.html covers the 3 core sod varieties');
-assert(residencialHtml.includes('calc-widget'), 'residencial.html includes embedded calculator');
+assert(residencialHtml.includes('calculadora.html?escenario=residencial'), 'residencial.html enlaza a la calculadora única preseleccionada');
 
 const b2bHtml = fs.readFileSync(path.join(SITE_DIR, 'pages/b2b-hidrosiembra.html'), 'utf-8');
 assert(b2bHtml.includes('Hasta 60°') && (b2bHtml.includes('(Talud 1:1)') || b2bHtml.includes('(1:1)')), 'b2b-hidrosiembra.html includes max slope 60° spec');

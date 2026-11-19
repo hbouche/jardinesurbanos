@@ -9,7 +9,7 @@
   "paginas": {
     "index": {
       "archivo": "index.html",
-      "cta_header": "<a href=\"#calculadora\" class=\"btn btn-accent btn-sm\"><svg class=\"svg-icon\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect width=\"16\" height=\"20\" x=\"4\" y=\"2\" rx=\"2\"/><line x1=\"8\" x2=\"16\" y1=\"6\" y2=\"6\"/><line x1=\"16\" x2=\"16\" y1=\"14\" y2=\"18\"/><path d=\"M16 10h.01\"/><path d=\"M12 10h.01\"/><path d=\"M8 10h.01\"/><path d=\"M12 14h.01\"/><path d=\"M8 14h.01\"/><path d=\"M12 18h.01\"/><path d=\"M8 18h.01\"/></svg> Cotizar m²</a>"
+      "cta_header": "<a href=\"pages/calculadora.html\" class=\"btn btn-accent btn-sm\"><svg class=\"svg-icon\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect width=\"16\" height=\"20\" x=\"4\" y=\"2\" rx=\"2\"/><line x1=\"8\" x2=\"16\" y1=\"6\" y2=\"6\"/><line x1=\"16\" x2=\"16\" y1=\"14\" y2=\"18\"/><path d=\"M16 10h.01\"/><path d=\"M12 10h.01\"/><path d=\"M8 10h.01\"/><path d=\"M12 14h.01\"/><path d=\"M8 14h.01\"/><path d=\"M12 18h.01\"/><path d=\"M8 18h.01\"/></svg> Cotizar m²</a>"
     },
     "nosotros": {
       "archivo": "pages/nosotros.html",
@@ -17,11 +17,11 @@
     },
     "residencial": {
       "archivo": "pages/residencial.html",
-      "cta_header": "<a href=\"#calculadora\" class=\"btn btn-accent btn-sm\"><svg class=\"svg-icon\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect width=\"16\" height=\"20\" x=\"4\" y=\"2\" rx=\"2\"/><line x1=\"8\" x2=\"16\" y1=\"6\" y2=\"6\"/><line x1=\"16\" x2=\"16\" y1=\"14\" y2=\"18\"/><path d=\"M16 10h.01\"/><path d=\"M12 10h.01\"/><path d=\"M8 10h.01\"/><path d=\"M12 14h.01\"/><path d=\"M8 14h.01\"/><path d=\"M12 18h.01\"/><path d=\"M8 18h.01\"/></svg> Cotizar m²</a>"
+      "cta_header": "<a href=\"calculadora.html?escenario=residencial\" class=\"btn btn-accent btn-sm\"><svg class=\"svg-icon\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect width=\"16\" height=\"20\" x=\"4\" y=\"2\" rx=\"2\"/><line x1=\"8\" x2=\"16\" y1=\"6\" y2=\"6\"/><line x1=\"16\" x2=\"16\" y1=\"14\" y2=\"18\"/><path d=\"M16 10h.01\"/><path d=\"M12 10h.01\"/><path d=\"M8 10h.01\"/><path d=\"M12 14h.01\"/><path d=\"M8 14h.01\"/><path d=\"M12 18h.01\"/><path d=\"M8 18h.01\"/></svg> Cotizar m²</a>"
     },
     "comercial": {
       "archivo": "pages/comercial.html",
-      "cta_header": "<a href=\"#calculadora\" class=\"btn btn-accent btn-sm\">Cotizar comercial</a>"
+      "cta_header": "<a href=\"calculadora.html?escenario=comercial\" class=\"btn btn-accent btn-sm\">Cotizar comercial</a>"
     },
     "b2b-hidrosiembra": {
       "archivo": "pages/b2b-hidrosiembra.html",
