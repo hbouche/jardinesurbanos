@@ -80,7 +80,29 @@ Detalle de lo que pedía la fase:
 5. Quitar "B2B" y "B2C" de los textos visibles y los títulos. "Residencial / B2C" pasa a "Residencial".
 6. Moderar los adjetivos y aclarar "SAE". Dejar la jerga (BoQ, MOP, slurry) solo en Hidrosiembra.
 
-## Fase 2: Forma (contraste, valla, logos y fotos)
+## Fase 2: Forma (contraste, valla, logos y fotos). HECHA
+Estado:
+- **Contraste:** `node scripts/contraste.js [desktop|movil]` → 0 textos por debajo de 4.5:1. Solo queda el separador decorativo "|" del cintillo.
+  - Causa de los bloques negros de "Paso 1/2/3": el CSS usaba `--color-lime` y `--radius-full` sin definirlas.
+  - Verde WhatsApp de los botones: `#15803D` (5:1). El oficial `#25D366` daba 2:1 con texto blanco.
+  - Terracota: `#B8560A` (4.8:1). La original `#FA7D09` daba 2.6:1.
+  - Insignias con fondo sólido.
+  - En móvil, las descripciones de la calculadora y las marcas del deslizador usaban un color pensado para fondo oscuro.
+  - En la tarjeta de resultado de Comercial había texto oscuro sobre fondo oscuro.
+- **Valla:** eliminada de los 3 lugares de DMC y de un 4.º que apareció en la revisión.
+  - Las imágenes decorativas sobre "Nosotros", en Inicio y en Nosotros.
+  - El video `video_finca_dron_cocle.mp4`, recortado desde el segundo 3.5 y con portada nueva (pasó de 3.4 MB a 1.5 MB).
+  - El hero de Nosotros, que ahora usa una foto de cosecha mecanizada tomada de `Originales Julio/Grama5.jpg`.
+  - La tarjeta "Equipo agronómico" de Inicio, que usaba `Nosotros1.jpg` (también era la valla).
+- **Logos:** las tarjetas claras de Inicio y Nosotros usan `logo-horizontal-verde.svg`. Ya no se usa ningún PNG de 290 px.
+- **Fotos:** `scripts/optimizar_imagenes.py` convirtió 145 imágenes a WebP (de 92 MB a 15.6 MB). Inicio pasó de 34.6 MB a 5.4 MB de imágenes en desktop y de 17.6 MB a 2.8 MB en móvil (`node scripts/peso_paginas.js`). Las primeras 6 tarjetas del catálogo cargan de inmediato. 0 imágenes rotas.
+- **Marca de agua** (opción A):
+  - Logo y "© Imagen propiedad de Jardines Urbanos, S.A." dentro del archivo.
+  - Se aplicó a las fotos propias de `scripts/fotos_propias.txt`, que son 47.
+  - No se aplicó a las referenciales ni a las fotos que se usan como fondo de hero, donde quedaría recortada. En algunas propias que también son hero (por ejemplo `HIDROSIEMBRA-MAQUINA`, `clusia_rosea_vivero`) queda sin marca. **Conviene que el cliente confirme la lista de fotos propias.**
+  - Se quitaron las etiquetas "[Foto oficial finca JUSA]" y "© Propiedad de…". La etiqueta de "imagen referencial" se mantiene.
+
+Detalle de lo que pedía la fase:
 1. Contraste de 4.5:1 como mínimo: "Foto oficial finca JUSA", "Paso 1/2/3" (hoy son bloques negros), insignia del resultado, descripciones grises de la calculadora en móvil y marcas del deslizador.
 2. **Valla fuera** de los 3 lugares: quitar los decor de `index.html:1679-1680`; en el hero de Nosotros poner una foto de la finca o la cosecha (de `Originales Julio/`); en el video, cambiar el inicio o la portada (`poster`) o elegir otro video.
 3. Logos SVG en el header, el footer y el menú móvil, más el favicon. Logo verde en las tarjetas claras.

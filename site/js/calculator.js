@@ -77,7 +77,7 @@
       name: 'Grama Zoysia Toro',
       scientificName: "Zoysia japonica 'Toro'",
       supplyMode: 'Rollos / tarimas de finca',
-      shortDescription: 'Grama de hoja media y color verde esmeralda intenso cultivada en Río Grande, Coclé. Resiste bien el pisoteo y rápida regeneración.',
+      shortDescription: 'Grama de hoja media y color verde esmeralda intenso cultivada en Río Grande, Coclé. Resiste bien el pisoteo y se regenera rápido.',
       isHydroseeding: false
     },
     zoysia_toro_deportivo: {

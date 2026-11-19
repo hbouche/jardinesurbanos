@@ -540,7 +540,7 @@ ${lead.name}`
         return;
       }
 
-      items.forEach(function(item) {
+      items.forEach(function(item, idx) {
         const card = document.createElement('article');
         card.className = 'catalog-card';
         card.setAttribute('data-id', item.id);
@@ -548,7 +548,7 @@ ${lead.name}`
         const imgPath = assetPrefix + item.photoUrl;
 
         let badgeHtml = item.isOfficial
-          ? `<span class="badge badge-official">${item.badge}</span>`
+          ? ''
           : `<span class="badge badge-mockup">${item.badge}</span>`;
 
         let traitsHtml = '';
@@ -599,6 +599,13 @@ ${lead.name}`
           if (e.target.closest('.btn-whatsapp')) return;
           openCatalogModal(item);
         });
+
+        // Las primeras tarjetas cargan de inmediato (antes quedaban en blanco por la carga diferida)
+        const cardImg = card.querySelector('img');
+        if (cardImg) {
+          cardImg.decoding = 'async';
+          if (idx < 6) cardImg.loading = 'eager';
+        }
 
         catalogGrid.appendChild(card);
       });
@@ -717,7 +724,7 @@ ${lead.name}`
 
     const badgeContainer = overlay.querySelector('#modal-badge-container');
     badgeContainer.innerHTML = item.isOfficial
-      ? `<span class="badge badge-official">${item.sourceTag}</span>`
+      ? ''
       : `<span class="badge badge-mockup">${item.sourceTag}</span>`;
 
     const featuresList = overlay.querySelector('#modal-features');

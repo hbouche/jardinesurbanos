@@ -28,12 +28,18 @@
   --color-chlorophyll: #2E6F40;        /* Clorofila UI: Primary action buttons, links, toggles */
   --color-chlorophyll-hover: #245833;  /* Clorofila Hover */
 
-  --color-terracotta: #FA7D09;         /* Terracota Coclé: Alerts, slope warning, before state */
-  --color-terracotta-hover: #E06C04;   /* Terracota Hover */
+  --color-terracotta: #B8560A;         /* Terracota Coclé (ajustada a 4.8:1 con texto blanco, revisión DMC) */
+  --color-terracotta-hover: #9A4708;   /* Terracota Hover */
+  --color-terracotta-bright: #FA7D09;  /* Terracota original: solo acentos decorativos, nunca fondo de texto */
   --color-terracotta-soft: rgba(250, 125, 9, 0.12);
 
-  --color-whatsapp: #25D366;           /* WhatsApp Official Accent */
-  --color-whatsapp-dark: #1EBE5D;
+  --color-whatsapp: #15803D;           /* Verde WhatsApp accesible: 5:1 con texto blanco (el oficial #25D366 da 2:1) */
+  --color-whatsapp-dark: #116B33;
+  --color-whatsapp-bright: #25D366;    /* Verde oficial: solo íconos o acentos */
+
+  /* Variables que el CSS usaba sin definir (causaban los bloques negros de "Paso 1/2/3") */
+  --color-lime: #A9D982;               /* Lima claro: 9.3:1 sobre Bosque */
+  --radius-full: 9999px;
 
   /* Typography Colors */
   --color-text-dark: #122B1D;          /* Primary text on light background */

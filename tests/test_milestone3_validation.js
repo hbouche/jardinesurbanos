@@ -124,7 +124,7 @@ assert(indexHtml.includes('Fincas propias en Coclé'), 'Credibility banner inclu
 assert(indexHtml.includes('calc-widget'), 'Calculator widget markup is present');
 assert(indexHtml.includes('catalog-grid'), 'Botanical catalog grid markup is present');
 assert(indexHtml.includes('ba-comparator'), 'Before/After comparator markup is present');
-assert(indexHtml.includes('assets/img/HIDROSIEMBRA-MAQUINA.jpg'), 'B2B section references HIDROSIEMBRA-MAQUINA.jpg');
+assert(indexHtml.includes('assets/img/HIDROSIEMBRA-MAQUINA.webp'), 'B2B section references HIDROSIEMBRA-MAQUINA.webp');
 assert(indexHtml.includes('data-action="copy-spec"'), '1-Click BoQ Spec Copier action button is present');
 assert(indexHtml.includes('ley81_optin'), 'Ley 81 opt-in compliance checkbox is present');
 assert(indexHtml.includes('thumb-bar'), 'Mobile sticky bottom thumb action bar is present');

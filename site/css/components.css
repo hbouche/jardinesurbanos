@@ -141,18 +141,18 @@
   line-height: 1;
 }
 
-/* Official photo tag: [Foto Oficial Finca JUSA] */
+/* Insignia verde: fondo sólido Salvia para que se lea igual sobre fondos claros, oscuros o fotos (revisión DMC) */
 .badge-official {
-  background-color: rgba(113, 179, 71, 0.15);
-  color: #245A1A;
-  border: 1px solid rgba(113, 179, 71, 0.45);
+  background-color: #E3EDDB;
+  color: #1F4D1A;
+  border: 1px solid #B9D4A3;
 }
 
-/* Mockup AI tag: [Variedad de Finca • Imagen Referencial] */
+/* Insignia de imagen referencial: fondo sólido para mantener 4.5:1 */
 .badge-mockup {
-  background-color: rgba(250, 125, 9, 0.12);
-  color: #B35400;
-  border: 1px solid rgba(250, 125, 9, 0.35);
+  background-color: #FDEBD8;
+  color: #8F4300;
+  border: 1px solid #F3C99E;
 }
 
 /* Status tags */
@@ -420,7 +420,7 @@ input[type="range"].range-slider::-moz-range-thumb {
 }
 
 .btn-calc-whatsapp-primary {
-  background-color: #25D366;
+  background-color: var(--color-whatsapp);
   color: #FFFFFF;
   font-weight: 700;
   box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
@@ -1461,7 +1461,7 @@ input[type="range"].range-slider::-moz-range-thumb {
   }
   .calc-pill-sub {
     font-size: 0.72rem !important;
-    color: var(--color-text-dim) !important;
+    color: var(--color-text-muted) !important;
     line-height: 1.25 !important;
   }
   .calc-pill.active .calc-pill-sub {
@@ -1500,7 +1500,7 @@ input[type="range"].range-slider::-moz-range-thumb {
     display: flex !important;
     justify-content: space-between !important;
     font-size: 0.68rem !important;
-    color: var(--color-text-dim) !important;
+    color: var(--color-text-muted) !important;
     width: 100% !important;
     margin-top: 4px !important;
     padding: 0 2px !important;
