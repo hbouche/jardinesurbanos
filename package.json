@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "build": "python3 scripts/build_partials.py",
+    "check": "python3 scripts/build_partials.py --check",
+    "logos": "python3 scripts/generar_logos.py",
+    "capturas": "node scripts/capturas.js docs/qa/despues"
+  },
   "devDependencies": {
     "playwright": "^1.65.0"
   }
