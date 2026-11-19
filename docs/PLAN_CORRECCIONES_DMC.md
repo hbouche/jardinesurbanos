@@ -60,7 +60,19 @@ Material de Drive: es idéntico a `Originales Julio/` del repo (182 fotos y vide
 
 Tests existentes: calculadora, catálogo y milestone3 (184 en total) pasan. `test_runtime_dom_sim.js`, `test_e2e_comprehensive.*` y `test_milestone1_verification.py` ya fallaban antes de los cambios porque usan rutas de Windows o Edge, o no tienen el DOM simulado.
 
-## Fase 1: Texto y errores (no requiere decisiones del cliente)
+## Fase 1: Texto y errores (no requiere decisiones del cliente). HECHA
+Estado: aplicada en las 8 páginas, los parciales y el JS (calculadora, catálogo, main).
+- Unos 300 textos pasaron a tipo oración.
+- Las etiquetas en versalitas (insignias, "eyebrows", títulos del footer) siguen en mayúsculas porque así lo pone el CSS (`.badge`, `.section-eyebrow`, `.footer-heading`). El texto de origen ya está en tipo oración, así que pasarlas a minúsculas es quitar un `text-transform` del CSS.
+- No queda ningún "&" en textos visibles, ni "B2B" o "B2C" visibles (la URL `/b2b-hidrosiembra` se cambia en la Fase 4).
+- "Km 168" solo queda en direcciones. La franja de cifras ahora dice "Río Grande · Fincas propias en Coclé".
+- Se quitó "Talud inclinado" de la calculadora de Residencial.
+- Se corrigió que esa calculadora arrancaba con 180 m² pero mostraba el resultado de 250.
+- Tests de calculadora, catálogo y milestone3 actualizados a los textos nuevos: todos pasan.
+
+Pendiente para la Fase 5, porque requiere datos del cliente: las cifras "5,000 m²/día" y "100% adaptación genética" de la franja.
+
+Detalle de lo que pedía la fase:
 1. Tipo oración en títulos, subtítulos, botones, etiquetas y footer, con Comercial como modelo. Los nombres de variedad no cambian.
 2. "&" por "y" en títulos y etiquetas pequeñas.
 3. Correcciones puntuales: "Río Grande"; quitar "en el Fincas propias…"; "Roebelenii"; "Jardín / residencial" en lugar de "Jardín / PH" y "2,000 m² (PH)"; quitar "Talud inclinado" de Residencial; quitar "Ver portal de ingeniería".

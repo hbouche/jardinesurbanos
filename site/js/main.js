@@ -171,12 +171,12 @@
 
       const refPriceEl = calcWidget.querySelector('#calc-ref-price');
       if (refPriceEl) {
-        let unitP = '$3.75 / m² (Ref.)';
+        let unitP = '$3.75 / m² (ref.)';
         let unitVal = 3.75;
-        if (quote.varietyKey === 'zoysia_japonica') { unitP = '$4.25 / m² (Ref.)'; unitVal = 4.25; }
-        else if (quote.varietyKey === 'san_agustin') { unitP = '$3.25 / m² (Ref.)'; unitVal = 3.25; }
-        else if (quote.varietyKey === 'hidrosiembra') { unitP = '$1.85 / m² (Ref.)'; unitVal = 1.85; }
-        else { unitP = '$3.75 / m² (Ref.)'; unitVal = 3.75; }
+        if (quote.varietyKey === 'zoysia_japonica') { unitP = '$4.25 / m² (ref.)'; unitVal = 4.25; }
+        else if (quote.varietyKey === 'san_agustin') { unitP = '$3.25 / m² (ref.)'; unitVal = 3.25; }
+        else if (quote.varietyKey === 'hidrosiembra') { unitP = '$1.85 / m² (ref.)'; unitVal = 1.85; }
+        else { unitP = '$3.75 / m² (ref.)'; unitVal = 3.75; }
 
         const totalEst = quote.areaGross > 0 ? ` • Est. Total: $${(quote.areaGross * unitVal).toLocaleString('es-PA', {minimumFractionDigits: 2, maximumFractionDigits: 2})}` : '';
         refPriceEl.innerHTML = `${unitP}<span style="font-size:0.75rem; color:var(--color-sand-muted); font-weight:normal;">${totalEst}</span>`;
@@ -195,10 +195,10 @@
 
       if (leadBadgeEl) {
         if (quote.isB2B) {
-          leadBadgeEl.textContent = 'Prioridad B2B / Obra Civil';
+          leadBadgeEl.textContent = 'Prioridad obra civil';
           leadBadgeEl.className = 'badge badge-b2b';
         } else {
-          leadBadgeEl.textContent = 'Residencial / B2C';
+          leadBadgeEl.textContent = 'Residencial';
           leadBadgeEl.className = 'badge badge-official';
         }
       }
@@ -402,9 +402,9 @@
         <div class="box">
           <div class="box-title">Parámetros del Terreno</div>
           <div class="row"><span>Escenario:</span><strong>${quote.scenarioLabel}</strong></div>
-          <div class="row"><span>Exposición Solar:</span><strong>${quote.sunLabel}</strong></div>
+          <div class="row"><span>Exposición solar:</span><strong>${quote.sunLabel}</strong></div>
           <div class="row"><span>Modalidad:</span><strong>${state.includeInstall}</strong></div>
-          <div class="row"><span>Clasificación:</span><strong>${quote.isB2B ? 'Proyecto B2B / Ingeniería' : 'Residencial / PH'}</strong></div>
+          <div class="row"><span>Clasificación:</span><strong>${quote.isB2B ? 'Proyecto de obra / ingeniería' : 'Residencial'}</strong></div>
         </div>
       </div>
 
@@ -415,7 +415,7 @@
         </div>
         <div style="text-align:right;">
           <span class="big">${quote.areaGross.toLocaleString('es-PA')} m²</span>
-          <div style="font-size:12px; color:#71B347;">${quote.isHydroseeding ? 'Aplicación Mecanizada en Obra' : '~' + quote.estimatedPallets + ' Tarimas de Finca'}</div>
+          <div style="font-size:12px; color:#71B347;">${quote.isHydroseeding ? 'Aplicación mecanizada en obra' : '~' + quote.estimatedPallets + ' Tarimas de Finca'}</div>
         </div>
       </div>
 
@@ -442,7 +442,7 @@
 </body>
 </html>`);
         win.document.close();
-        showToast('Ficha de Cotización Ejecutiva en PDF generada.');
+        showToast('Cotización en PDF generada.');
       });
     }
 
@@ -475,7 +475,7 @@
 ` +
           `• Total con +5% Merma Técnica: ${quote.areaGross} m²
 ` +
-          `• Logística Estimada: ${quote.isHydroseeding ? 'Hidrosiembra Mecanizada' : '~' + quote.estimatedPallets + ' tarimas'}
+          `• Logística estimada: ${quote.isHydroseeding ? 'Hidrosiembra mecanizada' : '~' + quote.estimatedPallets + ' tarimas'}
 ` +
           `• Modalidad: ${state.includeInstall}
 
@@ -519,7 +519,7 @@ ${lead.name}`
         catalogGrid.innerHTML = `
           <div style="grid-column: 1 / -1; text-align: center; padding: 3rem 1rem;">
             <p style="font-size: 1.25rem; font-weight: 600; color: var(--color-forest);">No se encontraron especies con los filtros seleccionados.</p>
-            <p style="color: var(--color-text-muted);">Prueba ajustando los términos de búsqueda o seleccionando "Todo el Inventario".</p>
+            <p style="color: var(--color-text-muted);">Prueba ajustando los términos de búsqueda o seleccionando "Todo el inventario".</p>
             <button class="btn btn-outline btn-sm" id="btn-reset-catalog" style="margin-top: 1rem;">Restablecer Filtros</button>
           </div>
         `;
@@ -818,7 +818,7 @@ ${lead.name}`
           const fullMsg = `Hola Jardines Urbanos, mi nombre es ${name} (Tel: ${phone}), ubicado en ${prov}. Consulta: ${msg}`;
           const waUrl = `https://wa.me/50765390949?text=${encodeURIComponent(fullMsg)}`;
           window.open(waUrl, '_blank');
-          showToast('Redirigiendo a WhatsApp Oficial de Jardines Urbanos...');
+          showToast('Abriendo WhatsApp de Jardines Urbanos...');
         }
       });
     });
@@ -931,7 +931,7 @@ ${lead.name}`
           src: 'assets/video/viveros_oficial_jusa.mp4',
           svgIcon: '<svg class="svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V8"/><path d="M12 8C8 8 5 5 5 2c4 0 7 3 7 6Z"/><path d="M12 8c4 0 7-3 7-6-4 0-7 3-7 6Z"/><path d="M12 11c-4 1-7-1-9-4 3-1 7 0 9 4Z"/><path d="M12 11c4 1 7-1 9-4-3-1-7 0-9 4Z"/></svg>',
           title: 'Vivero botánico completo con palmas reales y árboles en cepellón',
-          desc: 'Recorre nuestros lotes de ejemplares adultos preparados con poda radicular para proyectos residenciales y urbanismos de lujo.'
+          desc: 'Recorre nuestros lotes de ejemplares adultos preparados con poda radicular para proyectos residenciales y urbanísticos.'
         },
         {
           src: 'assets/video/recorrido_finca_jusa.mp4',

@@ -119,8 +119,8 @@ if (jsonLdMatch) {
 // 5. Section Elements in Master Showcase
 console.log('\n--- 5. Master Showcase Section Requirements ---');
 assert(indexHtml.includes('assets/img/DJI_0677-Mejorado-NR.jpg'), 'Hero references real drone photo DJI_0677-Mejorado-NR.jpg');
-assert(indexHtml.includes('+25 Años'), 'Credibility banner includes +25 Años trayectoria');
-assert(indexHtml.includes('Km 168'), 'Credibility banner includes Km 168 Coclé');
+assert(indexHtml.includes('+25 años'), 'Credibility banner includes +25 años trayectoria');
+assert(indexHtml.includes('Fincas propias en Coclé'), 'Credibility banner includes Fincas propias en Coclé');
 assert(indexHtml.includes('calc-widget'), 'Calculator widget markup is present');
 assert(indexHtml.includes('catalog-grid'), 'Botanical catalog grid markup is present');
 assert(indexHtml.includes('ba-comparator'), 'Before/After comparator markup is present');

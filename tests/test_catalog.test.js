@@ -60,7 +60,7 @@ runTest('Todas las fotos oficiales declaradas deben existir físicamente en site
     assert.ok(fs.existsSync(fullPath), `Archivo no encontrado en disco para ${sp.name}: ${sp.photoUrl}`);
     assert.strictEqual(sp.isOfficial, true, `Especie ${sp.name} debe tener isOfficial = true`);
     assert.strictEqual(sp.isMockup, false, `Especie ${sp.name} debe tener isMockup = false`);
-    assert.strictEqual(sp.sourceTag, '[Foto Oficial Finca JUSA]', `Especie ${sp.name} debe portar el sourceTag de foto oficial`);
+    assert.strictEqual(sp.sourceTag, '[Foto oficial finca JUSA]', `Especie ${sp.name} debe portar el sourceTag de foto oficial`);
   });
 });
 
@@ -73,9 +73,9 @@ runTest('Todas las especies mockup declaradas deben existir físicamente en site
     assert.ok(fs.existsSync(fullPath), `Archivo mockup no encontrado en disco para ${sp.name}: ${sp.photoUrl}`);
     assert.strictEqual(sp.isRealPhoto, false, `Especie mockup ${sp.name} debe tener isRealPhoto = false`);
     assert.strictEqual(sp.isOfficial, false, `Especie mockup ${sp.name} debe tener isOfficial = false`);
-    assert.strictEqual(sp.sourceTag, '[Variedad de Finca • Imagen Referencial]',
-      `Especie mockup ${sp.name} debe portar obligatoriamente la etiqueta '[Variedad de Finca • Imagen Referencial]'`);
-    assert.ok(sp.badge.includes('Referencial'), `Badge de ${sp.name} debe indicar que es referencial`);
+    assert.strictEqual(sp.sourceTag, '[Variedad de finca • imagen referencial]',
+      `Especie mockup ${sp.name} debe portar obligatoriamente la etiqueta '[Variedad de finca • imagen referencial]'`);
+    assert.ok(sp.badge.toLowerCase().includes('referencial'), `Badge de ${sp.name} debe indicar que es referencial`);
   });
 });
 
@@ -126,9 +126,9 @@ runTest("Filtro 'palma' debe retornar al menos 5 palmas ornamentales", () => {
   const result = JUSA_Catalog.filterBotanicalCatalog({ category: 'palma' });
   assert.ok(result.length >= 5, `Se esperaban >= 5 palmas, encontradas: ${result.length}`);
   const names = result.map(r => r.name);
-  assert.ok(names.includes('Palma Real en Finca'));
+  assert.ok(names.includes('Palma Real en finca'));
   assert.ok(names.includes('Palma Bismarckia'));
-  assert.ok(names.includes('Palma Cola de Zorro'));
+  assert.ok(names.includes('Palma cola de zorro'));
   assert.ok(names.includes('Palma Areca'));
 });
 
@@ -136,7 +136,7 @@ runTest("Filtro 'arbol' debe retornar árboles nativos (preparado, neem, panamá
   const result = JUSA_Catalog.filterBotanicalCatalog({ category: 'arbol' });
   assert.ok(result.length >= 5, `Se esperaban >= 5 árboles, encontrados: ${result.length}`);
   const names = result.map(r => r.name);
-  assert.ok(names.includes('Árbol Preparado en Cepellón'));
+  assert.ok(names.includes('Árbol preparado en cepellón'));
   assert.ok(names.includes('Árbol de Neem'));
   assert.ok(names.includes('Árbol Panamá (Árbol Nacional)'));
 });

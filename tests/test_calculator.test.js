@@ -95,63 +95,63 @@ runTest('Entradas no numéricas o nulas deben ser manejadas con seguridad retorn
 // -------------------------------------------------------------------
 console.log('\n--- Grupo 2: Matriz de Decisión Agronómica (8 combinaciones) ---');
 
-runTest('Escenario Talud + Pleno Sol -> Hidrosiembra Técnica JUSA', () => {
+runTest('Escenario Talud + Pleno sol -> Hidrosiembra técnica JUSA', () => {
   const quote = JUSA_Calculator.calculateLawnQuote({ areaNet: 200, scenario: 'talud', sun: 'sol' });
-  assert.strictEqual(quote.recommendedVariety, 'Hidrosiembra Técnica JUSA');
+  assert.strictEqual(quote.recommendedVariety, 'Hidrosiembra técnica JUSA');
   assert.strictEqual(quote.varietyKey, 'hidrosiembra');
-  assert.strictEqual(quote.supplyMode, 'Camión Hidrosembrador B2B');
+  assert.strictEqual(quote.supplyMode, 'Camión hidrosembrador');
   assert.strictEqual(quote.isHydroseeding, true);
 });
 
-runTest('Escenario Talud + Sombra Parcial -> Precedencia de Hidrosiembra Técnica JUSA', () => {
+runTest('Escenario Talud + Sombra parcial -> Precedencia de Hidrosiembra técnica JUSA', () => {
   const quote = JUSA_Calculator.calculateLawnQuote({ areaNet: 200, scenario: 'talud', sun: 'sombra' });
-  assert.strictEqual(quote.recommendedVariety, 'Hidrosiembra Técnica JUSA');
+  assert.strictEqual(quote.recommendedVariety, 'Hidrosiembra técnica JUSA');
   assert.strictEqual(quote.varietyKey, 'hidrosiembra');
   assert.strictEqual(quote.isHydroseeding, true);
 });
 
-runTest('Escenario Casa de Playa + Pleno Sol -> Grama Zoysia Japónica', () => {
+runTest('Escenario Casa de playa + Pleno sol -> Grama Zoysia Japónica', () => {
   const quote = JUSA_Calculator.calculateLawnQuote({ areaNet: 150, scenario: 'playa', sun: 'sol' });
   assert.strictEqual(quote.recommendedVariety, 'Grama Zoysia Japónica');
   assert.strictEqual(quote.varietyKey, 'zoysia_japonica');
-  assert.strictEqual(quote.supplyMode, 'Rollos / Tarimas de Finca');
+  assert.strictEqual(quote.supplyMode, 'Rollos / tarimas de finca');
   assert.strictEqual(quote.isHydroseeding, false);
 });
 
-runTest('Escenario Casa de Playa + Sombra Parcial -> Precedencia de Grama Zoysia Japónica por salinidad', () => {
+runTest('Escenario Casa de playa + Sombra parcial -> Precedencia de Grama Zoysia Japónica por salinidad', () => {
   const quote = JUSA_Calculator.calculateLawnQuote({ areaNet: 150, scenario: 'playa', sun: 'sombra' });
   assert.strictEqual(quote.recommendedVariety, 'Grama Zoysia Japónica');
   assert.strictEqual(quote.varietyKey, 'zoysia_japonica');
   assert.strictEqual(quote.isHydroseeding, false);
 });
 
-runTest('Escenario Deportivo + Pleno Sol -> Grama Zoysia Toro (Alto Tráfico)', () => {
+runTest('Escenario Deportivo + Pleno sol -> Grama Zoysia Toro (alto tráfico)', () => {
   const quote = JUSA_Calculator.calculateLawnQuote({ areaNet: 600, scenario: 'deportivo', sun: 'sol' });
-  assert.strictEqual(quote.recommendedVariety, 'Grama Zoysia Toro (Alto Tráfico)');
+  assert.strictEqual(quote.recommendedVariety, 'Grama Zoysia Toro (alto tráfico)');
   assert.strictEqual(quote.varietyKey, 'zoysia_toro_deportivo');
-  assert.strictEqual(quote.supplyMode, 'Suministro a Escala / Tarimas');
+  assert.strictEqual(quote.supplyMode, 'Suministro a escala / tarimas');
   assert.strictEqual(quote.isHydroseeding, false);
 });
 
-runTest('Escenario Deportivo + Sombra Parcial -> Grama San Agustín (precedencia fisiológica de luz)', () => {
+runTest('Escenario Deportivo + Sombra parcial -> Grama San Agustín (precedencia fisiológica de luz)', () => {
   const quote = JUSA_Calculator.calculateLawnQuote({ areaNet: 300, scenario: 'deportivo', sun: 'sombra' });
   assert.strictEqual(quote.recommendedVariety, 'Grama San Agustín');
   assert.strictEqual(quote.varietyKey, 'san_agustin');
-  assert.strictEqual(quote.supplyMode, 'Rollos / Tarimas de Finca');
+  assert.strictEqual(quote.supplyMode, 'Rollos / tarimas de finca');
 });
 
-runTest('Escenario Residencial + Pleno Sol (Default) -> Grama Zoysia Toro', () => {
+runTest('Escenario Residencial + Pleno sol (Default) -> Grama Zoysia Toro', () => {
   const quote = JUSA_Calculator.calculateLawnQuote({ areaNet: 80, scenario: 'residencial', sun: 'sol' });
   assert.strictEqual(quote.recommendedVariety, 'Grama Zoysia Toro');
   assert.strictEqual(quote.varietyKey, 'zoysia_toro');
-  assert.strictEqual(quote.supplyMode, 'Rollos / Tarimas de Finca');
+  assert.strictEqual(quote.supplyMode, 'Rollos / tarimas de finca');
 });
 
-runTest('Escenario Residencial + Sombra Parcial -> Grama San Agustín', () => {
+runTest('Escenario Residencial + Sombra parcial -> Grama San Agustín', () => {
   const quote = JUSA_Calculator.calculateLawnQuote({ areaNet: 120, scenario: 'residencial', sun: 'sombra' });
   assert.strictEqual(quote.recommendedVariety, 'Grama San Agustín');
   assert.strictEqual(quote.varietyKey, 'san_agustin');
-  assert.strictEqual(quote.supplyMode, 'Rollos / Tarimas de Finca');
+  assert.strictEqual(quote.supplyMode, 'Rollos / tarimas de finca');
 });
 
 // -------------------------------------------------------------------
@@ -176,9 +176,9 @@ runTest('Mensaje pre-llenado en WhatsApp debe coincidir con el formato exigido',
     'Debe contener los metros brutos con merma');
   assert.ok(textParam.includes('Grama Zoysia Toro'),
     'Debe especificar la variedad recomendada');
-  assert.ok(textParam.includes('Jardín / PH'),
+  assert.ok(textParam.includes('Jardín / residencial'),
     'Debe especificar el escenario');
-  assert.ok(textParam.includes('Pleno Sol'),
+  assert.ok(textParam.includes('Pleno sol'),
     'Debe especificar la condición de sol');
 });
 

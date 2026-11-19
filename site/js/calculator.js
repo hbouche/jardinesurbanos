@@ -32,26 +32,26 @@
   const SCENARIOS = {
     residencial: {
       key: 'residencial',
-      label: 'Jardín / PH',
-      fullLabel: 'Jardín / PH Residencial',
+      label: 'Jardín / residencial',
+      fullLabel: 'Jardín / residencial',
       description: 'Patios residenciales, jardines de casas particulares y áreas verdes comunes de propiedad horizontal.'
     },
     playa: {
       key: 'playa',
-      label: 'Casa de Playa',
-      fullLabel: 'Casa de Playa / Costa',
+      label: 'Casa de playa',
+      fullLabel: 'Casa de playa / costa',
       description: 'Propiedades costeras con exposición a brisa marina salina, suelos arenosos y sequías estacionales.'
     },
     deportivo: {
       key: 'deportivo',
-      label: 'Parque / Alto Tráfico',
-      fullLabel: 'Parque / Alto Tráfico',
+      label: 'Parque / alto tráfico',
+      fullLabel: 'Parque / alto tráfico',
       description: 'Canchas deportivas, parques recreativos, áreas infantiles y zonas con tránsito peatonal intenso o mascotas.'
     },
     talud: {
       key: 'talud',
-      label: 'Talud / Obra Vial',
-      fullLabel: 'Talud / Control de Erosión',
+      label: 'Talud / obra vial',
+      fullLabel: 'Talud / control de erosión',
       description: 'Pendientes pronunciadas, cortes viales y terraplenes con riesgo crítico de erosión pluvial en Panamá.'
     }
   };
@@ -59,14 +59,14 @@
   const SUN_CONDITIONS = {
     sol: {
       key: 'sol',
-      label: 'Pleno Sol',
-      fullLabel: 'Pleno Sol (+6 hrs)',
+      label: 'Pleno sol',
+      fullLabel: 'Pleno sol (+6 hrs)',
       description: 'Más de 6 horas continuas de sol directo al día.'
     },
     sombra: {
       key: 'sombra',
-      label: 'Sombra Parcial',
-      fullLabel: 'Sombra Parcial / Árboles',
+      label: 'Sombra parcial',
+      fullLabel: 'Sombra parcial / árboles',
       description: 'Luz filtrada por copas de árboles maduros o muros perimetrales altos.'
     }
   };
@@ -76,15 +76,15 @@
       key: 'zoysia_toro',
       name: 'Grama Zoysia Toro',
       scientificName: "Zoysia japonica 'Toro'",
-      supplyMode: 'Rollos / Tarimas de Finca',
-      shortDescription: 'Grama de hoja media y color verde esmeralda intenso cultivada en Río Grande, Coclé. Excelente resistencia al pisoteo y rápida regeneración.',
+      supplyMode: 'Rollos / tarimas de finca',
+      shortDescription: 'Grama de hoja media y color verde esmeralda intenso cultivada en Río Grande, Coclé. Resiste bien el pisoteo y rápida regeneración.',
       isHydroseeding: false
     },
     zoysia_toro_deportivo: {
       key: 'zoysia_toro_deportivo',
-      name: 'Grama Zoysia Toro (Alto Tráfico)',
+      name: 'Grama Zoysia Toro (alto tráfico)',
       scientificName: "Zoysia japonica 'Toro'",
-      supplyMode: 'Suministro a Escala / Tarimas',
+      supplyMode: 'Suministro a escala / tarimas',
       shortDescription: 'Variedad de máximo desempeño mecánico cultivada en Coclé. Diseñada para soportar pisoteo deportivo constante y tránsito masivo de mascotas.',
       isHydroseeding: false
     },
@@ -92,7 +92,7 @@
       key: 'zoysia_japonica',
       name: 'Grama Zoysia Japónica',
       scientificName: 'Zoysia japonica',
-      supplyMode: 'Rollos / Tarimas de Finca',
+      supplyMode: 'Rollos / tarimas de finca',
       shortDescription: 'Césped de textura fina con la mayor tolerancia comprobada al salitre costero, brisa marina y suelos arenosos en el litoral pacífico y caribeño.',
       isHydroseeding: false
     },
@@ -100,15 +100,15 @@
       key: 'san_agustin',
       name: 'Grama San Agustín',
       scientificName: 'Stenotaphrum secundatum',
-      supplyMode: 'Rollos / Tarimas de Finca',
+      supplyMode: 'Rollos / tarimas de finca',
       shortDescription: 'Variedad de hoja ancha verde azulada de alta tolerancia a la sombra parcial y luz tamizada de árboles maduros o edificios residenciales.',
       isHydroseeding: false
     },
     hidrosiembra: {
       key: 'hidrosiembra',
-      name: 'Hidrosiembra Técnica JUSA',
-      scientificName: 'Técnica Mecanizada B2B',
-      supplyMode: 'Camión Hidrosembrador B2B',
+      name: 'Hidrosiembra técnica JUSA',
+      scientificName: 'Aplicación mecanizada',
+      supplyMode: 'Camión hidrosembrador',
       shortDescription: 'Aplicación mecanizada de semillas tropicalizadas, mulch de fibra de madera/celulosa, fijador orgánico y fertilizantes para estabilización de taludes al 98%.',
       isHydroseeding: true
     }
@@ -130,10 +130,10 @@
   /**
    * Resuelve la recomendación agronómica según la jerarquía estricta.
    * Jerarquía:
-   * 1. Talud -> Hidrosiembra Técnica JUSA (prevalencia absoluta sobre condición solar)
+   * 1. Talud -> Hidrosiembra técnica JUSA (prevalencia absoluta sobre condición solar)
    * 2. Playa -> Grama Zoysia Japónica (prevalencia por salinidad y costa)
    * 3. Sombra -> Grama San Agustín (prevalencia fisiológica por tolerancia lumínica)
-   * 4. Deportivo -> Grama Zoysia Toro (Alto Tráfico)
+   * 4. Deportivo -> Grama Zoysia Toro (alto tráfico)
    * 5. Default (Residencial sol) -> Grama Zoysia Toro
    * 
    * @param {string} scenario - 'residencial' | 'playa' | 'deportivo' | 'talud'
@@ -198,8 +198,8 @@
    * @param {Object} params
    * @param {number} params.gross - Metros cuadrados con merma
    * @param {string} params.varietyTitle - Nombre comercial de la variedad recomendada
-   * @param {string} params.scenarioLabel - Etiqueta corta del escenario (ej. "Jardín / PH")
-   * @param {string} params.sunLabel - Etiqueta del sol (ej. "Pleno Sol" o "Sombra Parcial")
+   * @param {string} params.scenarioLabel - Etiqueta corta del escenario (ej. "Jardín / residencial")
+   * @param {string} params.sunLabel - Etiqueta del sol (ej. "Pleno sol" o "Sombra parcial")
    * @param {string} [params.location] - Ubicación opcional de entrega
    * @param {string} [params.includeInstall] - Requerimiento opcional de instalación
    * @param {string} [params.utmSource] - Fuente UTM de atribución opcional
@@ -208,8 +208,8 @@
   function buildWhatsAppUrl(params) {
     const gross = Number(params.gross) || 0;
     const varietyTitle = params.varietyTitle || 'Grama Zoysia Toro';
-    const scenarioLabel = params.scenarioLabel || 'Jardín / PH';
-    const sunLabel = params.sunLabel || 'Pleno Sol';
+    const scenarioLabel = params.scenarioLabel || 'Jardín / residencial';
+    const sunLabel = params.sunLabel || 'Pleno sol';
     const grossFormatted = gross.toLocaleString('es-PA');
 
     // Mensaje base estandarizado
