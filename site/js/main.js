@@ -166,7 +166,8 @@
       if (recTitleEl) recTitleEl.textContent = quote.recommendedVariety;
 
       const refPriceEl = calcWidget.querySelector('#calc-ref-price');
-      if (refPriceEl) {
+      const mostrarPrecios = window.JUSA_Catalog && window.JUSA_Catalog.MOSTRAR_PRECIOS;
+      if (refPriceEl && mostrarPrecios) {
         let unitP = '$3.75 / m² (ref.)';
         let unitVal = 3.75;
         if (quote.varietyKey === 'zoysia_japonica') { unitP = '$4.25 / m² (ref.)'; unitVal = 4.25; }
@@ -549,7 +550,7 @@ ${lead.name}`
           <div style="grid-column: 1 / -1; text-align: center; padding: 3rem 1rem;">
             <p style="font-size: 1.25rem; font-weight: 600; color: var(--color-forest);">No se encontraron especies con los filtros seleccionados.</p>
             <p style="color: var(--color-text-muted);">Prueba ajustando los términos de búsqueda o seleccionando "Todo el inventario".</p>
-            <button class="btn btn-outline btn-sm" id="btn-reset-catalog" style="margin-top: 1rem;">Restablecer Filtros</button>
+            <button class="btn btn-outline btn-sm" id="btn-reset-catalog" style="margin-top: 1rem;">Restablecer filtros</button>
           </div>
         `;
         const resetBtn = document.querySelector('#btn-reset-catalog');
@@ -613,7 +614,7 @@ ${lead.name}`
               <div class="catalog-card-traits">${traitsHtml}</div>
               <p class="catalog-card-desc">${item.shortDescription}</p>
               <div class="catalog-card-footer">
-                <span class="catalog-price-tag" title="Precio referencial en vivero">${item.price}</span>
+                ${(window.JUSA_Catalog && window.JUSA_Catalog.MOSTRAR_PRECIOS) ? `<span class="catalog-price-tag" title="Precio referencial en vivero">${item.price}</span>` : '<span class="catalog-card-cotizar">Precio según cantidad</span>'}
                 <a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm" data-grass-variety="${item.name}" data-product-category="Catálogo" title="Cotizar o consultar disponibilidad por WhatsApp">
                   <svg class="svg-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> Consultar
                 </a>
@@ -714,16 +715,17 @@ ${lead.name}`
             <div id="modal-badge-container" style="margin-bottom: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;"></div>
             <p id="modal-desc" style="font-size: 1rem; line-height: 1.6; color: var(--color-text-dark); margin-bottom: 1.25rem;"></p>
             <div style="background: var(--color-sand); padding: 1rem; border-radius: var(--radius-md); margin-bottom: 1.25rem;">
-              <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--color-forest); margin-bottom: 0.5rem;">Características de Finca & Cultivo:</h4>
+              <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--color-forest); margin-bottom: 0.5rem;">Características de finca y cultivo:</h4>
               <ul id="modal-features" style="padding-left: 1.25rem; font-size: 0.875rem; color: var(--color-text-muted); line-height: 1.6;"></ul>
             </div>
             <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--color-sand-muted); padding-top: 1rem;">
-              <div>
-                <span style="font-size: 0.75rem; color: var(--color-text-muted); display: block;">Precio Referencial:</span>
-                <span class="catalog-price-tag">${item.price}</span>
+              <div>${(window.JUSA_Catalog && window.JUSA_Catalog.MOSTRAR_PRECIOS) ? `
+                <span style="font-size: 0.75rem; color: var(--color-text-muted); display: block;">Precio referencial:</span>
+                <span class="catalog-price-tag">${item.price}</span>` : `
+                <span style="font-size: 0.85rem; color: var(--color-text-muted);">Precio según cantidad y lugar de entrega</span>`}
               </div>
               <a id="modal-wa-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
-                <svg class="svg-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> Solicitar Disponibilidad
+                <svg class="svg-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> Solicitar disponibilidad
               </a>
             </div>
           </div>

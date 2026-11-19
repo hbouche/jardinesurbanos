@@ -1823,3 +1823,23 @@ img {
 .politica-datos-card a { color: var(--color-chlorophyll); font-weight: 600; }
 .consentimiento-datos { font-size: var(--fs-caption); color: var(--color-text-muted); margin-top: var(--space-2); }
 .consentimiento-datos a { color: var(--color-chlorophyll); font-weight: 600; }
+
+/* Sin precios visibles (decisión del cliente): texto en lugar de la etiqueta de precio */
+.catalog-card-cotizar { font-size: 0.8rem; color: var(--color-text-muted); }
+
+/* Aviso de cookies (Ley 81) */
+.aviso-cookies {
+  position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 9999;
+  max-width: 760px; margin: 0 auto; background: #FFFFFF; color: var(--color-text-dark);
+  border: 1px solid var(--color-hoja); border-radius: var(--radius-lg);
+  box-shadow: 0 12px 32px rgba(18, 43, 29, 0.18); padding: var(--space-4) var(--space-5);
+  display: flex; align-items: center; gap: var(--space-4); flex-wrap: wrap;
+}
+.aviso-cookies-texto { margin: 0; flex: 1 1 320px; font-size: var(--fs-body-sm); line-height: 1.5; }
+.aviso-cookies-texto a { color: var(--color-chlorophyll); font-weight: 600; }
+.aviso-cookies-acciones { display: flex; gap: var(--space-2); }
+@media (max-width: 768px) {
+  .aviso-cookies { bottom: 84px; padding: var(--space-4); }  /* sobre la barra fija de móvil */
+  .aviso-cookies-acciones { width: 100%; }
+  .aviso-cookies-acciones .btn { flex: 1; }
+}

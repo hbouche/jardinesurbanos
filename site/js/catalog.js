@@ -24,6 +24,9 @@
   'use strict';
 
   const PENDING_CLIENT_DATA = 'Precio a cotizar';
+  // Decisión del cliente (nov. 2026): no mostrar precios en el sitio. Los precios se conservan en los datos;
+  // para volver a mostrarlos basta con poner true.
+  const MOSTRAR_PRECIOS = false;
   const OFFICIAL_PHOTO_TAG = '[Foto oficial finca JUSA]';
   const MOCKUP_PHOTO_TAG = '[Variedad de finca • imagen referencial]';
 
@@ -1054,7 +1057,7 @@
       '<div class="catalog-card-traits">' + traitsHtml + '</div>' +
       '<p class="catalog-card-desc">' + item.shortDescription + '</p>' +
       '<div class="catalog-card-footer">' +
-      '<span class="catalog-price-tag" title="Precio referencial en vivero">' + item.price + '</span>' +
+      (MOSTRAR_PRECIOS ? '<span class="catalog-price-tag" title="Precio referencial en vivero">' + item.price + '</span>' : '<span class="catalog-card-cotizar">Precio según cantidad</span>') +
       '<a href="' + waUrl + '" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm" data-grass-variety="' + item.name + '" data-product-category="Catálogo" title="Cotizar o consultar disponibilidad por WhatsApp">' +
       '<svg class="svg-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> Consultar' +
       '</a>' +
@@ -1064,6 +1067,7 @@
 
   return {
     PENDING_CLIENT_DATA: PENDING_CLIENT_DATA,
+    MOSTRAR_PRECIOS: MOSTRAR_PRECIOS,
     OFFICIAL_PHOTO_TAG: OFFICIAL_PHOTO_TAG,
     MOCKUP_PHOTO_TAG: MOCKUP_PHOTO_TAG,
     CATEGORIES: CATEGORIES,

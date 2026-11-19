@@ -12,6 +12,10 @@
  *   whatsapp_click · llamada_click · correo_click → contacto directo
  *   formulario_envio       → envío de los formularios de contacto e hidrosiembra
  * En Meta, además, los de cotizar/calculadora/formulario se envían como "Lead" y los de contacto como "Contact".
+ *
+ * Aviso de cookies (Ley 81): GA4 y el píxel de Meta solo se cargan si la persona acepta.
+ * La decisión se guarda en este navegador (localStorage 'jusa_consentimiento') y se puede
+ * cambiar desde el enlace "Preferencias de cookies" del footer.
  */
 (function () {
   'use strict';
@@ -23,26 +27,78 @@
 
   window.dataLayer = window.dataLayer || [];
 
-  // ---- Carga de las etiquetas (solo si hay ID) ----
-  if (CONFIG.ga4) {
-    var g = document.createElement('script');
-    g.async = true;
-    g.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(CONFIG.ga4);
-    document.head.appendChild(g);
-    window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
-    window.gtag('js', new Date());
-    window.gtag('config', CONFIG.ga4);
+  // ---- Consentimiento ----
+  var CONSENT_KEY = 'jusa_consentimiento';
+  function getConsent() { try { return localStorage.getItem(CONSENT_KEY); } catch (e) { return null; } }
+  function setConsent(v) { try { localStorage.setItem(CONSENT_KEY, v); } catch (e) { /* navegación privada */ } }
+  var loaded = false;
+
+  // ---- Carga de las etiquetas (solo con consentimiento y si hay ID) ----
+  function loadTags() {
+    if (loaded) return;
+    loaded = true;
+    if (CONFIG.ga4) {
+      var g = document.createElement('script');
+      g.async = true;
+      g.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(CONFIG.ga4);
+      document.head.appendChild(g);
+      window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+      window.gtag('js', new Date());
+      window.gtag('config', CONFIG.ga4);
+    }
+    if (CONFIG.metaPixel) {
+      /* Código base oficial del píxel de Meta */
+      !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = [];
+        t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+      }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      window.fbq('init', CONFIG.metaPixel);
+      window.fbq('track', 'PageView');
+    }
   }
-  if (CONFIG.metaPixel) {
-    /* Código base oficial del píxel de Meta */
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = [];
-      t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
-    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-    window.fbq('init', CONFIG.metaPixel);
-    window.fbq('track', 'PageView');
+  if (getConsent() === 'aceptado') loadTags();
+
+  // ---- Aviso de cookies ----
+  var thisScript = document.currentScript || document.querySelector('script[src*="js/analitica.js"]');
+  var prefix = thisScript ? thisScript.getAttribute('src').split('js/analitica.js')[0] : '';
+
+  function showBanner() {
+    if (document.getElementById('aviso-cookies')) return;
+    var box = document.createElement('div');
+    box.id = 'aviso-cookies';
+    box.className = 'aviso-cookies';
+    box.setAttribute('role', 'dialog');
+    box.setAttribute('aria-label', 'Aviso de cookies');
+    box.innerHTML =
+      '<p class="aviso-cookies-texto">Usamos cookies de medición (Google Analytics y Meta) para saber qué partes del sitio son útiles y mejorar nuestros anuncios. ' +
+      'Solo se activan si las aceptas. <a href="' + prefix + 'politica-de-datos/#cookies">Más información</a>.</p>' +
+      '<div class="aviso-cookies-acciones">' +
+      '<button type="button" class="btn btn-outline btn-sm" data-cookies="rechazado">Rechazar</button>' +
+      '<button type="button" class="btn btn-primary btn-sm" data-cookies="aceptado">Aceptar</button>' +
+      '</div>';
+    box.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-cookies]');
+      if (!b) return;
+      var v = b.getAttribute('data-cookies');
+      var prev = getConsent();
+      setConsent(v);
+      box.remove();
+      window.dataLayer.push({ event: 'consentimiento_cookies', decision: v });
+      if (v === 'aceptado') loadTags();
+      else if (prev === 'aceptado' && loaded) location.reload(); // descarga las etiquetas ya cargadas
+    });
+    document.body.appendChild(box);
   }
+
+  function initBanner() {
+    if (!getConsent()) showBanner();
+    document.addEventListener('click', function (e) {
+      if (e.target.closest('[data-abrir-cookies]')) { e.preventDefault(); showBanner(); }
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initBanner);
+  else initBanner();
 
   var META_LEAD = { cotizar_residencial: 1, cotizar_comercial: 1, cotizar_hidrosiembra: 1, calculadora_cotizacion: 1, formulario_envio: 1 };
   var META_CONTACT = { whatsapp_click: 1, llamada_click: 1, correo_click: 1 };
@@ -51,14 +107,14 @@
     params = params || {};
     params.pagina = location.pathname.replace(/index\.html$/, '') || '/';
     window.dataLayer.push(Object.assign({ event: name }, params));
-    if (CONFIG.ga4 && window.gtag) window.gtag('event', name, params);
-    if (CONFIG.metaPixel && window.fbq) {
+    if (loaded && CONFIG.ga4 && window.gtag) window.gtag('event', name, params);
+    if (loaded && CONFIG.metaPixel && window.fbq) {
       if (META_LEAD[name]) window.fbq('track', 'Lead', { content_name: name });
       else if (META_CONTACT[name]) window.fbq('track', 'Contact', { content_name: name });
       window.fbq('trackCustom', name, params);
     }
   }
-  window.JUSA_Analitica = { track: track, config: CONFIG };
+  window.JUSA_Analitica = { track: track, config: CONFIG, mostrarAvisoCookies: showBanner };
 
   function section(el) {
     var s = el.closest('section, header, footer, aside, .mobile-sticky-bar');

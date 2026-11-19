@@ -174,15 +174,18 @@ Detalle de lo que pedía la fase:
 4. Página `politica-de-datos` (Ley 81), enlazada desde todos los formularios y el footer.
 5. Redes en el footer, con las URLs listas para reemplazar.
 
-## Fase 5: Bloqueado, decide el cliente
-Mientras no lleguen las respuestas, se deja preparado para activarlo con un interruptor.
-- Precios visibles o no (25 fichas, `js/main.js` con "Est. total").
-- Sección "Soluciones para constructoras… pliegos MOP".
-- Capacidad de hidrosiembra (5,000 o 3,500 m²/día) y hectáreas (7 tecnificadas o 7 de pitahaya).
-- Promesas: 100% de arraigo, 98% de escorrentía, 100% de adaptación, producción certificada, menos de 24 h, MOP y MiAmbiente. Sin respaldo, se suavizan con "hasta" o "en condiciones normales", o se quitan.
-- Fotos reales de antes y después. Mientras no lleguen, se oculta la sección.
-- Número de RUC y URLs de Instagram, LinkedIn, Facebook y YouTube.
-- IDs de GA4 y Meta, y dominio propio.
+## Fase 5: Decisiones del cliente (19-nov-2026)
+| Tema | Decisión | Estado |
+|---|---|---|
+| Publicación | **No publicar todavía**: el sitio está en modo de prueba | Nada publicado |
+| Aviso de cookies | Sí | ✅ Aviso en la primera visita (Aceptar / Rechazar), "Preferencias de cookies" en el footer y sección 8 en la política. GA4 y Meta solo se cargan si se acepta |
+| Precios visibles | No | ✅ Ocultos en tarjetas, ficha del catálogo y calculadora. Interruptor `MOSTRAR_PRECIOS` en `js/catalog.js`; los precios se conservan en los datos |
+| Sección de pliegos | Se le explicó qué es; **pendiente de respuesta** | Fuera de Inicio desde la Fase 3; sigue completa en `/hidrosiembra/` |
+| Capacidad de hidrosiembra | "+5,000" | ✅ "+5,000 m²/día" en Inicio y en Hidrosiembra (se unificó el "hasta 3,500"). **Confirmar unidad:** el cliente dijo "hectáreas"; se interpretó m²/día |
+| Promesas ("100% de arraigo", etc.) | Se mantienen | Sin cambios |
+| Fotos reales de antes y después | Sí | **Pendiente:** hacen falta pares de fotos reales (mismo lugar, antes y después). Mientras tanto siguen las referenciales con su etiqueta |
+| RUC | No se pone | ✅ El footer no muestra RUC |
+| URLs de redes, IDs de GA4 y Meta | El cliente los pasa después | Pendiente: `site/_partials/paginas.json` > `redes` y `CONFIG` en `site/js/analitica.js` |
 
 ## Fase 6: Control de calidad
 Capturas en desktop y móvil de cada página, comparadas con las de la Fase 0. Verificar el contraste (axe o Lighthouse), que todas las imágenes cargan haciendo scroll en móvil, el peso de Inicio y el número de pantallas. Búsqueda final sin "B2B", "B2C", "Km 168" (en cifras), "Rio Grande", "&" en títulos ni "instagram.com" genérico. Ejecutar los tests de `tests/`.
