@@ -1,0 +1,198 @@
+MATERIAL VIGENTE DEL CLIENTE - JARDINES URBANOS
+
+Esta carpeta contiene los originales enviados por Julio que el cliente quiere utilizar ahora. El material utilizado anteriormente en el proyecto era de muestra. Esta carpeta queda separada de esas muestras; los archivos anteriores no se han eliminado ni alterado.
+
+Contenido verificado: 169 imágenes + 13 videos en Fotos para redes; 3 videos MOV adicionales en Videos; 1 logo original LOGOJUSA.ai en Logo. Total: 186 originales, 633.395.605 bytes.
+Se conservaron nombres y formatos originales, incluidos HEIC y MOV. Se omitió únicamente .DS_Store, metadato de macOS sin contenido creativo.
+
+INVENTARIO_ORIGINALES.csv lista cada archivo, su ubicación relativa, tipo, tamaño, SHA-256 local y fuente de Drive. Todos los tamaños se cotejaron con Drive. Los hashes SHA-256 son referencias locales de integridad; no una comparación contra hashes del proveedor.
+No se han clasificado servicios ni deducido aprobaciones individuales adicionales. No se ha comunicado nada a Antigravity.
+
+LISTADO COMPLETO
+
+1. Fotos para redes\IMG_8704.JPG | image/jpeg | 4289821 bytes
+2. Fotos para redes\IMG_8681.JPG | image/jpeg | 3549100 bytes
+3. Fotos para redes\IMG_8678.JPG | image/jpeg | 4352134 bytes
+4. Fotos para redes\IMG_8690.JPG | image/jpeg | 4049774 bytes
+5. Fotos para redes\GramaAd2.png | image/png | 3376736 bytes
+6. Fotos para redes\GramasAd.png | image/png | 3361940 bytes
+7. Fotos para redes\WhatsApp Image 2025-05-27 at 7.08.37 AM.jpeg | image/jpeg | 1423070 bytes
+8. Fotos para redes\Gramas5.jpg | image/jpeg | 6432189 bytes
+9. Fotos para redes\IMG_0217.MOV | video/quicktime | 6319673 bytes
+10. Fotos para redes\IMG_0232.MOV | video/quicktime | 495667 bytes
+11. Fotos para redes\IMG_0265.MOV | video/quicktime | 11026556 bytes
+12. Fotos para redes\IMG_0261.MOV | video/quicktime | 17596934 bytes
+13. Fotos para redes\IMG_0168.HEIC | image/heif | 1669911 bytes
+14. Fotos para redes\IMG_0169.HEIC | image/heif | 1521551 bytes
+15. Fotos para redes\IMG_0170.HEIC | image/heif | 1220946 bytes
+16. Fotos para redes\IMG_0171.HEIC | image/heif | 2541557 bytes
+17. Fotos para redes\IMG_0172.HEIC | image/heif | 1881701 bytes
+18. Fotos para redes\IMG_0173.HEIC | image/heif | 1753564 bytes
+19. Fotos para redes\IMG_0231.MOV | video/quicktime | 12956969 bytes
+20. Fotos para redes\IMG_0174.HEIC | image/heif | 3231734 bytes
+21. Fotos para redes\IMG_0175.HEIC | image/heif | 3277978 bytes
+22. Fotos para redes\IMG_0176.HEIC | image/heif | 2648142 bytes
+23. Fotos para redes\IMG_0180.HEIC | image/heif | 1838703 bytes
+24. Fotos para redes\IMG_0181.HEIC | image/heif | 2614984 bytes
+25. Fotos para redes\IMG_0182.HEIC | image/heif | 2312071 bytes
+26. Fotos para redes\IMG_0183.HEIC | image/heif | 2912821 bytes
+27. Fotos para redes\IMG_0184.HEIC | image/heif | 2746533 bytes
+28. Fotos para redes\IMG_0185.HEIC | image/heif | 2866437 bytes
+29. Fotos para redes\IMG_0186.HEIC | image/heif | 2226889 bytes
+30. Fotos para redes\IMG_0187.HEIC | image/heif | 2123898 bytes
+31. Fotos para redes\IMG_0188.HEIC | image/heif | 2269004 bytes
+32. Fotos para redes\IMG_0189.HEIC | image/heif | 2186790 bytes
+33. Fotos para redes\IMG_0190.HEIC | image/heif | 2072104 bytes
+34. Fotos para redes\IMG_0191.HEIC | image/heif | 1969247 bytes
+35. Fotos para redes\IMG_0192.HEIC | image/heif | 3105000 bytes
+36. Fotos para redes\IMG_0193.HEIC | image/heif | 1780339 bytes
+37. Fotos para redes\IMG_0194.HEIC | image/heif | 1619401 bytes
+38. Fotos para redes\IMG_0195.HEIC | image/heif | 878848 bytes
+39. Fotos para redes\IMG_0198.HEIC | image/heif | 2438683 bytes
+40. Fotos para redes\IMG_0199.HEIC | image/heif | 2514278 bytes
+41. Fotos para redes\IMG_0202.HEIC | image/heif | 2650481 bytes
+42. Fotos para redes\IMG_0203.HEIC | image/heif | 2834112 bytes
+43. Fotos para redes\IMG_0204.HEIC | image/heif | 3403868 bytes
+44. Fotos para redes\IMG_0205.HEIC | image/heif | 2230021 bytes
+45. Fotos para redes\IMG_0206.HEIC | image/heif | 2783184 bytes
+46. Fotos para redes\IMG_0207.HEIC | image/heif | 2005997 bytes
+47. Fotos para redes\IMG_0208.HEIC | image/heif | 1820310 bytes
+48. Fotos para redes\IMG_0210.HEIC | image/heif | 2732236 bytes
+49. Fotos para redes\IMG_0211.HEIC | image/heif | 2088508 bytes
+50. Fotos para redes\IMG_0212.HEIC | image/heif | 2311315 bytes
+51. Fotos para redes\IMG_0213.HEIC | image/heif | 2410829 bytes
+52. Fotos para redes\IMG_0214.HEIC | image/heif | 2579394 bytes
+53. Fotos para redes\IMG_0215.HEIC | image/heif | 2059407 bytes
+54. Fotos para redes\IMG_0218.HEIC | image/heif | 2153256 bytes
+55. Fotos para redes\IMG_0219.HEIC | image/heif | 1679303 bytes
+56. Fotos para redes\IMG_0220.HEIC | image/heif | 2097467 bytes
+57. Fotos para redes\IMG_0221.HEIC | image/heif | 1790065 bytes
+58. Fotos para redes\IMG_0222.HEIC | image/heif | 1778922 bytes
+59. Fotos para redes\IMG_0223.HEIC | image/heif | 1556965 bytes
+60. Fotos para redes\IMG_0224.HEIC | image/heif | 2015909 bytes
+61. Fotos para redes\IMG_0225.HEIC | image/heif | 1525093 bytes
+62. Fotos para redes\IMG_0226.HEIC | image/heif | 1521817 bytes
+63. Fotos para redes\IMG_0227.HEIC | image/heif | 1841246 bytes
+64. Fotos para redes\IMG_0228.HEIC | image/heif | 2049105 bytes
+65. Fotos para redes\IMG_0229.HEIC | image/heif | 1942079 bytes
+66. Fotos para redes\IMG_0230.HEIC | image/heif | 1993044 bytes
+67. Fotos para redes\IMG_0233.HEIC | image/heif | 1928513 bytes
+68. Fotos para redes\IMG_0234.HEIC | image/heif | 1738671 bytes
+69. Fotos para redes\IMG_0235.HEIC | image/heif | 1672331 bytes
+70. Fotos para redes\IMG_0236.HEIC | image/heif | 3041293 bytes
+71. Fotos para redes\IMG_0237.HEIC | image/heif | 2249997 bytes
+72. Fotos para redes\IMG_0238.HEIC | image/heif | 1751275 bytes
+73. Fotos para redes\IMG_0239.HEIC | image/heif | 2582486 bytes
+74. Fotos para redes\IMG_0240.HEIC | image/heif | 2214591 bytes
+75. Fotos para redes\IMG_0241.HEIC | image/heif | 2386503 bytes
+76. Fotos para redes\IMG_0242.HEIC | image/heif | 1949605 bytes
+77. Fotos para redes\IMG_0246.HEIC | image/heif | 3486232 bytes
+78. Fotos para redes\IMG_0248.HEIC | image/heif | 2070531 bytes
+79. Fotos para redes\IMG_0249.HEIC | image/heif | 1986638 bytes
+80. Fotos para redes\IMG_0250.HEIC | image/heif | 1700218 bytes
+81. Fotos para redes\IMG_0252.HEIC | image/heif | 1879155 bytes
+82. Fotos para redes\IMG_0254.HEIC | image/heif | 2175362 bytes
+83. Fotos para redes\IMG_0256.HEIC | image/heif | 3417569 bytes
+84. Fotos para redes\IMG_0257.HEIC | image/heif | 2149334 bytes
+85. Fotos para redes\IMG_0258.HEIC | image/heif | 1652043 bytes
+86. Fotos para redes\IMG_0259.HEIC | image/heif | 1653317 bytes
+87. Fotos para redes\IMG_0260.HEIC | image/heif | 1421261 bytes
+88. Fotos para redes\IMG_0262.HEIC | image/heif | 3671835 bytes
+89. Fotos para redes\IMG_0264.HEIC | image/heif | 2861313 bytes
+90. Fotos para redes\IMG_0266.HEIC | image/heif | 3297805 bytes
+91. Fotos para redes\IMG_0267.HEIC | image/heif | 3363139 bytes
+92. Fotos para redes\IMG_0268.HEIC | image/heif | 3589397 bytes
+93. Fotos para redes\IMG_0269.HEIC | image/heif | 2944053 bytes
+94. Fotos para redes\IMG_0270.HEIC | image/heif | 2553036 bytes
+95. Fotos para redes\IMG_0271.HEIC | image/heif | 1778750 bytes
+96. Fotos para redes\34fd9f89-40d9-4315-a44a-8d10df7cd4c0.mp4 | video/mp4 | 3117762 bytes
+97. Fotos para redes\2f2f6549-abef-4d65-a7f0-bab3065166ff.mp4 | video/mp4 | 2046790 bytes
+98. Fotos para redes\241d5375-1a69-4be2-8ec2-957843069f9c.mp4 | video/mp4 | 2724677 bytes
+99. Fotos para redes\916f34c1-ffad-4e29-84dc-f084c43f5d1d.mp4 | video/mp4 | 3176938 bytes
+100. Fotos para redes\a12c4663-fe2c-46fc-8880-0c1b2296afd1.jpg | image/jpeg | 105418 bytes
+101. Fotos para redes\cbc715f0-c157-4067-84c0-032d936d10cf.jpg | image/jpeg | 103342 bytes
+102. Fotos para redes\842fbe75-d7f3-4b54-b250-8416838e8b67.jpg | image/jpeg | 136507 bytes
+103. Fotos para redes\0536952a-892a-4980-a3d6-a9581b73142a.jpg | image/jpeg | 135833 bytes
+104. Fotos para redes\87008915-0034-4884-86a7-70fc20b866d5.jpg | image/jpeg | 95702 bytes
+105. Fotos para redes\b512a86a-0e9e-435f-afd2-d9132cf198ee.jpg | image/jpeg | 148163 bytes
+106. Fotos para redes\f7d41d0c-b705-4c88-b0cf-93d57bddf496.jpg | image/jpeg | 109228 bytes
+107. Fotos para redes\dde6fa0e-f3d1-4bed-9456-ee3539bc56e0.jpg | image/jpeg | 147979 bytes
+108. Fotos para redes\0a7f0733-6403-406e-94bf-5f2a7364512f.jpg | image/jpeg | 113007 bytes
+109. Fotos para redes\6d6b4a56-90a2-4dfe-bc01-700d64372e73.jpg | image/jpeg | 268993 bytes
+110. Fotos para redes\23e045b3-53f9-4998-89b9-fe7537535a0e.jpg | image/jpeg | 366229 bytes
+111. Fotos para redes\00273ea7-349a-40ce-96ce-1ede1231e5ac.jpg | image/jpeg | 346493 bytes
+112. Fotos para redes\925645d9-48cf-44cd-b09a-89d4816362d4.jpg | image/jpeg | 155295 bytes
+113. Fotos para redes\a6ceef66-a4b7-4dac-917a-6fe2f9d989af.jpg | image/jpeg | 174745 bytes
+114. Fotos para redes\fe8ee917-1ff1-46d5-b3b0-44a3f421b6b8.jpg | image/jpeg | 148780 bytes
+115. Fotos para redes\11a4c4c4-5886-47cd-93a1-a6e423192d57.jpg | image/jpeg | 176949 bytes
+116. Fotos para redes\WhatsApp Image 2025-05-26 at 10.44.42 AM.jpeg | image/jpeg | 1958325 bytes
+117. Fotos para redes\WhatsApp Image 2025-05-26 at 10.43.43 AM.jpeg | image/jpeg | 2091283 bytes
+118. Fotos para redes\f43a8443-f369-4eb9-ad0b-9913d81f878e.JPEG | image/jpeg | 234754 bytes
+119. Fotos para redes\Uvero de Playa2.jpg | image/jpeg | 1600422 bytes
+120. Fotos para redes\Jupiter1.jpg | image/jpeg | 2277805 bytes
+121. Fotos para redes\PHOTO-2025-05-24-15-49-53.jpg | image/jpeg | 2680918 bytes
+122. Fotos para redes\PHOTO-2025-05-24-15-49-54.jpg | image/jpeg | 561706 bytes
+123. Fotos para redes\Stories2.jpg | image/jpeg | 1037829 bytes
+124. Fotos para redes\Clusia.JPG | image/jpeg | 15505643 bytes
+125. Fotos para redes\PlantasPaisajismo.jpg | image/jpeg | 2055980 bytes
+126. Fotos para redes\Grama5.jpg | image/jpeg | 7239320 bytes
+127. Fotos para redes\Stories1.jpg | image/jpeg | 3871250 bytes
+128. Fotos para redes\Grama4.jpg | image/jpeg | 9746085 bytes
+129. Fotos para redes\PHOTO-2025-05-21-11-38-33.jpg | image/jpeg | 1422011 bytes
+130. Fotos para redes\Dianela.jpg | image/jpeg | 944307 bytes
+131. Fotos para redes\PHOTO-2025-05-19-10-52-43.jpg | image/jpeg | 610047 bytes
+132. Fotos para redes\PHOTO-2025-05-19-10-52-45 2.jpg | image/jpeg | 221447 bytes
+133. Fotos para redes\Proyectos Paisajismo2.jpg | image/jpeg | 844218 bytes
+134. Fotos para redes\Proyectos Paisajismo3.jpg | image/jpeg | 848384 bytes
+135. Fotos para redes\3d5fca69-16e7-4f42-b067-da54d14dbbed.JPG | image/jpeg | 1139967 bytes
+136. Fotos para redes\332fbe76-0d4c-4354-8da3-aef6f22818b2.JPG | image/jpeg | 1124445 bytes
+137. Fotos para redes\PHOTO-2025-05-16-08-42-23 2.jpg | image/jpeg | 140919 bytes
+138. Fotos para redes\PHOTO-2025-05-16-08-42-23 4.jpg | image/jpeg | 287931 bytes
+139. Fotos para redes\PHOTO-2025-05-16-08-42-23.jpg | image/jpeg | 269754 bytes
+140. Fotos para redes\PHOTO-2025-05-16-08-07-45.jpg | image/jpeg | 803521 bytes
+141. Fotos para redes\66bf4869-d692-48d5-bcb6-bc3a2030e34b.JPG | image/jpeg | 1596530 bytes
+142. Fotos para redes\50224170-b162-4fdf-98e9-822226539742.JPG | image/jpeg | 1186669 bytes
+143. Fotos para redes\Stories2.mp4 | video/mp4 | 9900016 bytes
+144. Fotos para redes\PHOTO-2025-05-13-07-02-29.jpg | image/jpeg | 107371 bytes
+145. Fotos para redes\PHOTO-2025-05-12-10-55-02.jpg | image/jpeg | 208183 bytes
+146. Fotos para redes\VIDEO-2025-05-10-06-44-43.mp4 | video/mp4 | 9991783 bytes
+147. Fotos para redes\PHOTO-2025-05-10-06-45-11 2.jpg | image/jpeg | 200860 bytes
+148. Fotos para redes\VIDEO-2025-05-10-06-46-31.mp4 | video/mp4 | 3899468 bytes
+149. Fotos para redes\PHOTO-2025-05-10-06-44-40 2.jpg | image/jpeg | 204935 bytes
+150. Fotos para redes\PHOTO-2025-05-10-06-44-40.jpg | image/jpeg | 198423 bytes
+151. Fotos para redes\PHOTO-2025-05-10-06-44-41 2.jpg | image/jpeg | 211096 bytes
+152. Fotos para redes\PHOTO-2025-05-10-06-44-41.jpg | image/jpeg | 142029 bytes
+153. Fotos para redes\PHOTO-2025-05-10-06-45-11 3.jpg | image/jpeg | 169069 bytes
+154. Fotos para redes\PHOTO-2025-05-10-06-45-11.jpg | image/jpeg | 188825 bytes
+155. Fotos para redes\PHOTO-2025-05-10-06-45-33.jpg | image/jpeg | 178515 bytes
+156. Fotos para redes\PHOTO-2025-05-10-06-47-03.jpg | image/jpeg | 205019 bytes
+157. Fotos para redes\4b299cf1-5d6c-40f9-ab40-8b7b3fd54279.JPG | image/jpeg | 205055 bytes
+158. Fotos para redes\4aaa936a-f5ce-4a45-8575-2157f8e7c66e.JPG | image/jpeg | 1312231 bytes
+159. Fotos para redes\29bd0dc3-5ced-4a74-9163-3cb3b66cf31e.JPG | image/jpeg | 1396380 bytes
+160. Fotos para redes\773f53c5-9a70-4e3e-9c65-c3fb19578ea7.JPG | image/jpeg | 1234618 bytes
+161. Fotos para redes\3606b01a-fb56-49ad-9f09-21473a4821bc.JPG | image/jpeg | 1265401 bytes
+162. Fotos para redes\442ddc6f-0de1-442f-b25e-a4c5ec43a42c.JPG | image/jpeg | 1070469 bytes
+163. Fotos para redes\PHOTO-2025-05-07-11-39-13 2.jpg | image/jpeg | 866309 bytes
+164. Fotos para redes\PHOTO-2025-05-07-11-39-12.jpg | image/jpeg | 769733 bytes
+165. Fotos para redes\PHOTO-2025-05-07-11-39-13.jpg | image/jpeg | 680942 bytes
+166. Fotos para redes\PHOTO-2025-05-02-06-49-00 3.jpg | image/jpeg | 584150 bytes
+167. Fotos para redes\PHOTO-2025-05-02-06-37-20.jpg | image/jpeg | 1133152 bytes
+168. Fotos para redes\PHOTO-2025-05-02-06-37-21 2.jpg | image/jpeg | 1302945 bytes
+169. Fotos para redes\PHOTO-2025-05-02-06-37-21.jpg | image/jpeg | 721224 bytes
+170. Fotos para redes\PHOTO-2025-05-02-06-49-00.jpg | image/jpeg | 524511 bytes
+171. Fotos para redes\RosaT.jpg | image/jpeg | 1722270 bytes
+172. Fotos para redes\Areca.jpg | image/jpeg | 1742699 bytes
+173. Fotos para redes\Lechuga de Playa.jpg | image/jpeg | 1159428 bytes
+174. Fotos para redes\ManglePlateado.jpg | image/jpeg | 759994 bytes
+175. Fotos para redes\Monstera.jpg | image/jpeg | 1566574 bytes
+176. Fotos para redes\Grama2.jpg | image/jpeg | 1461251 bytes
+177. Fotos para redes\PHOTO-2025-04-23-16-13-01.jpg | image/jpeg | 2360543 bytes
+178. Fotos para redes\PHOTO-2025-04-23-14-56-23.jpg | image/jpeg | 1609319 bytes
+179. Fotos para redes\PHOTO-2025-04-11-14-34-29 3.jpg | image/jpeg | 607681 bytes
+180. Fotos para redes\PHOTO-2025-04-11-14-34-29.jpg | image/jpeg | 808522 bytes
+181. Fotos para redes\PHOTO-2025-04-10-09-46-49.jpg | image/jpeg | 2228550 bytes
+182. Fotos para redes\VIDEO-2025-04-10-09-46-02.mp4 | video/mp4 | 3777341 bytes
+183. Videos\Video Grama.MOV | video/quicktime | 73501415 bytes
+184. Videos\Video Vivero.MOV | video/quicktime | 81213312 bytes
+185. Videos\vivero.MOV | video/quicktime | 77980754 bytes
+186. Logo\LOGOJUSA.ai | application/postscript | 1449077 bytes
